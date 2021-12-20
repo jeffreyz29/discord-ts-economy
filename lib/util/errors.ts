@@ -35,7 +35,7 @@ const Messages = {
  */
 
 interface LewdLabsModuleError {
-  code: any;
+  code: string;
 }
 
 class LewdLabsModuleError extends Error {

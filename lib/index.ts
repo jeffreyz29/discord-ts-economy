@@ -1,3 +1,4 @@
+import { DataBaseController } from "./database/controller";
 import { Economy } from "./economy";
 
-export { Economy };
+export { Economy, DataBaseController };

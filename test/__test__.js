@@ -1,6 +1,13 @@
+/**
+ * ! ----------------------------- Test File -----------------------------
+ *  Do not copy code from this file, it is used for development on new economy functions
+ * ? ----------------------------- Test File -----------------------------
+ */
+
+
 const mongo = require("mongoose");
 const { Economy } = require("../dist/index");
-const config = require("./config.json")
+const config = require("./config.json");
 
 const on = async () => {
   mongo.connect(`${config.dbURl}`);
@@ -21,7 +28,9 @@ console.log("Eco Class loaded...");
 on()
   .then(async () => {
     await ecoTest.db.init().then(async () => {
-      await console.log(`Starting Cached Items Size: ${ecoTest.db.items.size ?? 0}`);
+      await console.log(
+        `Starting Cached Items Size: ${ecoTest.db.items.size ?? 0}`
+      );
     });
 
     let setCommand = ecoTest.db.get("xxx", "x", null);
@@ -35,11 +44,11 @@ on()
     }
 
     setTimeout(() => {
-      ecoTest.db.clear("xxx")
-      console.log("Document Deleted...")
+      ecoTest.db.clear("xxx");
+      console.log("Document Deleted...");
       console.log(`New Cached Items Size: ${ecoTest.db.items.size ?? 0}`);
-      process.exit(1)
-    }, 10000)
+      process.exit(1);
+    }, 10000);
   })
   .then(() => {
     console.log("Program Finished!");

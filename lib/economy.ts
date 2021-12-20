@@ -34,7 +34,14 @@ export class Economy {
     } else this.config = configOptions;
   }
 
-  public async getRawUser(target: string) {
+  /**
+   * The Raw user object fetched from our cache or db.
+   * This function is internal and not used by you the user.
+   * @param target 
+   * @returns 
+   */
+  //@ts-ignore
+  private async getRawUser(target: string) {
     // we call the cache
     let userData = this.db.get(target, "Economy", null);
     // if no cache is found for this user, we will search the db itself.

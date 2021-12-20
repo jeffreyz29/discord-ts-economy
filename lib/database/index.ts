@@ -3,10 +3,10 @@ import { Model } from "mongoose";
 import IModuleError from "../util/errors";
 import { UserEconomyStructure } from "./schema";
 
-export class IDataBaseControler {
-  /** The cache collection for our DataBase */
+export class IDataBaseController {
+  /** The cache collection for our DataBase. */
   public items: Collection<string, any>;
-  /** The mongodb Schema for our database */
+  /** The mongodb Model for our database. If non is passed then the default model will be used.*/
   public model!: Model<UserEconomyStructure>;
   constructor() {
     // Creating our new cache when the Economy is loaded.

@@ -1,8 +1,11 @@
 import type { Document, Model } from "mongoose";
-import { IDataBaseControler } from "./base.controller";
+import { IDataBaseController } from ".";
 import { UserDataSchema, UserEconomyStructure } from "./schema";
 
-export class DataBaseController extends IDataBaseControler {
+/**
+ * The Database Controller manages the main functionality of the database and our cache system.
+ */
+export class DataBaseController extends IDataBaseController {
   public constructor(model?: Model<UserEconomyStructure>) {
     super();
     // if a model is  inserted then use that and not the default
@@ -17,9 +20,9 @@ export class DataBaseController extends IDataBaseControler {
    * Saves all the mongodb documents to our cache after starting the db.
    */
   public async init(): Promise<void> {
-    const Icache = await this.model.find();
-    for (const i in Icache) {
-      const cache = Icache[i];
+    const Cache = await this.model.find();
+    for (const i in Cache) {
+      const cache = Cache[i];
       this.items.set(cache.id, cache.settings);
     }
   }
@@ -35,7 +38,7 @@ export class DataBaseController extends IDataBaseControler {
     id: string,
     key: string,
     defaultValue: any
-  ): Document<any, any, any> {
+  ): Document<string, string, any> {
     if (this.items.has(id)) {
       const value = this.items.get(id)[key];
       return value == null ? defaultValue : value;
@@ -54,13 +57,13 @@ export class DataBaseController extends IDataBaseControler {
     id: string,
     key: string,
     value: any
-  ): Promise<Document<any, any, any>> {
+  ): Promise<Document<string, string, any>> {
     // gets the cache first before writting to the db
     const data = this.items.get(id) || {};
     data[key] = value;
     this.items.set(id, data);
 
-    const doc = await this.getDocument(id);
+    const doc = await this.getDocument(id) as any
     doc.settings[key] = value;
     doc.markModified("settings");
     return doc.save();
@@ -80,7 +83,7 @@ export class DataBaseController extends IDataBaseControler {
     const data = this.items.get(id) || {};
     delete data[key];
 
-    const doc = await this.getDocument(id);
+    const doc = await this.getDocument(id) as any
     delete doc.settings[key];
     doc.markModified("settings");
     return doc.save();
@@ -102,7 +105,7 @@ export class DataBaseController extends IDataBaseControler {
    * @param {string} id - ID of document
    * @returns {Document<any, any, any>} - Mongoose query object|document
    */
-  public async getDocument(id: string): Promise<any> {
+  public async getDocument(id: string) {
     const obj = await this.model.findOne({ id });
     if (!obj) {
       // eslint-disable-next-line new-cap

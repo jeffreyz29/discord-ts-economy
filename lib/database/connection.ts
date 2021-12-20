@@ -1,8 +1,9 @@
 import { connect } from "mongoose";
 
 /**
- * A simple function to connect to mongodb drivers.
- * @param url
+ * @internal
+ * A function to connect to mongodb.
+ * @param {string} url mongodb connection url
  */
 export const mongodb_connect_function = async (url: string) => {
   await connect(url, {

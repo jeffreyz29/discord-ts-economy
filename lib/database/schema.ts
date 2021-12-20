@@ -1,6 +1,6 @@
 import { Document, model, Schema } from "mongoose";
 
-/** The mongodb model structure */
+/** The mongodb model structure. This is required to use with this package*/
 export interface UserEconomyStructure extends Document {
   /** The Discord user Id. */
   id: string;
