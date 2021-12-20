@@ -1,0 +1,6 @@
+dist/
+.pnp.js
+.yarn/*
+node_modules/
+.json
+docs/

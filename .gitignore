@@ -1,0 +1,16 @@
+# NPM trash
+node_modules/
+
+# TS emits
+build/
+dist/
+
+# Express cockiess local data
+sessions/
+
+# Vars
+
+.env
+config.json
+
+# test

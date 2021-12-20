@@ -1,0 +1,7 @@
+*
+
+!package.json
+!out/dist/**/*.js
+!out/types/**/*.d.ts
+
+!README.md

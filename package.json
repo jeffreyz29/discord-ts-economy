@@ -1,0 +1,40 @@
+{
+  "name": "@lewdlabs/economy",
+  "version": "0.0.1",
+  "description": "A mongodb discord bot economy system.",
+  "main": "./test/__test__.js",
+  "types": "./types",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node ./lib/index.ts",
+    "prod:dev": "yarn run build && node .",
+    "build": "tsc --skipLibCheck",
+    "format": "prettier --ignore-path .gitignore --write .",
+    "update": "yarn upgrade-interactive --latest",
+    "watch": "tsc -w",
+    "docs": "npx typedoc --out docs --entryPointStrategy expand ./lib --json docs/v1.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lewd-labs/Economy.git"
+  },
+  "keywords": [],
+  "author": "ThatGuyJamal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lewd-labs/Economy/issues"
+  },
+  "homepage": "https://github.com/lewd-labs/Economy#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.0",
+    "dotenv": "^10.0.0",
+    "prettier": "^2.4.1",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "@discordjs/collection": "^0.3.2",
+    "mongoose": "^6.1.2",
+    "typedoc": "^0.22.10"
+  }
+}

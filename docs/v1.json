@@ -1,0 +1,2644 @@
+{
+  "id": 0,
+  "name": "Lewd.labs Economy",
+  "kind": 1,
+  "flags": {},
+  "children": [
+    {
+      "id": 1,
+      "name": "database/base.controller",
+      "kind": 2,
+      "kindString": "Module",
+      "flags": {},
+      "children": [
+        {
+          "id": 2,
+          "name": "IDataBaseControler",
+          "kind": 128,
+          "kindString": "Class",
+          "flags": {},
+          "children": [
+            {
+              "id": 3,
+              "name": "constructor",
+              "kind": 512,
+              "kindString": "Constructor",
+              "flags": {},
+              "sources": [
+                {
+                  "fileName": "database/base.controller.ts",
+                  "line": 11,
+                  "character": 2
+                }
+              ],
+              "signatures": [
+                {
+                  "id": 4,
+                  "name": "new IDataBaseControler",
+                  "kind": 16384,
+                  "kindString": "Constructor signature",
+                  "flags": {},
+                  "type": {
+                    "type": "reference",
+                    "id": 2,
+                    "name": "IDataBaseControler"
+                  }
+                }
+              ]
+            },
+            {
+              "id": 5,
+              "name": "items",
+              "kind": 1024,
+              "kindString": "Property",
+              "flags": {
+                "isPublic": true
+              },
+              "comment": {
+                "shortText": "The cache collection for our DataBase"
+              },
+              "sources": [
+                {
+                  "fileName": "database/base.controller.ts",
+                  "line": 8,
+                  "character": 9
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "typeArguments": [
+                  {
+                    "type": "intrinsic",
+                    "name": "string"
+                  },
+                  {
+                    "type": "intrinsic",
+                    "name": "any"
+                  }
+                ],
+                "name": "Collection"
+              }
+            },
+            {
+              "id": 6,
+              "name": "model",
+              "kind": 1024,
+              "kindString": "Property",
+              "flags": {
+                "isPublic": true
+              },
+              "comment": {
+                "shortText": "The mongodb Schema for our database"
+              },
+              "sources": [
+                {
+                  "fileName": "database/base.controller.ts",
+                  "line": 10,
+                  "character": 9
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "typeArguments": [
+                  {
+                    "type": "reference",
+                    "id": 69,
+                    "name": "UserEconomyStructure"
+                  },
+                  {
+                    "type": "reflection",
+                    "declaration": {
+                      "id": 7,
+                      "name": "__type",
+                      "kind": 65536,
+                      "kindString": "Type literal",
+                      "flags": {}
+                    }
+                  },
+                  {
+                    "type": "reflection",
+                    "declaration": {
+                      "id": 8,
+                      "name": "__type",
+                      "kind": 65536,
+                      "kindString": "Type literal",
+                      "flags": {}
+                    }
+                  },
+                  {
+                    "type": "reflection",
+                    "declaration": {
+                      "id": 9,
+                      "name": "__type",
+                      "kind": 65536,
+                      "kindString": "Type literal",
+                      "flags": {}
+                    }
+                  }
+                ],
+                "name": "Model"
+              }
+            },
+            {
+              "id": 26,
+              "name": "clear",
+              "kind": 2048,
+              "kindString": "Method",
+              "flags": {
+                "isPublic": true
+              },
+              "sources": [
+                {
+                  "fileName": "database/base.controller.ts",
+                  "line": 73,
+                  "character": 9
+                }
+              ],
+              "signatures": [
+                {
+                  "id": 27,
+                  "name": "clear",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "comment": {
+                    "shortText": "Clears an entry.",
+                    "returns": "\n",
+                    "tags": [
+                      {
+                        "tag": "abstract",
+                        "text": ""
+                      }
+                    ]
+                  },
+                  "parameters": [
+                    {
+                      "id": 28,
+                      "name": "id",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "comment": {
+                        "shortText": "ID of entry."
+                      },
+                      "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "reference",
+                    "typeArguments": [
+                      {
+                        "type": "intrinsic",
+                        "name": "any"
+                      }
+                    ],
+                    "name": "Promise"
+                  }
+                }
+              ]
+            },
+            {
+              "id": 22,
+              "name": "delete",
+              "kind": 2048,
+              "kindString": "Method",
+              "flags": {
+                "isPublic": true
+              },
+              "sources": [
+                {
+                  "fileName": "database/base.controller.ts",
+                  "line": 61,
+                  "character": 9
+                }
+              ],
+              "signatures": [
+                {
+                  "id": 23,
+                  "name": "delete",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "comment": {
+                    "shortText": "Deletes a value.",
+                    "returns": "\n",
+                    "tags": [
+                      {
+                        "tag": "abstract",
+                        "text": ""
+                      }
+                    ]
+                  },
+                  "parameters": [
+                    {
+                      "id": 24,
+                      "name": "id",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "comment": {
+                        "shortText": "ID of entry."
+                      },
+                      "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                      }
+                    },
+                    {
+                      "id": 25,
+                      "name": "key",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "comment": {
+                        "shortText": "The key to delete."
+                      },
+                      "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "reference",
+                    "typeArguments": [
+                      {
+                        "type": "intrinsic",
+                        "name": "any"
+                      }
+                    ],
+                    "name": "Promise"
+                  }
+                }
+              ]
+            },
+            {
+              "id": 12,
+              "name": "get",
+              "kind": 2048,
+              "kindString": "Method",
+              "flags": {
+                "isPublic": true
+              },
+              "sources": [
+                {
+                  "fileName": "database/base.controller.ts",
+                  "line": 32,
+                  "character": 9
+                }
+              ],
+              "signatures": [
+                {
+                  "id": 13,
+                  "name": "get",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "comment": {
+                    "shortText": "Gets a value.",
+                    "returns": "\n",
+                    "tags": [
+                      {
+                        "tag": "abstract",
+                        "text": ""
+                      }
+                    ]
+                  },
+                  "parameters": [
+                    {
+                      "id": 14,
+                      "name": "id",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "comment": {
+                        "shortText": "ID of entry."
+                      },
+                      "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                      }
+                    },
+                    {
+                      "id": 15,
+                      "name": "key",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "comment": {
+                        "shortText": "The key to get."
+                      },
+                      "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                      }
+                    },
+                    {
+                      "id": 16,
+                      "name": "defaultValue",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "intrinsic",
+                        "name": "any"
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "any"
+                  }
+                }
+              ]
+            },
+            {
+              "id": 10,
+              "name": "init",
+              "kind": 2048,
+              "kindString": "Method",
+              "flags": {
+                "isPublic": true
+              },
+              "sources": [
+                {
+                  "fileName": "database/base.controller.ts",
+                  "line": 21,
+                  "character": 9
+                }
+              ],
+              "signatures": [
+                {
+                  "id": 11,
+                  "name": "init",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "comment": {
+                    "shortText": "Initializes the provider.",
+                    "returns": "\n",
+                    "tags": [
+                      {
+                        "tag": "abstract",
+                        "text": ""
+                      }
+                    ]
+                  },
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "void"
+                  }
+                }
+              ]
+            },
+            {
+              "id": 17,
+              "name": "set",
+              "kind": 2048,
+              "kindString": "Method",
+              "flags": {
+                "isPublic": true
+              },
+              "sources": [
+                {
+                  "fileName": "database/base.controller.ts",
+                  "line": 47,
+                  "character": 9
+                }
+              ],
+              "signatures": [
+                {
+                  "id": 18,
+                  "name": "set",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "comment": {
+                    "shortText": "Sets a value.",
+                    "returns": "\n",
+                    "tags": [
+                      {
+                        "tag": "abstract",
+                        "text": ""
+                      }
+                    ]
+                  },
+                  "parameters": [
+                    {
+                      "id": 19,
+                      "name": "id",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "comment": {
+                        "shortText": "ID of entry."
+                      },
+                      "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                      }
+                    },
+                    {
+                      "id": 20,
+                      "name": "key",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "comment": {
+                        "shortText": "The key to set."
+                      },
+                      "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                      }
+                    },
+                    {
+                      "id": 21,
+                      "name": "value",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "comment": {
+                        "shortText": "The value."
+                      },
+                      "type": {
+                        "type": "intrinsic",
+                        "name": "any"
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "reference",
+                    "typeArguments": [
+                      {
+                        "type": "intrinsic",
+                        "name": "any"
+                      }
+                    ],
+                    "name": "Promise"
+                  }
+                }
+              ]
+            }
+          ],
+          "groups": [
+            {
+              "title": "Constructors",
+              "kind": 512,
+              "children": [3]
+            },
+            {
+              "title": "Properties",
+              "kind": 1024,
+              "children": [5, 6]
+            },
+            {
+              "title": "Methods",
+              "kind": 2048,
+              "children": [26, 22, 12, 10, 17]
+            }
+          ],
+          "sources": [
+            {
+              "fileName": "database/base.controller.ts",
+              "line": 6,
+              "character": 13
+            }
+          ],
+          "extendedBy": [
+            {
+              "type": "reference",
+              "id": 34,
+              "name": "DataBaseController"
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "title": "Classes",
+          "kind": 128,
+          "children": [2]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "database/base.controller.ts",
+          "line": 1,
+          "character": 0
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "database/connection",
+      "kind": 2,
+      "kindString": "Module",
+      "flags": {},
+      "children": [
+        {
+          "id": 30,
+          "name": "mongodb_connect_function",
+          "kind": 64,
+          "kindString": "Function",
+          "flags": {
+            "isConst": true
+          },
+          "sources": [
+            {
+              "fileName": "database/connection.ts",
+              "line": 7,
+              "character": 13
+            }
+          ],
+          "signatures": [
+            {
+              "id": 31,
+              "name": "mongodb_connect_function",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "comment": {
+                "shortText": "A simple function to connect to mongodb drivers."
+              },
+              "parameters": [
+                {
+                  "id": 32,
+                  "name": "url",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "comment": {
+                    "shortText": "\n"
+                  },
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "string"
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "typeArguments": [
+                  {
+                    "type": "intrinsic",
+                    "name": "void"
+                  }
+                ],
+                "name": "Promise"
+              }
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "title": "Functions",
+          "kind": 64,
+          "children": [30]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "database/connection.ts",
+          "line": 1,
+          "character": 0
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "name": "database/controller",
+      "kind": 2,
+      "kindString": "Module",
+      "flags": {},
+      "children": [
+        {
+          "id": 34,
+          "name": "DataBaseController",
+          "kind": 128,
+          "kindString": "Class",
+          "flags": {},
+          "children": [
+            {
+              "id": 35,
+              "name": "constructor",
+              "kind": 512,
+              "kindString": "Constructor",
+              "flags": {
+                "isPublic": true
+              },
+              "sources": [
+                {
+                  "fileName": "database/controller.ts",
+                  "line": 6,
+                  "character": 2
+                }
+              ],
+              "signatures": [
+                {
+                  "id": 36,
+                  "name": "new DataBaseController",
+                  "kind": 16384,
+                  "kindString": "Constructor signature",
+                  "flags": {},
+                  "parameters": [
+                    {
+                      "id": 37,
+                      "name": "model",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {
+                        "isOptional": true
+                      },
+                      "type": {
+                        "type": "reference",
+                        "typeArguments": [
+                          {
+                            "type": "reference",
+                            "id": 69,
+                            "name": "UserEconomyStructure"
+                          },
+                          {
+                            "type": "reflection",
+                            "declaration": {
+                              "id": 38,
+                              "name": "__type",
+                              "kind": 65536,
+                              "kindString": "Type literal",
+                              "flags": {}
+                            }
+                          },
+                          {
+                            "type": "reflection",
+                            "declaration": {
+                              "id": 39,
+                              "name": "__type",
+                              "kind": 65536,
+                              "kindString": "Type literal",
+                              "flags": {}
+                            }
+                          },
+                          {
+                            "type": "reflection",
+                            "declaration": {
+                              "id": 40,
+                              "name": "__type",
+                              "kind": 65536,
+                              "kindString": "Type literal",
+                              "flags": {}
+                            }
+                          }
+                        ],
+                        "name": "Model"
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "reference",
+                    "id": 34,
+                    "name": "DataBaseController"
+                  },
+                  "overwrites": {
+                    "type": "reference",
+                    "id": 4,
+                    "name": "IDataBaseControler.constructor"
+                  }
+                }
+              ],
+              "overwrites": {
+                "type": "reference",
+                "id": 3,
+                "name": "IDataBaseControler.constructor"
+              }
+            },
+            {
+              "id": 63,
+              "name": "items",
+              "kind": 1024,
+              "kindString": "Property",
+              "flags": {
+                "isPublic": true
+              },
+              "comment": {
+                "shortText": "The cache collection for our DataBase"
+              },
+              "sources": [
+                {
+                  "fileName": "database/base.controller.ts",
+                  "line": 8,
+                  "character": 9
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "typeArguments": [
+                  {
+                    "type": "intrinsic",
+                    "name": "string"
+                  },
+                  {
+                    "type": "intrinsic",
+                    "name": "any"
+                  }
+                ],
+                "name": "Collection"
+              },
+              "inheritedFrom": {
+                "type": "reference",
+                "id": 5,
+                "name": "IDataBaseControler.items"
+              }
+            },
+            {
+              "id": 64,
+              "name": "model",
+              "kind": 1024,
+              "kindString": "Property",
+              "flags": {
+                "isPublic": true
+              },
+              "comment": {
+                "shortText": "The mongodb Schema for our database"
+              },
+              "sources": [
+                {
+                  "fileName": "database/base.controller.ts",
+                  "line": 10,
+                  "character": 9
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "typeArguments": [
+                  {
+                    "type": "reference",
+                    "id": 69,
+                    "name": "UserEconomyStructure"
+                  },
+                  {
+                    "type": "reflection",
+                    "declaration": {
+                      "id": 65,
+                      "name": "__type",
+                      "kind": 65536,
+                      "kindString": "Type literal",
+                      "flags": {}
+                    }
+                  },
+                  {
+                    "type": "reflection",
+                    "declaration": {
+                      "id": 66,
+                      "name": "__type",
+                      "kind": 65536,
+                      "kindString": "Type literal",
+                      "flags": {}
+                    }
+                  },
+                  {
+                    "type": "reflection",
+                    "declaration": {
+                      "id": 67,
+                      "name": "__type",
+                      "kind": 65536,
+                      "kindString": "Type literal",
+                      "flags": {}
+                    }
+                  }
+                ],
+                "name": "Model"
+              },
+              "inheritedFrom": {
+                "type": "reference",
+                "id": 6,
+                "name": "IDataBaseControler.model"
+              }
+            },
+            {
+              "id": 57,
+              "name": "clear",
+              "kind": 2048,
+              "kindString": "Method",
+              "flags": {
+                "isPublic": true
+              },
+              "sources": [
+                {
+                  "fileName": "database/controller.ts",
+                  "line": 94,
+                  "character": 15
+                }
+              ],
+              "signatures": [
+                {
+                  "id": 58,
+                  "name": "clear",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "comment": {
+                    "shortText": "Removes a document from our cache and db.",
+                    "returns": "\n"
+                  },
+                  "parameters": [
+                    {
+                      "id": 59,
+                      "name": "id",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "comment": {
+                        "shortText": "ID of document"
+                      },
+                      "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "reference",
+                    "typeArguments": [
+                      {
+                        "type": "intrinsic",
+                        "name": "void"
+                      }
+                    ],
+                    "name": "Promise"
+                  },
+                  "overwrites": {
+                    "type": "reference",
+                    "id": 27,
+                    "name": "IDataBaseControler.clear"
+                  }
+                }
+              ],
+              "overwrites": {
+                "type": "reference",
+                "id": 26,
+                "name": "IDataBaseControler.clear"
+              }
+            },
+            {
+              "id": 53,
+              "name": "delete",
+              "kind": 2048,
+              "kindString": "Method",
+              "flags": {
+                "isPublic": true
+              },
+              "sources": [
+                {
+                  "fileName": "database/controller.ts",
+                  "line": 76,
+                  "character": 15
+                }
+              ],
+              "signatures": [
+                {
+                  "id": 54,
+                  "name": "delete",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "comment": {
+                    "shortText": "Deletes a value from our cache and db.\nThis is not the same as the clear function. This will only delete a settings[key] field",
+                    "returns": "- Mongoose query object|document\n"
+                  },
+                  "parameters": [
+                    {
+                      "id": 55,
+                      "name": "id",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "comment": {
+                        "shortText": "ID of document"
+                      },
+                      "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                      }
+                    },
+                    {
+                      "id": 56,
+                      "name": "key",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "comment": {
+                        "shortText": "The key to delete."
+                      },
+                      "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "reference",
+                    "typeArguments": [
+                      {
+                        "type": "reference",
+                        "typeArguments": [
+                          {
+                            "type": "intrinsic",
+                            "name": "any"
+                          },
+                          {
+                            "type": "intrinsic",
+                            "name": "any"
+                          },
+                          {
+                            "type": "intrinsic",
+                            "name": "any"
+                          }
+                        ],
+                        "name": "Document"
+                      }
+                    ],
+                    "name": "Promise"
+                  },
+                  "overwrites": {
+                    "type": "reference",
+                    "id": 23,
+                    "name": "IDataBaseControler.delete"
+                  }
+                }
+              ],
+              "overwrites": {
+                "type": "reference",
+                "id": 22,
+                "name": "IDataBaseControler.delete"
+              }
+            },
+            {
+              "id": 43,
+              "name": "get",
+              "kind": 2048,
+              "kindString": "Method",
+              "flags": {
+                "isPublic": true
+              },
+              "sources": [
+                {
+                  "fileName": "database/controller.ts",
+                  "line": 34,
+                  "character": 9
+                }
+              ],
+              "signatures": [
+                {
+                  "id": 44,
+                  "name": "get",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "comment": {
+                    "shortText": "Gets a value from our cache.\nKeep in mind if the data is not in the cache you have to fetch the entire document.",
+                    "returns": "\n"
+                  },
+                  "parameters": [
+                    {
+                      "id": 45,
+                      "name": "id",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "comment": {
+                        "shortText": "ID of document."
+                      },
+                      "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                      }
+                    },
+                    {
+                      "id": 46,
+                      "name": "key",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "comment": {
+                        "shortText": "The key to get."
+                      },
+                      "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                      }
+                    },
+                    {
+                      "id": 47,
+                      "name": "defaultValue",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "intrinsic",
+                        "name": "any"
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "reference",
+                    "typeArguments": [
+                      {
+                        "type": "intrinsic",
+                        "name": "any"
+                      },
+                      {
+                        "type": "intrinsic",
+                        "name": "any"
+                      },
+                      {
+                        "type": "intrinsic",
+                        "name": "any"
+                      }
+                    ],
+                    "name": "Document"
+                  },
+                  "overwrites": {
+                    "type": "reference",
+                    "id": 13,
+                    "name": "IDataBaseControler.get"
+                  }
+                }
+              ],
+              "overwrites": {
+                "type": "reference",
+                "id": 12,
+                "name": "IDataBaseControler.get"
+              }
+            },
+            {
+              "id": 60,
+              "name": "getDocument",
+              "kind": 2048,
+              "kindString": "Method",
+              "flags": {
+                "isPublic": true
+              },
+              "sources": [
+                {
+                  "fileName": "database/controller.ts",
+                  "line": 105,
+                  "character": 15
+                }
+              ],
+              "signatures": [
+                {
+                  "id": 61,
+                  "name": "getDocument",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "comment": {
+                    "shortText": "Gets a document from the mongodb servers and not cache.",
+                    "returns": "- Mongoose query object|document\n"
+                  },
+                  "parameters": [
+                    {
+                      "id": 62,
+                      "name": "id",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "comment": {
+                        "shortText": "ID of document"
+                      },
+                      "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "reference",
+                    "typeArguments": [
+                      {
+                        "type": "intrinsic",
+                        "name": "any"
+                      }
+                    ],
+                    "name": "Promise"
+                  }
+                }
+              ]
+            },
+            {
+              "id": 41,
+              "name": "init",
+              "kind": 2048,
+              "kindString": "Method",
+              "flags": {
+                "isPublic": true
+              },
+              "sources": [
+                {
+                  "fileName": "database/controller.ts",
+                  "line": 19,
+                  "character": 15
+                }
+              ],
+              "signatures": [
+                {
+                  "id": 42,
+                  "name": "init",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "comment": {
+                    "shortText": "Saves all the mongodb documents to our cache after starting the db."
+                  },
+                  "type": {
+                    "type": "reference",
+                    "typeArguments": [
+                      {
+                        "type": "intrinsic",
+                        "name": "void"
+                      }
+                    ],
+                    "name": "Promise"
+                  },
+                  "overwrites": {
+                    "type": "reference",
+                    "id": 11,
+                    "name": "IDataBaseControler.init"
+                  }
+                }
+              ],
+              "overwrites": {
+                "type": "reference",
+                "id": 10,
+                "name": "IDataBaseControler.init"
+              }
+            },
+            {
+              "id": 48,
+              "name": "set",
+              "kind": 2048,
+              "kindString": "Method",
+              "flags": {
+                "isPublic": true
+              },
+              "sources": [
+                {
+                  "fileName": "database/controller.ts",
+                  "line": 53,
+                  "character": 15
+                }
+              ],
+              "signatures": [
+                {
+                  "id": 49,
+                  "name": "set",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "comment": {
+                    "shortText": "Sets a value in our cache and db.",
+                    "returns": "- Mongoose query object|document\n"
+                  },
+                  "parameters": [
+                    {
+                      "id": 50,
+                      "name": "id",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "comment": {
+                        "shortText": "ID of document"
+                      },
+                      "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                      }
+                    },
+                    {
+                      "id": 51,
+                      "name": "key",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "comment": {
+                        "shortText": "The key to set."
+                      },
+                      "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                      }
+                    },
+                    {
+                      "id": 52,
+                      "name": "value",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "comment": {
+                        "shortText": "The value."
+                      },
+                      "type": {
+                        "type": "intrinsic",
+                        "name": "any"
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "reference",
+                    "typeArguments": [
+                      {
+                        "type": "reference",
+                        "typeArguments": [
+                          {
+                            "type": "intrinsic",
+                            "name": "any"
+                          },
+                          {
+                            "type": "intrinsic",
+                            "name": "any"
+                          },
+                          {
+                            "type": "intrinsic",
+                            "name": "any"
+                          }
+                        ],
+                        "name": "Document"
+                      }
+                    ],
+                    "name": "Promise"
+                  },
+                  "overwrites": {
+                    "type": "reference",
+                    "id": 18,
+                    "name": "IDataBaseControler.set"
+                  }
+                }
+              ],
+              "overwrites": {
+                "type": "reference",
+                "id": 17,
+                "name": "IDataBaseControler.set"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "title": "Constructors",
+              "kind": 512,
+              "children": [35]
+            },
+            {
+              "title": "Properties",
+              "kind": 1024,
+              "children": [63, 64]
+            },
+            {
+              "title": "Methods",
+              "kind": 2048,
+              "children": [57, 53, 43, 60, 41, 48]
+            }
+          ],
+          "sources": [
+            {
+              "fileName": "database/controller.ts",
+              "line": 5,
+              "character": 13
+            }
+          ],
+          "extendedTypes": [
+            {
+              "type": "reference",
+              "id": 2,
+              "name": "IDataBaseControler"
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "title": "Classes",
+          "kind": 128,
+          "children": [34]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "database/controller.ts",
+          "line": 1,
+          "character": 0
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "name": "database/schema",
+      "kind": 2,
+      "kindString": "Module",
+      "flags": {},
+      "children": [
+        {
+          "id": 69,
+          "name": "UserEconomyStructure",
+          "kind": 256,
+          "kindString": "Interface",
+          "flags": {},
+          "comment": {
+            "shortText": "The mongodb model structure"
+          },
+          "children": [
+            {
+              "id": 70,
+              "name": "id",
+              "kind": 1024,
+              "kindString": "Property",
+              "flags": {},
+              "comment": {
+                "shortText": "The Discord user Id."
+              },
+              "sources": [
+                {
+                  "fileName": "database/schema.ts",
+                  "line": 6,
+                  "character": 2
+                }
+              ],
+              "type": {
+                "type": "intrinsic",
+                "name": "string"
+              },
+              "overwrites": {
+                "type": "reference",
+                "name": "Document.id"
+              }
+            },
+            {
+              "id": 71,
+              "name": "settings",
+              "kind": 1024,
+              "kindString": "Property",
+              "flags": {},
+              "comment": {
+                "shortText": "Our object for all our user settings."
+              },
+              "sources": [
+                {
+                  "fileName": "database/schema.ts",
+                  "line": 8,
+                  "character": 2
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "name": "Object"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "title": "Properties",
+              "kind": 1024,
+              "children": [70, 71]
+            }
+          ],
+          "sources": [
+            {
+              "fileName": "database/schema.ts",
+              "line": 4,
+              "character": 17
+            }
+          ],
+          "extendedTypes": [
+            {
+              "type": "reference",
+              "name": "Document"
+            }
+          ]
+        },
+        {
+          "id": 72,
+          "name": "UserDataSchema",
+          "kind": 32,
+          "kindString": "Variable",
+          "flags": {},
+          "sources": [
+            {
+              "fileName": "database/schema.ts",
+              "line": 25,
+              "character": 13
+            }
+          ],
+          "type": {
+            "type": "reference",
+            "typeArguments": [
+              {
+                "type": "reference",
+                "id": 69,
+                "name": "UserEconomyStructure"
+              },
+              {
+                "type": "reflection",
+                "declaration": {
+                  "id": 73,
+                  "name": "__type",
+                  "kind": 65536,
+                  "kindString": "Type literal",
+                  "flags": {}
+                }
+              },
+              {
+                "type": "reflection",
+                "declaration": {
+                  "id": 74,
+                  "name": "__type",
+                  "kind": 65536,
+                  "kindString": "Type literal",
+                  "flags": {}
+                }
+              },
+              {
+                "type": "reflection",
+                "declaration": {
+                  "id": 75,
+                  "name": "__type",
+                  "kind": 65536,
+                  "kindString": "Type literal",
+                  "flags": {}
+                }
+              }
+            ],
+            "name": "Model"
+          },
+          "defaultValue": "..."
+        }
+      ],
+      "groups": [
+        {
+          "title": "Interfaces",
+          "kind": 256,
+          "children": [69]
+        },
+        {
+          "title": "Variables",
+          "kind": 32,
+          "children": [72]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "database/schema.ts",
+          "line": 1,
+          "character": 0
+        }
+      ]
+    },
+    {
+      "id": 97,
+      "name": "economy",
+      "kind": 2,
+      "kindString": "Module",
+      "flags": {},
+      "children": [
+        {
+          "id": 98,
+          "name": "Economy",
+          "kind": 128,
+          "kindString": "Class",
+          "flags": {},
+          "comment": {
+            "shortText": "The Lewd Labs Economy for discord bots with mongodb"
+          },
+          "children": [
+            {
+              "id": 99,
+              "name": "constructor",
+              "kind": 512,
+              "kindString": "Constructor",
+              "flags": {
+                "isPublic": true
+              },
+              "sources": [
+                {
+                  "fileName": "economy.ts",
+                  "line": 12,
+                  "character": 2
+                }
+              ],
+              "signatures": [
+                {
+                  "id": 100,
+                  "name": "new Economy",
+                  "kind": 16384,
+                  "kindString": "Constructor signature",
+                  "flags": {},
+                  "parameters": [
+                    {
+                      "id": 101,
+                      "name": "configOptions",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "reference",
+                        "id": 125,
+                        "name": "EconomyConfigOptions"
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "reference",
+                    "id": 98,
+                    "name": "Economy"
+                  },
+                  "overwrites": {
+                    "type": "reference",
+                    "id": 79,
+                    "name": "IEconomy.constructor"
+                  }
+                }
+              ],
+              "overwrites": {
+                "type": "reference",
+                "id": 78,
+                "name": "IEconomy.constructor"
+              }
+            },
+            {
+              "id": 102,
+              "name": "config",
+              "kind": 1024,
+              "kindString": "Property",
+              "flags": {
+                "isPublic": true
+              },
+              "comment": {
+                "shortText": "Our constructor config options"
+              },
+              "sources": [
+                {
+                  "fileName": "economy.ts",
+                  "line": 11,
+                  "character": 9
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "id": 125,
+                "name": "EconomyConfigOptions"
+              }
+            },
+            {
+              "id": 106,
+              "name": "db",
+              "kind": 1024,
+              "kindString": "Property",
+              "flags": {
+                "isPublic": true
+              },
+              "comment": {
+                "shortText": "Allows the raw db function to be accessed throughout the Economy for more user customization."
+              },
+              "sources": [
+                {
+                  "fileName": "economy.core.ts",
+                  "line": 6,
+                  "character": 9
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "id": 34,
+                "name": "DataBaseController"
+              },
+              "defaultValue": "...",
+              "inheritedFrom": {
+                "type": "reference",
+                "id": 80,
+                "name": "IEconomy.db"
+              }
+            },
+            {
+              "id": 103,
+              "name": "connect",
+              "kind": 2048,
+              "kindString": "Method",
+              "flags": {
+                "isPublic": true
+              },
+              "sources": [
+                {
+                  "fileName": "economy.ts",
+                  "line": 37,
+                  "character": 15
+                }
+              ],
+              "signatures": [
+                {
+                  "id": 104,
+                  "name": "connect",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "comment": {
+                    "shortText": "A simple function to connecto mongodb.\nThis is not required to use, but if you do this must be called before other parts of the database or else functions will not work.",
+                    "tags": [
+                      {
+                        "tag": "see",
+                        "text": "https://www.mongodb.com/ for support with setting up your database.\n"
+                      }
+                    ]
+                  },
+                  "parameters": [
+                    {
+                      "id": 105,
+                      "name": "url",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "comment": {
+                        "shortText": "Your mongodb URL"
+                      },
+                      "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "reference",
+                    "typeArguments": [
+                      {
+                        "type": "intrinsic",
+                        "name": "void"
+                      }
+                    ],
+                    "name": "Promise"
+                  }
+                }
+              ]
+            },
+            {
+              "id": 107,
+              "name": "getRawUser",
+              "kind": 2048,
+              "kindString": "Method",
+              "flags": {
+                "isPublic": true
+              },
+              "sources": [
+                {
+                  "fileName": "economy.core.ts",
+                  "line": 7,
+                  "character": 15
+                }
+              ],
+              "signatures": [
+                {
+                  "id": 108,
+                  "name": "getRawUser",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "parameters": [
+                    {
+                      "id": 109,
+                      "name": "target",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "reference",
+                    "typeArguments": [
+                      {
+                        "type": "intrinsic",
+                        "name": "any"
+                      }
+                    ],
+                    "name": "Promise"
+                  },
+                  "inheritedFrom": {
+                    "type": "reference",
+                    "id": 82,
+                    "name": "IEconomy.getRawUser"
+                  }
+                }
+              ],
+              "inheritedFrom": {
+                "type": "reference",
+                "id": 81,
+                "name": "IEconomy.getRawUser"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "title": "Constructors",
+              "kind": 512,
+              "children": [99]
+            },
+            {
+              "title": "Properties",
+              "kind": 1024,
+              "children": [102, 106]
+            },
+            {
+              "title": "Methods",
+              "kind": 2048,
+              "children": [103, 107]
+            }
+          ],
+          "sources": [
+            {
+              "fileName": "economy.ts",
+              "line": 9,
+              "character": 13
+            }
+          ],
+          "extendedTypes": [
+            {
+              "type": "reference",
+              "id": 77,
+              "name": "IEconomy"
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "title": "Classes",
+          "kind": 128,
+          "children": [98]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "economy.ts",
+          "line": 1,
+          "character": 0
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "name": "economy.core",
+      "kind": 2,
+      "kindString": "Module",
+      "flags": {},
+      "children": [
+        {
+          "id": 77,
+          "name": "IEconomy",
+          "kind": 128,
+          "kindString": "Class",
+          "flags": {},
+          "comment": {
+            "shortText": "Private function for the economy class"
+          },
+          "children": [
+            {
+              "id": 78,
+              "name": "constructor",
+              "kind": 512,
+              "kindString": "Constructor",
+              "flags": {},
+              "signatures": [
+                {
+                  "id": 79,
+                  "name": "new IEconomy",
+                  "kind": 16384,
+                  "kindString": "Constructor signature",
+                  "flags": {},
+                  "type": {
+                    "type": "reference",
+                    "id": 77,
+                    "name": "IEconomy"
+                  }
+                }
+              ]
+            },
+            {
+              "id": 80,
+              "name": "db",
+              "kind": 1024,
+              "kindString": "Property",
+              "flags": {
+                "isPublic": true
+              },
+              "comment": {
+                "shortText": "Allows the raw db function to be accessed throughout the Economy for more user customization."
+              },
+              "sources": [
+                {
+                  "fileName": "economy.core.ts",
+                  "line": 6,
+                  "character": 9
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "id": 34,
+                "name": "DataBaseController"
+              },
+              "defaultValue": "..."
+            },
+            {
+              "id": 81,
+              "name": "getRawUser",
+              "kind": 2048,
+              "kindString": "Method",
+              "flags": {
+                "isPublic": true
+              },
+              "sources": [
+                {
+                  "fileName": "economy.core.ts",
+                  "line": 7,
+                  "character": 15
+                }
+              ],
+              "signatures": [
+                {
+                  "id": 82,
+                  "name": "getRawUser",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "parameters": [
+                    {
+                      "id": 83,
+                      "name": "target",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "reference",
+                    "typeArguments": [
+                      {
+                        "type": "intrinsic",
+                        "name": "any"
+                      }
+                    ],
+                    "name": "Promise"
+                  }
+                }
+              ]
+            }
+          ],
+          "groups": [
+            {
+              "title": "Constructors",
+              "kind": 512,
+              "children": [78]
+            },
+            {
+              "title": "Properties",
+              "kind": 1024,
+              "children": [80]
+            },
+            {
+              "title": "Methods",
+              "kind": 2048,
+              "children": [81]
+            }
+          ],
+          "sources": [
+            {
+              "fileName": "economy.core.ts",
+              "line": 4,
+              "character": 13
+            }
+          ],
+          "extendedBy": [
+            {
+              "type": "reference",
+              "id": 98,
+              "name": "Economy"
+            }
+          ]
+        },
+        {
+          "id": 84,
+          "name": "UserEconomyTypes",
+          "kind": 256,
+          "kindString": "Interface",
+          "flags": {},
+          "children": [
+            {
+              "id": 93,
+              "name": "balance",
+              "kind": 1024,
+              "kindString": "Property",
+              "flags": {},
+              "comment": {
+                "shortText": "Where all the money is stored in the economy"
+              },
+              "sources": [
+                {
+                  "fileName": "economy.core.ts",
+                  "line": 39,
+                  "character": 2
+                }
+              ],
+              "type": {
+                "type": "reflection",
+                "declaration": {
+                  "id": 94,
+                  "name": "__type",
+                  "kind": 65536,
+                  "kindString": "Type literal",
+                  "flags": {},
+                  "children": [
+                    {
+                      "id": 96,
+                      "name": "bank",
+                      "kind": 1024,
+                      "kindString": "Property",
+                      "flags": {},
+                      "comment": {
+                        "shortText": "The private user storage that cant be robbed"
+                      },
+                      "sources": [
+                        {
+                          "fileName": "economy.core.ts",
+                          "line": 43,
+                          "character": 4
+                        }
+                      ],
+                      "type": {
+                        "type": "intrinsic",
+                        "name": "number"
+                      }
+                    },
+                    {
+                      "id": 95,
+                      "name": "wallet",
+                      "kind": 1024,
+                      "kindString": "Property",
+                      "flags": {},
+                      "comment": {
+                        "shortText": "The public user storage that can be robbed"
+                      },
+                      "sources": [
+                        {
+                          "fileName": "economy.core.ts",
+                          "line": 41,
+                          "character": 4
+                        }
+                      ],
+                      "type": {
+                        "type": "intrinsic",
+                        "name": "number"
+                      }
+                    }
+                  ],
+                  "groups": [
+                    {
+                      "title": "Properties",
+                      "kind": 1024,
+                      "children": [96, 95]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 85,
+              "name": "bankLimit",
+              "kind": 1024,
+              "kindString": "Property",
+              "flags": {},
+              "comment": {
+                "shortText": "The max balance a user bank can have."
+              },
+              "sources": [
+                {
+                  "fileName": "economy.core.ts",
+                  "line": 26,
+                  "character": 2
+                }
+              ],
+              "type": {
+                "type": "intrinsic",
+                "name": "number"
+              }
+            },
+            {
+              "id": 88,
+              "name": "dailyStreak",
+              "kind": 1024,
+              "kindString": "Property",
+              "flags": {},
+              "sources": [
+                {
+                  "fileName": "economy.core.ts",
+                  "line": 31,
+                  "character": 2
+                }
+              ],
+              "type": {
+                "type": "intrinsic",
+                "name": "number"
+              }
+            },
+            {
+              "id": 87,
+              "name": "dailyTimeout",
+              "kind": 1024,
+              "kindString": "Property",
+              "flags": {},
+              "comment": {
+                "shortText": "The last cached time the daily command was used."
+              },
+              "sources": [
+                {
+                  "fileName": "economy.core.ts",
+                  "line": 30,
+                  "character": 2
+                }
+              ],
+              "type": {
+                "type": "intrinsic",
+                "name": "number"
+              }
+            },
+            {
+              "id": 86,
+              "name": "itemsOwned",
+              "kind": 1024,
+              "kindString": "Property",
+              "flags": {},
+              "comment": {
+                "shortText": "All the items owned by the user from the shop"
+              },
+              "sources": [
+                {
+                  "fileName": "economy.core.ts",
+                  "line": 28,
+                  "character": 2
+                }
+              ],
+              "type": {
+                "type": "array",
+                "elementType": {
+                  "type": "intrinsic",
+                  "name": "any"
+                }
+              }
+            },
+            {
+              "id": 92,
+              "name": "monthlyStreak",
+              "kind": 1024,
+              "kindString": "Property",
+              "flags": {},
+              "sources": [
+                {
+                  "fileName": "economy.core.ts",
+                  "line": 37,
+                  "character": 2
+                }
+              ],
+              "type": {
+                "type": "intrinsic",
+                "name": "number"
+              }
+            },
+            {
+              "id": 91,
+              "name": "monthlyTimeout",
+              "kind": 1024,
+              "kindString": "Property",
+              "flags": {},
+              "comment": {
+                "shortText": "The last cached time the monthly command was used."
+              },
+              "sources": [
+                {
+                  "fileName": "economy.core.ts",
+                  "line": 36,
+                  "character": 2
+                }
+              ],
+              "type": {
+                "type": "intrinsic",
+                "name": "number"
+              }
+            },
+            {
+              "id": 90,
+              "name": "weeklyStreak",
+              "kind": 1024,
+              "kindString": "Property",
+              "flags": {},
+              "sources": [
+                {
+                  "fileName": "economy.core.ts",
+                  "line": 34,
+                  "character": 2
+                }
+              ],
+              "type": {
+                "type": "intrinsic",
+                "name": "number"
+              }
+            },
+            {
+              "id": 89,
+              "name": "weeklyTimeout",
+              "kind": 1024,
+              "kindString": "Property",
+              "flags": {},
+              "comment": {
+                "shortText": "The last cached time the weekly command was used."
+              },
+              "sources": [
+                {
+                  "fileName": "economy.core.ts",
+                  "line": 33,
+                  "character": 2
+                }
+              ],
+              "type": {
+                "type": "intrinsic",
+                "name": "number"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "title": "Properties",
+              "kind": 1024,
+              "children": [93, 85, 88, 87, 86, 92, 91, 90, 89]
+            }
+          ],
+          "sources": [
+            {
+              "fileName": "economy.core.ts",
+              "line": 22,
+              "character": 17
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "title": "Classes",
+          "kind": 128,
+          "children": [77]
+        },
+        {
+          "title": "Interfaces",
+          "kind": 256,
+          "children": [84]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "economy.core.ts",
+          "line": 1,
+          "character": 0
+        }
+      ]
+    },
+    {
+      "id": 110,
+      "name": "index",
+      "kind": 2,
+      "kindString": "Module",
+      "flags": {},
+      "children": [
+        {
+          "id": 131,
+          "name": "Economy",
+          "kind": 16777216,
+          "kindString": "Reference",
+          "flags": {},
+          "sources": [
+            {
+              "fileName": "index.ts",
+              "line": 3,
+              "character": 9
+            }
+          ],
+          "target": 98
+        }
+      ],
+      "groups": [
+        {
+          "title": "References",
+          "kind": 16777216,
+          "children": [131]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "index.ts",
+          "line": 1,
+          "character": 0
+        }
+      ]
+    },
+    {
+      "id": 111,
+      "name": "util/errors",
+      "kind": 2,
+      "kindString": "Module",
+      "flags": {},
+      "children": [
+        {
+          "id": 112,
+          "name": "default",
+          "kind": 128,
+          "kindString": "Class",
+          "flags": {},
+          "children": [
+            {
+              "id": 113,
+              "name": "constructor",
+              "kind": 512,
+              "kindString": "Constructor",
+              "flags": {},
+              "sources": [
+                {
+                  "fileName": "util/errors.ts",
+                  "line": 42,
+                  "character": 2
+                }
+              ],
+              "signatures": [
+                {
+                  "id": 114,
+                  "name": "new default",
+                  "kind": 16384,
+                  "kindString": "Constructor signature",
+                  "flags": {},
+                  "parameters": [
+                    {
+                      "id": 115,
+                      "name": "key",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                      }
+                    },
+                    {
+                      "id": 116,
+                      "name": "args",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {
+                        "isRest": true
+                      },
+                      "type": {
+                        "type": "array",
+                        "elementType": {
+                          "type": "intrinsic",
+                          "name": "string"
+                        }
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "reference",
+                    "id": 112,
+                    "name": "LewdLabsModuleError"
+                  }
+                }
+              ]
+            },
+            {
+              "id": 117,
+              "name": "code",
+              "kind": 1024,
+              "kindString": "Property",
+              "flags": {},
+              "sources": [
+                {
+                  "fileName": "util/errors.ts",
+                  "line": 38,
+                  "character": 2
+                }
+              ],
+              "type": {
+                "type": "intrinsic",
+                "name": "any"
+              }
+            },
+            {
+              "id": 118,
+              "name": "name",
+              "kind": 262144,
+              "kindString": "Accessor",
+              "flags": {},
+              "sources": [
+                {
+                  "fileName": "util/errors.ts",
+                  "line": 58,
+                  "character": 6
+                }
+              ],
+              "getSignature": [
+                {
+                  "id": 119,
+                  "name": "name",
+                  "kind": 524288,
+                  "kindString": "Get signature",
+                  "flags": {},
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "string"
+                  }
+                }
+              ]
+            }
+          ],
+          "groups": [
+            {
+              "title": "Constructors",
+              "kind": 512,
+              "children": [113]
+            },
+            {
+              "title": "Properties",
+              "kind": 1024,
+              "children": [117]
+            },
+            {
+              "title": "Accessors",
+              "kind": 262144,
+              "children": [118]
+            }
+          ],
+          "sources": [
+            {
+              "fileName": "util/errors.ts",
+              "line": 41,
+              "character": 6
+            }
+          ],
+          "extendedTypes": [
+            {
+              "type": "reference",
+              "name": "Error"
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "title": "Classes",
+          "kind": 128,
+          "children": [112]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "util/errors.ts",
+          "line": 1,
+          "character": 0
+        }
+      ]
+    },
+    {
+      "id": 120,
+      "name": "util/functions",
+      "kind": 2,
+      "kindString": "Module",
+      "flags": {},
+      "children": [
+        {
+          "id": 121,
+          "name": "ErrorMessage",
+          "kind": 64,
+          "kindString": "Function",
+          "flags": {},
+          "sources": [
+            {
+              "fileName": "util/functions.ts",
+              "line": 1,
+              "character": 16
+            }
+          ],
+          "signatures": [
+            {
+              "id": 122,
+              "name": "ErrorMessage",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "parameters": [
+                {
+                  "id": 123,
+                  "name": "msg",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "string"
+                  }
+                }
+              ],
+              "type": {
+                "type": "intrinsic",
+                "name": "string"
+              }
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "title": "Functions",
+          "kind": 64,
+          "children": [121]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "util/functions.ts",
+          "line": 1,
+          "character": 0
+        }
+      ]
+    },
+    {
+      "id": 124,
+      "name": "util/typings",
+      "kind": 2,
+      "kindString": "Module",
+      "flags": {},
+      "children": [
+        {
+          "id": 125,
+          "name": "EconomyConfigOptions",
+          "kind": 256,
+          "kindString": "Interface",
+          "flags": {},
+          "children": [
+            {
+              "id": 126,
+              "name": "currency",
+              "kind": 1024,
+              "kindString": "Property",
+              "flags": {},
+              "comment": {
+                "shortText": "The namne of your economys currency"
+              },
+              "sources": [
+                {
+                  "fileName": "util/typings.ts",
+                  "line": 3,
+                  "character": 2
+                }
+              ],
+              "type": {
+                "type": "intrinsic",
+                "name": "string"
+              }
+            },
+            {
+              "id": 128,
+              "name": "defaultBankLimit",
+              "kind": 1024,
+              "kindString": "Property",
+              "flags": {},
+              "comment": {
+                "shortText": "The default bank size allows for a user before updating."
+              },
+              "sources": [
+                {
+                  "fileName": "util/typings.ts",
+                  "line": 7,
+                  "character": 2
+                }
+              ],
+              "type": {
+                "type": "intrinsic",
+                "name": "number"
+              }
+            },
+            {
+              "id": 130,
+              "name": "mongodbURL",
+              "kind": 1024,
+              "kindString": "Property",
+              "flags": {
+                "isOptional": true
+              },
+              "comment": {
+                "shortText": "Optional Connection string for mongodb. If not provided you will have to create your own connection."
+              },
+              "sources": [
+                {
+                  "fileName": "util/typings.ts",
+                  "line": 11,
+                  "character": 2
+                }
+              ],
+              "type": {
+                "type": "intrinsic",
+                "name": "string"
+              }
+            },
+            {
+              "id": 129,
+              "name": "robEnabled",
+              "kind": 1024,
+              "kindString": "Property",
+              "flags": {},
+              "comment": {
+                "shortText": "If robbing is allowed in your economy."
+              },
+              "sources": [
+                {
+                  "fileName": "util/typings.ts",
+                  "line": 9,
+                  "character": 2
+                }
+              ],
+              "type": {
+                "type": "intrinsic",
+                "name": "boolean"
+              }
+            },
+            {
+              "id": 127,
+              "name": "shopEnabled",
+              "kind": 1024,
+              "kindString": "Property",
+              "flags": {},
+              "comment": {
+                "shortText": "If users can buy Items for your economy"
+              },
+              "sources": [
+                {
+                  "fileName": "util/typings.ts",
+                  "line": 5,
+                  "character": 2
+                }
+              ],
+              "type": {
+                "type": "intrinsic",
+                "name": "boolean"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "title": "Properties",
+              "kind": 1024,
+              "children": [126, 128, 130, 129, 127]
+            }
+          ],
+          "sources": [
+            {
+              "fileName": "util/typings.ts",
+              "line": 1,
+              "character": 17
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "title": "Interfaces",
+          "kind": 256,
+          "children": [125]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "util/typings.ts",
+          "line": 1,
+          "character": 0
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "title": "Modules",
+      "kind": 2,
+      "children": [1, 29, 33, 68, 97, 76, 110, 111, 120, 124]
+    }
+  ]
+}
