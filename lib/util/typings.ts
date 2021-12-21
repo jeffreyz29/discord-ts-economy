@@ -43,3 +43,7 @@ export interface UserEconomyTypes {
     bank: number;
   };
 }
+
+export type EconomyMethodOption = "wallet" | "bank";
+
+export type EconomyCoolDownOption = "daily" | "weekly" | "monthly";

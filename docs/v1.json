@@ -1,25 +1,25 @@
 {
 	"id": 0,
-	"name": "Lewd.labs Economy",
+	"name": "Lewd labs Economy",
 	"kind": 1,
 	"flags": {},
 	"children": [
 		{
-			"id": 41,
+			"id": 42,
 			"name": "database",
 			"kind": 2,
 			"kindString": "Module",
 			"flags": {},
 			"children": [
 				{
-					"id": 42,
+					"id": 43,
 					"name": "IDataBaseController",
 					"kind": 128,
 					"kindString": "Class",
 					"flags": {},
 					"children": [
 						{
-							"id": 43,
+							"id": 44,
 							"name": "constructor",
 							"kind": 512,
 							"kindString": "Constructor",
@@ -33,21 +33,21 @@
 							],
 							"signatures": [
 								{
-									"id": 44,
+									"id": 45,
 									"name": "new IDataBaseController",
 									"kind": 16384,
 									"kindString": "Constructor signature",
 									"flags": {},
 									"type": {
 										"type": "reference",
-										"id": 42,
+										"id": 43,
 										"name": "IDataBaseController"
 									}
 								}
 							]
 						},
 						{
-							"id": 45,
+							"id": 46,
 							"name": "items",
 							"kind": 1024,
 							"kindString": "Property",
@@ -80,7 +80,7 @@
 							}
 						},
 						{
-							"id": 46,
+							"id": 47,
 							"name": "model",
 							"kind": 1024,
 							"kindString": "Property",
@@ -102,18 +102,8 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"id": 70,
+										"id": 71,
 										"name": "UserEconomyStructure"
-									},
-									{
-										"type": "reflection",
-										"declaration": {
-											"id": 47,
-											"name": "__type",
-											"kind": 65536,
-											"kindString": "Type literal",
-											"flags": {}
-										}
 									},
 									{
 										"type": "reflection",
@@ -134,13 +124,23 @@
 											"kindString": "Type literal",
 											"flags": {}
 										}
+									},
+									{
+										"type": "reflection",
+										"declaration": {
+											"id": 50,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {}
+										}
 									}
 								],
 								"name": "Model"
 							}
 						},
 						{
-							"id": 66,
+							"id": 67,
 							"name": "clear",
 							"kind": 2048,
 							"kindString": "Method",
@@ -156,7 +156,7 @@
 							],
 							"signatures": [
 								{
-									"id": 67,
+									"id": 68,
 									"name": "clear",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -173,7 +173,7 @@
 									},
 									"parameters": [
 										{
-											"id": 68,
+											"id": 69,
 											"name": "id",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -201,7 +201,7 @@
 							]
 						},
 						{
-							"id": 62,
+							"id": 63,
 							"name": "delete",
 							"kind": 2048,
 							"kindString": "Method",
@@ -217,7 +217,7 @@
 							],
 							"signatures": [
 								{
-									"id": 63,
+									"id": 64,
 									"name": "delete",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -234,7 +234,7 @@
 									},
 									"parameters": [
 										{
-											"id": 64,
+											"id": 65,
 											"name": "id",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -248,7 +248,7 @@
 											}
 										},
 										{
-											"id": 65,
+											"id": 66,
 											"name": "key",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -276,7 +276,7 @@
 							]
 						},
 						{
-							"id": 52,
+							"id": 53,
 							"name": "get",
 							"kind": 2048,
 							"kindString": "Method",
@@ -292,7 +292,7 @@
 							],
 							"signatures": [
 								{
-									"id": 53,
+									"id": 54,
 									"name": "get",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -309,7 +309,7 @@
 									},
 									"parameters": [
 										{
-											"id": 54,
+											"id": 55,
 											"name": "id",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -323,7 +323,7 @@
 											}
 										},
 										{
-											"id": 55,
+											"id": 56,
 											"name": "key",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -337,7 +337,7 @@
 											}
 										},
 										{
-											"id": 56,
+											"id": 57,
 											"name": "defaultValue",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -356,7 +356,7 @@
 							]
 						},
 						{
-							"id": 50,
+							"id": 51,
 							"name": "init",
 							"kind": 2048,
 							"kindString": "Method",
@@ -372,7 +372,7 @@
 							],
 							"signatures": [
 								{
-									"id": 51,
+									"id": 52,
 									"name": "init",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -395,7 +395,7 @@
 							]
 						},
 						{
-							"id": 57,
+							"id": 58,
 							"name": "set",
 							"kind": 2048,
 							"kindString": "Method",
@@ -411,7 +411,7 @@
 							],
 							"signatures": [
 								{
-									"id": 58,
+									"id": 59,
 									"name": "set",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -428,7 +428,7 @@
 									},
 									"parameters": [
 										{
-											"id": 59,
+											"id": 60,
 											"name": "id",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -442,7 +442,7 @@
 											}
 										},
 										{
-											"id": 60,
+											"id": 61,
 											"name": "key",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -456,7 +456,7 @@
 											}
 										},
 										{
-											"id": 61,
+											"id": 62,
 											"name": "value",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -489,26 +489,26 @@
 							"title": "Constructors",
 							"kind": 512,
 							"children": [
-								43
+								44
 							]
 						},
 						{
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								45,
-								46
+								46,
+								47
 							]
 						},
 						{
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								66,
-								62,
-								52,
-								50,
-								57
+								67,
+								63,
+								53,
+								51,
+								58
 							]
 						}
 					],
@@ -533,7 +533,7 @@
 					"title": "Classes",
 					"kind": 128,
 					"children": [
-						42
+						43
 					]
 				}
 			],
@@ -657,7 +657,7 @@
 							"sources": [
 								{
 									"fileName": "database/controller.ts",
-									"line": 9,
+									"line": 10,
 									"character": 2
 								}
 							],
@@ -682,7 +682,7 @@
 												"typeArguments": [
 													{
 														"type": "reference",
-														"id": 70,
+														"id": 71,
 														"name": "UserEconomyStructure"
 													},
 													{
@@ -727,19 +727,19 @@
 									},
 									"overwrites": {
 										"type": "reference",
-										"id": 44,
+										"id": 45,
 										"name": "IDataBaseController.constructor"
 									}
 								}
 							],
 							"overwrites": {
 								"type": "reference",
-								"id": 43,
+								"id": 44,
 								"name": "IDataBaseController.constructor"
 							}
 						},
 						{
-							"id": 36,
+							"id": 37,
 							"name": "items",
 							"kind": 1024,
 							"kindString": "Property",
@@ -772,12 +772,12 @@
 							},
 							"inheritedFrom": {
 								"type": "reference",
-								"id": 45,
+								"id": 46,
 								"name": "IDataBaseController.items"
 							}
 						},
 						{
-							"id": 37,
+							"id": 38,
 							"name": "model",
 							"kind": 1024,
 							"kindString": "Property",
@@ -799,18 +799,8 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"id": 70,
+										"id": 71,
 										"name": "UserEconomyStructure"
-									},
-									{
-										"type": "reflection",
-										"declaration": {
-											"id": 38,
-											"name": "__type",
-											"kind": 65536,
-											"kindString": "Type literal",
-											"flags": {}
-										}
 									},
 									{
 										"type": "reflection",
@@ -831,13 +821,23 @@
 											"kindString": "Type literal",
 											"flags": {}
 										}
+									},
+									{
+										"type": "reflection",
+										"declaration": {
+											"id": 41,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {}
+										}
 									}
 								],
 								"name": "Model"
 							},
 							"inheritedFrom": {
 								"type": "reference",
-								"id": 46,
+								"id": 47,
 								"name": "IDataBaseController.model"
 							}
 						},
@@ -852,7 +852,7 @@
 							"sources": [
 								{
 									"fileName": "database/controller.ts",
-									"line": 97,
+									"line": 87,
 									"character": 15
 								}
 							],
@@ -895,14 +895,14 @@
 									},
 									"overwrites": {
 										"type": "reference",
-										"id": 67,
+										"id": 68,
 										"name": "IDataBaseController.clear"
 									}
 								}
 							],
 							"overwrites": {
 								"type": "reference",
-								"id": 66,
+								"id": 67,
 								"name": "IDataBaseController.clear"
 							}
 						},
@@ -917,7 +917,7 @@
 							"sources": [
 								{
 									"fileName": "database/controller.ts",
-									"line": 79,
+									"line": 72,
 									"character": 15
 								}
 							],
@@ -957,8 +957,9 @@
 												"shortText": "The key to delete."
 											},
 											"type": {
-												"type": "intrinsic",
-												"name": "string"
+												"type": "reference",
+												"id": 79,
+												"name": "key_db_options"
 											}
 										}
 									],
@@ -966,36 +967,22 @@
 										"type": "reference",
 										"typeArguments": [
 											{
-												"type": "reference",
-												"typeArguments": [
-													{
-														"type": "intrinsic",
-														"name": "any"
-													},
-													{
-														"type": "intrinsic",
-														"name": "any"
-													},
-													{
-														"type": "intrinsic",
-														"name": "any"
-													}
-												],
-												"name": "Document"
+												"type": "intrinsic",
+												"name": "any"
 											}
 										],
 										"name": "Promise"
 									},
 									"overwrites": {
 										"type": "reference",
-										"id": 63,
+										"id": 64,
 										"name": "IDataBaseController.delete"
 									}
 								}
 							],
 							"overwrites": {
 								"type": "reference",
-								"id": 62,
+								"id": 63,
 								"name": "IDataBaseController.delete"
 							}
 						},
@@ -1010,7 +997,7 @@
 							"sources": [
 								{
 									"fileName": "database/controller.ts",
-									"line": 37,
+									"line": 38,
 									"character": 9
 								}
 							],
@@ -1050,8 +1037,9 @@
 												"shortText": "The key to get."
 											},
 											"type": {
-												"type": "intrinsic",
-												"name": "string"
+												"type": "reference",
+												"id": 79,
+												"name": "key_db_options"
 											}
 										},
 										{
@@ -1067,33 +1055,19 @@
 										}
 									],
 									"type": {
-										"type": "reference",
-										"typeArguments": [
-											{
-												"type": "intrinsic",
-												"name": "string"
-											},
-											{
-												"type": "intrinsic",
-												"name": "string"
-											},
-											{
-												"type": "intrinsic",
-												"name": "any"
-											}
-										],
-										"name": "Document"
+										"type": "intrinsic",
+										"name": "any"
 									},
 									"overwrites": {
 										"type": "reference",
-										"id": 53,
+										"id": 54,
 										"name": "IDataBaseController.get"
 									}
 								}
 							],
 							"overwrites": {
 								"type": "reference",
-								"id": 52,
+								"id": 53,
 								"name": "IDataBaseController.get"
 							}
 						},
@@ -1108,7 +1082,7 @@
 							"sources": [
 								{
 									"fileName": "database/controller.ts",
-									"line": 108,
+									"line": 98,
 									"character": 15
 								}
 							],
@@ -1147,7 +1121,7 @@
 												"types": [
 													{
 														"type": "reference",
-														"id": 70,
+														"id": 71,
 														"name": "UserEconomyStructure"
 													},
 													{
@@ -1157,7 +1131,36 @@
 															"name": "__type",
 															"kind": 65536,
 															"kindString": "Type literal",
-															"flags": {}
+															"flags": {},
+															"children": [
+																{
+																	"id": 36,
+																	"name": "_id",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "database/controller.ts",
+																			"line": 100,
+																			"character": 6
+																		}
+																	],
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "any"
+																	}
+																}
+															],
+															"groups": [
+																{
+																	"title": "Properties",
+																	"kind": 1024,
+																	"children": [
+																		36
+																	]
+																}
+															]
 														}
 													}
 												]
@@ -1179,7 +1182,7 @@
 							"sources": [
 								{
 									"fileName": "database/controller.ts",
-									"line": 22,
+									"line": 23,
 									"character": 15
 								}
 							],
@@ -1205,14 +1208,14 @@
 									},
 									"overwrites": {
 										"type": "reference",
-										"id": 51,
+										"id": 52,
 										"name": "IDataBaseController.init"
 									}
 								}
 							],
 							"overwrites": {
 								"type": "reference",
-								"id": 50,
+								"id": 51,
 								"name": "IDataBaseController.init"
 							}
 						},
@@ -1227,7 +1230,7 @@
 							"sources": [
 								{
 									"fileName": "database/controller.ts",
-									"line": 56,
+									"line": 53,
 									"character": 15
 								}
 							],
@@ -1267,8 +1270,9 @@
 												"shortText": "The key to set."
 											},
 											"type": {
-												"type": "intrinsic",
-												"name": "string"
+												"type": "reference",
+												"id": 79,
+												"name": "key_db_options"
 											}
 										},
 										{
@@ -1290,36 +1294,22 @@
 										"type": "reference",
 										"typeArguments": [
 											{
-												"type": "reference",
-												"typeArguments": [
-													{
-														"type": "intrinsic",
-														"name": "string"
-													},
-													{
-														"type": "intrinsic",
-														"name": "string"
-													},
-													{
-														"type": "intrinsic",
-														"name": "any"
-													}
-												],
-												"name": "Document"
+												"type": "intrinsic",
+												"name": "any"
 											}
 										],
 										"name": "Promise"
 									},
 									"overwrites": {
 										"type": "reference",
-										"id": 58,
+										"id": 59,
 										"name": "IDataBaseController.set"
 									}
 								}
 							],
 							"overwrites": {
 								"type": "reference",
-								"id": 57,
+								"id": 58,
 								"name": "IDataBaseController.set"
 							}
 						}
@@ -1336,8 +1326,8 @@
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								36,
-								37
+								37,
+								38
 							]
 						},
 						{
@@ -1356,14 +1346,14 @@
 					"sources": [
 						{
 							"fileName": "database/controller.ts",
-							"line": 8,
+							"line": 9,
 							"character": 13
 						}
 					],
 					"extendedTypes": [
 						{
 							"type": "reference",
-							"id": 42,
+							"id": 43,
 							"name": "IDataBaseController"
 						}
 					]
@@ -1387,14 +1377,14 @@
 			]
 		},
 		{
-			"id": 69,
+			"id": 70,
 			"name": "database/schema",
 			"kind": 2,
 			"kindString": "Module",
 			"flags": {},
 			"children": [
 				{
-					"id": 70,
+					"id": 71,
 					"name": "UserEconomyStructure",
 					"kind": 256,
 					"kindString": "Interface",
@@ -1404,7 +1394,7 @@
 					},
 					"children": [
 						{
-							"id": 71,
+							"id": 72,
 							"name": "id",
 							"kind": 1024,
 							"kindString": "Property",
@@ -1429,7 +1419,7 @@
 							}
 						},
 						{
-							"id": 72,
+							"id": 73,
 							"name": "settings",
 							"kind": 1024,
 							"kindString": "Property",
@@ -1455,8 +1445,8 @@
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								71,
-								72
+								72,
+								73
 							]
 						}
 					],
@@ -1475,7 +1465,7 @@
 					]
 				},
 				{
-					"id": 73,
+					"id": 74,
 					"name": "UserDataSchema",
 					"kind": 32,
 					"kindString": "Variable",
@@ -1492,18 +1482,8 @@
 						"typeArguments": [
 							{
 								"type": "reference",
-								"id": 70,
+								"id": 71,
 								"name": "UserEconomyStructure"
-							},
-							{
-								"type": "reflection",
-								"declaration": {
-									"id": 74,
-									"name": "__type",
-									"kind": 65536,
-									"kindString": "Type literal",
-									"flags": {}
-								}
 							},
 							{
 								"type": "reflection",
@@ -1524,6 +1504,16 @@
 									"kindString": "Type literal",
 									"flags": {}
 								}
+							},
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 77,
+									"name": "__type",
+									"kind": 65536,
+									"kindString": "Type literal",
+									"flags": {}
+								}
 							}
 						],
 						"name": "Model"
@@ -1536,14 +1526,14 @@
 					"title": "Interfaces",
 					"kind": 256,
 					"children": [
-						70
+						71
 					]
 				},
 				{
 					"title": "Variables",
 					"kind": 32,
 					"children": [
-						73
+						74
 					]
 				}
 			],
@@ -1556,15 +1546,95 @@
 			]
 		},
 		{
-			"id": 77,
+			"id": 78,
+			"name": "database/types",
+			"kind": 2,
+			"kindString": "Module",
+			"flags": {},
+			"children": [
+				{
+					"id": 79,
+					"name": "key_db_options",
+					"kind": 4194304,
+					"kindString": "Type alias",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "database/types.ts",
+							"line": 1,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "literal",
+								"value": "balance"
+							},
+							{
+								"type": "literal",
+								"value": "bankLimit"
+							},
+							{
+								"type": "literal",
+								"value": "itemsOwned"
+							},
+							{
+								"type": "literal",
+								"value": "dailyTimeout"
+							},
+							{
+								"type": "literal",
+								"value": "dailyStreak"
+							},
+							{
+								"type": "literal",
+								"value": "weeklyTimeout"
+							},
+							{
+								"type": "literal",
+								"value": "weeklyStreak"
+							},
+							{
+								"type": "literal",
+								"value": "monthlyTimeout"
+							},
+							{
+								"type": "literal",
+								"value": "monthlyStreak"
+							}
+						]
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Type aliases",
+					"kind": 4194304,
+					"children": [
+						79
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "database/types.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 80,
 			"name": "economy",
 			"kind": 2,
 			"kindString": "Module",
 			"flags": {},
 			"children": [
 				{
-					"id": 78,
-					"name": "Economy",
+					"id": 81,
+					"name": "IEconomy",
 					"kind": 128,
 					"kindString": "Class",
 					"flags": {},
@@ -1573,7 +1643,7 @@
 					},
 					"children": [
 						{
-							"id": 79,
+							"id": 82,
 							"name": "constructor",
 							"kind": 512,
 							"kindString": "Constructor",
@@ -1583,41 +1653,41 @@
 							"sources": [
 								{
 									"fileName": "economy.ts",
-									"line": 14,
+									"line": 20,
 									"character": 2
 								}
 							],
 							"signatures": [
 								{
-									"id": 80,
-									"name": "new Economy",
+									"id": 83,
+									"name": "new IEconomy",
 									"kind": 16384,
 									"kindString": "Constructor signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 81,
+											"id": 84,
 											"name": "configOptions",
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
 											"type": {
 												"type": "reference",
-												"id": 106,
+												"id": 225,
 												"name": "EconomyConfigOptions"
 											}
 										}
 									],
 									"type": {
 										"type": "reference",
-										"id": 78,
-										"name": "Economy"
+										"id": 81,
+										"name": "IEconomy"
 									}
 								}
 							]
 						},
 						{
-							"id": 82,
+							"id": 85,
 							"name": "config",
 							"kind": 1024,
 							"kindString": "Property",
@@ -1630,18 +1700,43 @@
 							"sources": [
 								{
 									"fileName": "economy.ts",
-									"line": 11,
+									"line": 13,
 									"character": 9
 								}
 							],
 							"type": {
 								"type": "reference",
-								"id": 106,
+								"id": 225,
 								"name": "EconomyConfigOptions"
 							}
 						},
 						{
-							"id": 83,
+							"id": 88,
+							"name": "currencyHandler",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPublic": true
+							},
+							"comment": {
+								"shortText": "Controls user ballance methods"
+							},
+							"sources": [
+								{
+									"fileName": "economy.ts",
+									"line": 19,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 137,
+								"name": "CurrencyHandler"
+							},
+							"defaultValue": "..."
+						},
+						{
+							"id": 86,
 							"name": "db",
 							"kind": 1024,
 							"kindString": "Property",
@@ -1654,7 +1749,7 @@
 							"sources": [
 								{
 									"fileName": "economy.ts",
-									"line": 13,
+									"line": 15,
 									"character": 9
 								}
 							],
@@ -1666,7 +1761,32 @@
 							"defaultValue": "..."
 						},
 						{
-							"id": 88,
+							"id": 87,
+							"name": "fetchManager",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPublic": true
+							},
+							"comment": {
+								"shortText": "Controls fetch methods four our economy"
+							},
+							"sources": [
+								{
+									"fileName": "economy.ts",
+									"line": 17,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 94,
+								"name": "fetchManager"
+							},
+							"defaultValue": "..."
+						},
+						{
+							"id": 89,
 							"name": "connect",
 							"kind": 2048,
 							"kindString": "Method",
@@ -1676,13 +1796,13 @@
 							"sources": [
 								{
 									"fileName": "economy.ts",
-									"line": 64,
+									"line": 49,
 									"character": 15
 								}
 							],
 							"signatures": [
 								{
-									"id": 89,
+									"id": 90,
 									"name": "connect",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -1698,7 +1818,7 @@
 									},
 									"parameters": [
 										{
-											"id": 90,
+											"id": 91,
 											"name": "url",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -1724,37 +1844,730 @@
 									}
 								}
 							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"kind": 512,
+							"children": [
+								82
+							]
 						},
 						{
-							"id": 84,
-							"name": "getRawUser",
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								85,
+								88,
+								86,
+								87
+							]
+						},
+						{
+							"title": "Methods",
 							"kind": 2048,
-							"kindString": "Method",
+							"children": [
+								89
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "economy.ts",
+							"line": 11,
+							"character": 13
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"kind": 128,
+					"children": [
+						81
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "economy.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 92,
+			"name": "index",
+			"kind": 2,
+			"kindString": "Module",
+			"flags": {},
+			"children": [
+				{
+					"id": 247,
+					"name": "DataBaseController",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 4,
+							"character": 18
+						}
+					],
+					"target": 6
+				},
+				{
+					"id": 246,
+					"name": "Economy",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 4,
+							"character": 9
+						}
+					],
+					"target": 81
+				}
+			],
+			"groups": [
+				{
+					"title": "References",
+					"kind": 16777216,
+					"children": [
+						247,
+						246
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 93,
+			"name": "managers/fetch",
+			"kind": 2,
+			"kindString": "Module",
+			"flags": {},
+			"children": [
+				{
+					"id": 94,
+					"name": "fetchManager",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {},
+					"comment": {
+						"shortText": "Allows easy internal control over all fetch based functions in our package\nThese methods control common acts like fetching for user data, ballance, and more."
+					},
+					"children": [
+						{
+							"id": 95,
+							"name": "constructor",
+							"kind": 512,
+							"kindString": "Constructor",
+							"flags": {},
+							"signatures": [
+								{
+									"id": 96,
+									"name": "new fetchManager",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"id": 94,
+										"name": "fetchManager"
+									}
+								}
+							]
+						},
+						{
+							"id": 97,
+							"name": "db",
+							"kind": 1024,
+							"kindString": "Property",
 							"flags": {
 								"isPrivate": true
 							},
 							"sources": [
 								{
-									"fileName": "economy.ts",
-									"line": 44,
-									"character": 16
+									"fileName": "managers/fetch.ts",
+									"line": 14,
+									"character": 10
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 6,
+								"name": "DataBaseController"
+							},
+							"defaultValue": "..."
+						},
+						{
+							"id": 101,
+							"name": "fetchBalance",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true
+							},
+							"sources": [
+								{
+									"fileName": "managers/fetch.ts",
+									"line": 39,
+									"character": 15
 								}
 							],
 							"signatures": [
 								{
-									"id": 85,
-									"name": "getRawUser",
+									"id": 102,
+									"name": "fetchBalance",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
 									"comment": {
-										"shortText": "The Raw user object fetched from our cache or db.\nThis function is internal and not used by you the user.",
+										"shortText": "Fetches the database for the users current balance in our economy.",
 										"returns": "\n"
 									},
 									"parameters": [
 										{
-											"id": 86,
-											"name": "target",
+											"id": 103,
+											"name": "targetUser",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"shortText": "the discord your is"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 104,
+											"name": "type",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"shortText": "the type of user storage you wish to fetch for. Defaults to wallet."
+											},
+											"type": {
+												"type": "reference",
+												"id": 244,
+												"name": "EconomyMethodOption"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "union",
+												"types": [
+													{
+														"type": "literal",
+														"value": "Could not fetch the given users balance."
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 105,
+															"name": "__type",
+															"kind": 65536,
+															"kindString": "Type literal",
+															"flags": {},
+															"children": [
+																{
+																	"id": 107,
+																	"name": "bank",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "undefined"
+																	},
+																	"defaultValue": "f.balance.bank"
+																},
+																{
+																	"id": 106,
+																	"name": "wallet",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "number"
+																	},
+																	"defaultValue": "f.balance.wallet"
+																}
+															],
+															"groups": [
+																{
+																	"title": "Properties",
+																	"kind": 1024,
+																	"children": [
+																		107,
+																		106
+																	]
+																}
+															]
+														}
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 108,
+															"name": "__type",
+															"kind": 65536,
+															"kindString": "Type literal",
+															"flags": {},
+															"children": [
+																{
+																	"id": 109,
+																	"name": "bank",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "number"
+																	},
+																	"defaultValue": "f.balance.bank"
+																},
+																{
+																	"id": 110,
+																	"name": "wallet",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "undefined"
+																	},
+																	"defaultValue": "f.balance.wallet"
+																}
+															],
+															"groups": [
+																{
+																	"title": "Properties",
+																	"kind": 1024,
+																	"children": [
+																		109,
+																		110
+																	]
+																}
+															]
+														}
+													}
+												]
+											}
+										],
+										"name": "Promise"
+									}
+								}
+							]
+						},
+						{
+							"id": 111,
+							"name": "fetchCoolDowns",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true
+							},
+							"sources": [
+								{
+									"fileName": "managers/fetch.ts",
+									"line": 57,
+									"character": 15
+								}
+							],
+							"signatures": [
+								{
+									"id": 112,
+									"name": "fetchCoolDowns",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 113,
+											"name": "targetUser",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 114,
+											"name": "coolDownOption",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"id": 245,
+												"name": "EconomyCoolDownOption"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "union",
+												"types": [
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 115,
+															"name": "__type",
+															"kind": 65536,
+															"kindString": "Type literal",
+															"flags": {},
+															"children": [
+																{
+																	"id": 117,
+																	"name": "dailyStreak",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "number"
+																	},
+																	"defaultValue": "u.dailyStreak"
+																},
+																{
+																	"id": 116,
+																	"name": "dailyTimeout",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "number"
+																	},
+																	"defaultValue": "u.dailyTimeout"
+																},
+																{
+																	"id": 121,
+																	"name": "monthlyStreak",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "undefined"
+																	},
+																	"defaultValue": "u.monthlyStreak"
+																},
+																{
+																	"id": 120,
+																	"name": "monthlyTimeout",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "undefined"
+																	},
+																	"defaultValue": "u.monthlyTimeout"
+																},
+																{
+																	"id": 119,
+																	"name": "weeklyStreak",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "undefined"
+																	},
+																	"defaultValue": "u.weeklyStreak"
+																},
+																{
+																	"id": 118,
+																	"name": "weeklyTimeout",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "undefined"
+																	},
+																	"defaultValue": "u.weeklyTimeout"
+																}
+															],
+															"groups": [
+																{
+																	"title": "Properties",
+																	"kind": 1024,
+																	"children": [
+																		117,
+																		116,
+																		121,
+																		120,
+																		119,
+																		118
+																	]
+																}
+															]
+														}
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 122,
+															"name": "__type",
+															"kind": 65536,
+															"kindString": "Type literal",
+															"flags": {},
+															"children": [
+																{
+																	"id": 126,
+																	"name": "dailyStreak",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "undefined"
+																	},
+																	"defaultValue": "u.dailyStreak"
+																},
+																{
+																	"id": 125,
+																	"name": "dailyTimeout",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "undefined"
+																	},
+																	"defaultValue": "u.dailyTimeout"
+																},
+																{
+																	"id": 128,
+																	"name": "monthlyStreak",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "undefined"
+																	},
+																	"defaultValue": "u.monthlyStreak"
+																},
+																{
+																	"id": 127,
+																	"name": "monthlyTimeout",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "undefined"
+																	},
+																	"defaultValue": "u.monthlyTimeout"
+																},
+																{
+																	"id": 124,
+																	"name": "weeklyStreak",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "number"
+																	},
+																	"defaultValue": "u.weeklyStreak"
+																},
+																{
+																	"id": 123,
+																	"name": "weeklyTimeout",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "number"
+																	},
+																	"defaultValue": "u.weeklyTimeout"
+																}
+															],
+															"groups": [
+																{
+																	"title": "Properties",
+																	"kind": 1024,
+																	"children": [
+																		126,
+																		125,
+																		128,
+																		127,
+																		124,
+																		123
+																	]
+																}
+															]
+														}
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 129,
+															"name": "__type",
+															"kind": 65536,
+															"kindString": "Type literal",
+															"flags": {},
+															"children": [
+																{
+																	"id": 133,
+																	"name": "dailyStreak",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "undefined"
+																	},
+																	"defaultValue": "u.dailyStreak"
+																},
+																{
+																	"id": 132,
+																	"name": "dailyTimeout",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "undefined"
+																	},
+																	"defaultValue": "u.dailyTimeout"
+																},
+																{
+																	"id": 131,
+																	"name": "monthlyStreak",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "number"
+																	},
+																	"defaultValue": "u.monthlyStreak"
+																},
+																{
+																	"id": 130,
+																	"name": "monthlyTimeout",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "number"
+																	},
+																	"defaultValue": "u.monthlyTimeout"
+																},
+																{
+																	"id": 135,
+																	"name": "weeklyStreak",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "undefined"
+																	},
+																	"defaultValue": "u.weeklyStreak"
+																},
+																{
+																	"id": 134,
+																	"name": "weeklyTimeout",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "undefined"
+																	},
+																	"defaultValue": "u.weeklyTimeout"
+																}
+															],
+															"groups": [
+																{
+																	"title": "Properties",
+																	"kind": 1024,
+																	"children": [
+																		133,
+																		132,
+																		131,
+																		130,
+																		135,
+																		134
+																	]
+																}
+															]
+														}
+													}
+												]
+											}
+										],
+										"name": "Promise"
+									}
+								}
+							]
+						},
+						{
+							"id": 98,
+							"name": "fetchUser",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true
+							},
+							"sources": [
+								{
+									"fileName": "managers/fetch.ts",
+									"line": 22,
+									"character": 15
+								}
+							],
+							"signatures": [
+								{
+									"id": 99,
+									"name": "fetchUser",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Searches the db for our user document.\nIf non is found then an empty object will be created under the base db settings object.",
+										"returns": "User Object\n"
+									},
+									"parameters": [
+										{
+											"id": 100,
+											"name": "targetUser",
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
@@ -1769,45 +2582,1264 @@
 										"type": "reference",
 										"typeArguments": [
 											{
+												"type": "reference",
+												"id": 231,
+												"name": "UserEconomyTypes"
+											}
+										],
+										"name": "Promise"
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"kind": 512,
+							"children": [
+								95
+							]
+						},
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								97
+							]
+						},
+						{
+							"title": "Methods",
+							"kind": 2048,
+							"children": [
+								101,
+								111,
+								98
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "managers/fetch.ts",
+							"line": 13,
+							"character": 13
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"kind": 128,
+					"children": [
+						94
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "managers/fetch.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 136,
+			"name": "structures/currency",
+			"kind": 2,
+			"kindString": "Module",
+			"flags": {},
+			"children": [
+				{
+					"id": 137,
+					"name": "CurrencyHandler",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {},
+					"comment": {
+						"shortText": "The class to handler user balance methods."
+					},
+					"children": [
+						{
+							"id": 138,
+							"name": "constructor",
+							"kind": 512,
+							"kindString": "Constructor",
+							"flags": {},
+							"signatures": [
+								{
+									"id": 139,
+									"name": "new CurrencyHandler",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"id": 137,
+										"name": "CurrencyHandler"
+									}
+								}
+							]
+						},
+						{
+							"id": 141,
+							"name": "db",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPrivate": true
+							},
+							"sources": [
+								{
+									"fileName": "structures/currency.ts",
+									"line": 11,
+									"character": 10
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 6,
+								"name": "DataBaseController"
+							},
+							"defaultValue": "..."
+						},
+						{
+							"id": 140,
+							"name": "fetchManager",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPrivate": true
+							},
+							"sources": [
+								{
+									"fileName": "structures/currency.ts",
+									"line": 10,
+									"character": 10
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 94,
+								"name": "fetchManager"
+							},
+							"defaultValue": "..."
+						},
+						{
+							"id": 174,
+							"name": "add",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true
+							},
+							"sources": [
+								{
+									"fileName": "structures/currency.ts",
+									"line": 110,
+									"character": 15
+								}
+							],
+							"signatures": [
+								{
+									"id": 175,
+									"name": "add",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Add's value to a users wallet or bank.\nWhile similar to the set function, it will not overwrite the old storage",
+										"returns": "amount\n"
+									},
+									"parameters": [
+										{
+											"id": 176,
+											"name": "amount",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"shortText": "of currency you wish to give the user"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 177,
+											"name": "targetUser",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"shortText": "the discord user to target"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 178,
+											"name": "type",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"shortText": "wallet or bank option"
+											},
+											"type": {
+												"type": "reference",
+												"id": 244,
+												"name": "EconomyMethodOption"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
 												"type": "union",
 												"types": [
 													{
+														"type": "literal",
+														"value": "Failed to add the new balance."
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 179,
+															"name": "__type",
+															"kind": 65536,
+															"kindString": "Type literal",
+															"flags": {},
+															"children": [
+																{
+																	"id": 182,
+																	"name": "bank",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "undefined"
+																	},
+																	"defaultValue": "f.balance.bank"
+																},
+																{
+																	"id": 180,
+																	"name": "earned",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "number"
+																	},
+																	"defaultValue": "amount"
+																},
+																{
+																	"id": 181,
+																	"name": "wallet",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "number"
+																	},
+																	"defaultValue": "..."
+																}
+															],
+															"groups": [
+																{
+																	"title": "Properties",
+																	"kind": 1024,
+																	"children": [
+																		182,
+																		180,
+																		181
+																	]
+																}
+															]
+														}
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 183,
+															"name": "__type",
+															"kind": 65536,
+															"kindString": "Type literal",
+															"flags": {},
+															"children": [
+																{
+																	"id": 185,
+																	"name": "bank",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "number"
+																	},
+																	"defaultValue": "..."
+																},
+																{
+																	"id": 184,
+																	"name": "earned",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "number"
+																	},
+																	"defaultValue": "amount"
+																},
+																{
+																	"id": 186,
+																	"name": "wallet",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "undefined"
+																	},
+																	"defaultValue": "f.balance.wallet"
+																}
+															],
+															"groups": [
+																{
+																	"title": "Properties",
+																	"kind": 1024,
+																	"children": [
+																		185,
+																		184,
+																		186
+																	]
+																}
+															]
+														}
+													}
+												]
+											}
+										],
+										"name": "Promise"
+									}
+								}
+							]
+						},
+						{
+							"id": 142,
+							"name": "createUser",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPrivate": true
+							},
+							"sources": [
+								{
+									"fileName": "structures/currency.ts",
+									"line": 18,
+									"character": 16
+								}
+							],
+							"signatures": [
+								{
+									"id": 143,
+									"name": "createUser",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Creates the base user data for our economy."
+									},
+									"parameters": [
+										{
+											"id": 144,
+											"name": "targetUser",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"shortText": "\n"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "intrinsic",
+												"name": "string"
+											}
+										],
+										"name": "Promise"
+									}
+								}
+							]
+						},
+						{
+							"id": 145,
+							"name": "fetch",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true
+							},
+							"sources": [
+								{
+									"fileName": "structures/currency.ts",
+									"line": 44,
+									"character": 9
+								}
+							],
+							"signatures": [
+								{
+									"id": 146,
+									"name": "fetch",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Fetches for a users ballance",
+										"returns": "object\n"
+									},
+									"parameters": [
+										{
+											"id": 147,
+											"name": "targetUser",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"shortText": "the discord user"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 148,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"children": [
+												{
+													"id": 149,
+													"name": "bank",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {},
+													"type": {
 														"type": "reference",
 														"typeArguments": [
 															{
-																"type": "intrinsic",
-																"name": "string"
-															},
-															{
-																"type": "intrinsic",
-																"name": "string"
-															},
-															{
-																"type": "intrinsic",
-																"name": "any"
+																"type": "union",
+																"types": [
+																	{
+																		"type": "literal",
+																		"value": "Could not fetch the given users balance."
+																	},
+																	{
+																		"type": "reflection",
+																		"declaration": {
+																			"id": 150,
+																			"name": "__type",
+																			"kind": 65536,
+																			"kindString": "Type literal",
+																			"flags": {},
+																			"children": [
+																				{
+																					"id": 152,
+																					"name": "bank",
+																					"kind": 1024,
+																					"kindString": "Property",
+																					"flags": {},
+																					"type": {
+																						"type": "intrinsic",
+																						"name": "undefined"
+																					},
+																					"defaultValue": "f.balance.bank"
+																				},
+																				{
+																					"id": 151,
+																					"name": "wallet",
+																					"kind": 1024,
+																					"kindString": "Property",
+																					"flags": {},
+																					"type": {
+																						"type": "intrinsic",
+																						"name": "number"
+																					},
+																					"defaultValue": "f.balance.wallet"
+																				}
+																			],
+																			"groups": [
+																				{
+																					"title": "Properties",
+																					"kind": 1024,
+																					"children": [
+																						152,
+																						151
+																					]
+																				}
+																			]
+																		}
+																	},
+																	{
+																		"type": "reflection",
+																		"declaration": {
+																			"id": 153,
+																			"name": "__type",
+																			"kind": 65536,
+																			"kindString": "Type literal",
+																			"flags": {},
+																			"children": [
+																				{
+																					"id": 154,
+																					"name": "bank",
+																					"kind": 1024,
+																					"kindString": "Property",
+																					"flags": {},
+																					"type": {
+																						"type": "intrinsic",
+																						"name": "number"
+																					},
+																					"defaultValue": "f.balance.bank"
+																				},
+																				{
+																					"id": 155,
+																					"name": "wallet",
+																					"kind": 1024,
+																					"kindString": "Property",
+																					"flags": {},
+																					"type": {
+																						"type": "intrinsic",
+																						"name": "undefined"
+																					},
+																					"defaultValue": "f.balance.wallet"
+																				}
+																			],
+																			"groups": [
+																				{
+																					"title": "Properties",
+																					"kind": 1024,
+																					"children": [
+																						154,
+																						155
+																					]
+																				}
+																			]
+																		}
+																	}
+																]
 															}
 														],
-														"name": "Document"
+														"name": "Promise"
+													},
+													"defaultValue": "..."
+												},
+												{
+													"id": 156,
+													"name": "wallet",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {},
+													"type": {
+														"type": "reference",
+														"typeArguments": [
+															{
+																"type": "union",
+																"types": [
+																	{
+																		"type": "literal",
+																		"value": "Could not fetch the given users balance."
+																	},
+																	{
+																		"type": "reflection",
+																		"declaration": {
+																			"id": 157,
+																			"name": "__type",
+																			"kind": 65536,
+																			"kindString": "Type literal",
+																			"flags": {},
+																			"children": [
+																				{
+																					"id": 159,
+																					"name": "bank",
+																					"kind": 1024,
+																					"kindString": "Property",
+																					"flags": {},
+																					"type": {
+																						"type": "intrinsic",
+																						"name": "undefined"
+																					},
+																					"defaultValue": "f.balance.bank"
+																				},
+																				{
+																					"id": 158,
+																					"name": "wallet",
+																					"kind": 1024,
+																					"kindString": "Property",
+																					"flags": {},
+																					"type": {
+																						"type": "intrinsic",
+																						"name": "number"
+																					},
+																					"defaultValue": "f.balance.wallet"
+																				}
+																			],
+																			"groups": [
+																				{
+																					"title": "Properties",
+																					"kind": 1024,
+																					"children": [
+																						159,
+																						158
+																					]
+																				}
+																			]
+																		}
+																	},
+																	{
+																		"type": "reflection",
+																		"declaration": {
+																			"id": 160,
+																			"name": "__type",
+																			"kind": 65536,
+																			"kindString": "Type literal",
+																			"flags": {},
+																			"children": [
+																				{
+																					"id": 161,
+																					"name": "bank",
+																					"kind": 1024,
+																					"kindString": "Property",
+																					"flags": {},
+																					"type": {
+																						"type": "intrinsic",
+																						"name": "number"
+																					},
+																					"defaultValue": "f.balance.bank"
+																				},
+																				{
+																					"id": 162,
+																					"name": "wallet",
+																					"kind": 1024,
+																					"kindString": "Property",
+																					"flags": {},
+																					"type": {
+																						"type": "intrinsic",
+																						"name": "undefined"
+																					},
+																					"defaultValue": "f.balance.wallet"
+																				}
+																			],
+																			"groups": [
+																				{
+																					"title": "Properties",
+																					"kind": 1024,
+																					"children": [
+																						161,
+																						162
+																					]
+																				}
+																			]
+																		}
+																	}
+																]
+															}
+														],
+														"name": "Promise"
+													},
+													"defaultValue": "..."
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"kind": 1024,
+													"children": [
+														149,
+														156
+													]
+												}
+											]
+										}
+									}
+								}
+							]
+						},
+						{
+							"id": 200,
+							"name": "leaderBoard",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true
+							},
+							"sources": [
+								{
+									"fileName": "structures/currency.ts",
+									"line": 202,
+									"character": 9
+								}
+							],
+							"signatures": [
+								{
+									"id": 201,
+									"name": "leaderBoard",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						},
+						{
+							"id": 202,
+							"name": "pay",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true
+							},
+							"sources": [
+								{
+									"fileName": "structures/currency.ts",
+									"line": 213,
+									"character": 15
+								}
+							],
+							"signatures": [
+								{
+									"id": 203,
+									"name": "pay",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "All0ows users to pay others from their own economy account.",
+										"returns": "paid amount\n"
+									},
+									"parameters": [
+										{
+											"id": 204,
+											"name": "amount",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"shortText": "of currency you wish to give the user"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 205,
+											"name": "targetUser",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"shortText": "the user who will pay"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 206,
+											"name": "targetToPay",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"shortText": "the user who will receive the amount"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "union",
+												"types": [
+													{
+														"type": "literal",
+														"value": "Your wallet is to low to pay this user."
 													},
 													{
-														"type": "intersection",
-														"types": [
-															{
-																"type": "reference",
-																"id": 70,
-																"name": "UserEconomyStructure"
-															},
-															{
-																"type": "reflection",
-																"declaration": {
-																	"id": 87,
-																	"name": "__type",
-																	"kind": 65536,
-																	"kindString": "Type literal",
-																	"flags": {}
+														"type": "reflection",
+														"declaration": {
+															"id": 207,
+															"name": "__type",
+															"kind": 65536,
+															"kindString": "Type literal",
+															"flags": {},
+															"children": [
+																{
+																	"id": 210,
+																	"name": "newUserWallet",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "number"
+																	},
+																	"defaultValue": "..."
+																},
+																{
+																	"id": 208,
+																	"name": "paid",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "number"
+																	},
+																	"defaultValue": "amount"
+																},
+																{
+																	"id": 209,
+																	"name": "userWallet",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "number"
+																	},
+																	"defaultValue": "..."
 																}
-															}
-														]
+															],
+															"groups": [
+																{
+																	"title": "Properties",
+																	"kind": 1024,
+																	"children": [
+																		210,
+																		208,
+																		209
+																	]
+																}
+															]
+														}
+													}
+												]
+											}
+										],
+										"name": "Promise"
+									}
+								}
+							]
+						},
+						{
+							"id": 163,
+							"name": "set",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true
+							},
+							"sources": [
+								{
+									"fileName": "structures/currency.ts",
+									"line": 65,
+									"character": 15
+								}
+							],
+							"signatures": [
+								{
+									"id": 164,
+									"name": "set",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Sets's value to a users wallet or bank.",
+										"text": "Warning using this function will over write a users ballance NOT add money to it. Please use the add function instead if you need to extend the wallet/bank.",
+										"returns": "amount\n"
+									},
+									"parameters": [
+										{
+											"id": 165,
+											"name": "amount",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"shortText": "of currency you wish to give the user"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 166,
+											"name": "targetUser",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"shortText": "the discord user to target"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 167,
+											"name": "type",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"shortText": "wallet or bank option"
+											},
+											"type": {
+												"type": "reference",
+												"id": 244,
+												"name": "EconomyMethodOption"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "union",
+												"types": [
+													{
+														"type": "literal",
+														"value": "Failed to add the new balance."
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 168,
+															"name": "__type",
+															"kind": 65536,
+															"kindString": "Type literal",
+															"flags": {},
+															"children": [
+																{
+																	"id": 170,
+																	"name": "bank",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "undefined"
+																	},
+																	"defaultValue": "f.balance.bank"
+																},
+																{
+																	"id": 169,
+																	"name": "wallet",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "number"
+																	},
+																	"defaultValue": "amount"
+																}
+															],
+															"groups": [
+																{
+																	"title": "Properties",
+																	"kind": 1024,
+																	"children": [
+																		170,
+																		169
+																	]
+																}
+															]
+														}
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 171,
+															"name": "__type",
+															"kind": 65536,
+															"kindString": "Type literal",
+															"flags": {},
+															"children": [
+																{
+																	"id": 172,
+																	"name": "bank",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "number"
+																	},
+																	"defaultValue": "amount"
+																},
+																{
+																	"id": 173,
+																	"name": "wallet",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "undefined"
+																	},
+																	"defaultValue": "f.balance.wallet"
+																}
+															],
+															"groups": [
+																{
+																	"title": "Properties",
+																	"kind": 1024,
+																	"children": [
+																		172,
+																		173
+																	]
+																}
+															]
+														}
+													}
+												]
+											}
+										],
+										"name": "Promise"
+									}
+								}
+							]
+						},
+						{
+							"id": 187,
+							"name": "subtract",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true
+							},
+							"sources": [
+								{
+									"fileName": "structures/currency.ts",
+									"line": 155,
+									"character": 15
+								}
+							],
+							"signatures": [
+								{
+									"id": 188,
+									"name": "subtract",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Subtract's value to a users wallet or bank.",
+										"returns": "amount\n"
+									},
+									"parameters": [
+										{
+											"id": 189,
+											"name": "amount",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"shortText": "of currency you wish to give the user"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 190,
+											"name": "targetUser",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"shortText": "the discord user to target"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 191,
+											"name": "type",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"shortText": "wallet or bank option"
+											},
+											"type": {
+												"type": "reference",
+												"id": 244,
+												"name": "EconomyMethodOption"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "union",
+												"types": [
+													{
+														"type": "intrinsic",
+														"name": "string"
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 192,
+															"name": "__type",
+															"kind": 65536,
+															"kindString": "Type literal",
+															"flags": {},
+															"children": [
+																{
+																	"id": 195,
+																	"name": "bank",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "undefined"
+																	},
+																	"defaultValue": "f.balance.bank"
+																},
+																{
+																	"id": 193,
+																	"name": "subtracted",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "number"
+																	},
+																	"defaultValue": "amount"
+																},
+																{
+																	"id": 194,
+																	"name": "wallet",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "number"
+																	},
+																	"defaultValue": "..."
+																}
+															],
+															"groups": [
+																{
+																	"title": "Properties",
+																	"kind": 1024,
+																	"children": [
+																		195,
+																		193,
+																		194
+																	]
+																}
+															]
+														}
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 196,
+															"name": "__type",
+															"kind": 65536,
+															"kindString": "Type literal",
+															"flags": {},
+															"children": [
+																{
+																	"id": 198,
+																	"name": "bank",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "number"
+																	},
+																	"defaultValue": "..."
+																},
+																{
+																	"id": 197,
+																	"name": "subtracted",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "number"
+																	},
+																	"defaultValue": "amount"
+																},
+																{
+																	"id": 199,
+																	"name": "wallet",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "undefined"
+																	},
+																	"defaultValue": "f.balance.wallet"
+																}
+															],
+															"groups": [
+																{
+																	"title": "Properties",
+																	"kind": 1024,
+																	"children": [
+																		198,
+																		197,
+																		199
+																	]
+																}
+															]
+														}
 													}
 												]
 											}
@@ -1823,29 +3855,34 @@
 							"title": "Constructors",
 							"kind": 512,
 							"children": [
-								79
+								138
 							]
 						},
 						{
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								82,
-								83
+								141,
+								140
 							]
 						},
 						{
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								88,
-								84
+								174,
+								142,
+								145,
+								200,
+								202,
+								163,
+								187
 							]
 						}
 					],
 					"sources": [
 						{
-							"fileName": "economy.ts",
+							"fileName": "structures/currency.ts",
 							"line": 9,
 							"character": 13
 						}
@@ -1857,90 +3894,34 @@
 					"title": "Classes",
 					"kind": 128,
 					"children": [
-						78
+						137
 					]
 				}
 			],
 			"sources": [
 				{
-					"fileName": "economy.ts",
+					"fileName": "structures/currency.ts",
 					"line": 1,
 					"character": 0
 				}
 			]
 		},
 		{
-			"id": 91,
-			"name": "index",
-			"kind": 2,
-			"kindString": "Module",
-			"flags": {},
-			"children": [
-				{
-					"id": 126,
-					"name": "DataBaseController",
-					"kind": 16777216,
-					"kindString": "Reference",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "index.ts",
-							"line": 4,
-							"character": 18
-						}
-					],
-					"target": 6
-				},
-				{
-					"id": 125,
-					"name": "Economy",
-					"kind": 16777216,
-					"kindString": "Reference",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "index.ts",
-							"line": 4,
-							"character": 9
-						}
-					],
-					"target": 78
-				}
-			],
-			"groups": [
-				{
-					"title": "References",
-					"kind": 16777216,
-					"children": [
-						126,
-						125
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "index.ts",
-					"line": 1,
-					"character": 0
-				}
-			]
-		},
-		{
-			"id": 92,
+			"id": 211,
 			"name": "util/errors",
 			"kind": 2,
 			"kindString": "Module",
 			"flags": {},
 			"children": [
 				{
-					"id": 93,
+					"id": 212,
 					"name": "default",
 					"kind": 128,
 					"kindString": "Class",
 					"flags": {},
 					"children": [
 						{
-							"id": 94,
+							"id": 213,
 							"name": "constructor",
 							"kind": 512,
 							"kindString": "Constructor",
@@ -1954,14 +3935,14 @@
 							],
 							"signatures": [
 								{
-									"id": 95,
+									"id": 214,
 									"name": "new default",
 									"kind": 16384,
 									"kindString": "Constructor signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 96,
+											"id": 215,
 											"name": "key",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -1972,7 +3953,7 @@
 											}
 										},
 										{
-											"id": 97,
+											"id": 216,
 											"name": "args",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -1990,14 +3971,14 @@
 									],
 									"type": {
 										"type": "reference",
-										"id": 93,
+										"id": 212,
 										"name": "LewdLabsModuleError"
 									}
 								}
 							]
 						},
 						{
-							"id": 98,
+							"id": 217,
 							"name": "code",
 							"kind": 1024,
 							"kindString": "Property",
@@ -2015,7 +3996,7 @@
 							}
 						},
 						{
-							"id": 99,
+							"id": 218,
 							"name": "name",
 							"kind": 262144,
 							"kindString": "Accessor",
@@ -2029,7 +4010,7 @@
 							],
 							"getSignature": [
 								{
-									"id": 100,
+									"id": 219,
 									"name": "name",
 									"kind": 524288,
 									"kindString": "Get signature",
@@ -2047,21 +4028,21 @@
 							"title": "Constructors",
 							"kind": 512,
 							"children": [
-								94
+								213
 							]
 						},
 						{
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								98
+								217
 							]
 						},
 						{
 							"title": "Accessors",
 							"kind": 262144,
 							"children": [
-								99
+								218
 							]
 						}
 					],
@@ -2085,7 +4066,7 @@
 					"title": "Classes",
 					"kind": 128,
 					"children": [
-						93
+						212
 					]
 				}
 			],
@@ -2098,14 +4079,14 @@
 			]
 		},
 		{
-			"id": 101,
+			"id": 220,
 			"name": "util/functions",
 			"kind": 2,
 			"kindString": "Module",
 			"flags": {},
 			"children": [
 				{
-					"id": 102,
+					"id": 221,
 					"name": "ErrorMessage",
 					"kind": 64,
 					"kindString": "Function",
@@ -2119,7 +4100,7 @@
 					],
 					"signatures": [
 						{
-							"id": 103,
+							"id": 222,
 							"name": "ErrorMessage",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -2135,7 +4116,7 @@
 							},
 							"parameters": [
 								{
-									"id": 104,
+									"id": 223,
 									"name": "msg",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -2162,7 +4143,7 @@
 					"title": "Functions",
 					"kind": 64,
 					"children": [
-						102
+						221
 					]
 				}
 			],
@@ -2175,14 +4156,14 @@
 			]
 		},
 		{
-			"id": 105,
+			"id": 224,
 			"name": "util/typings",
 			"kind": 2,
 			"kindString": "Module",
 			"flags": {},
 			"children": [
 				{
-					"id": 106,
+					"id": 225,
 					"name": "EconomyConfigOptions",
 					"kind": 256,
 					"kindString": "Interface",
@@ -2192,7 +4173,7 @@
 					},
 					"children": [
 						{
-							"id": 107,
+							"id": 226,
 							"name": "currency",
 							"kind": 1024,
 							"kindString": "Property",
@@ -2213,7 +4194,7 @@
 							}
 						},
 						{
-							"id": 109,
+							"id": 228,
 							"name": "defaultBankLimit",
 							"kind": 1024,
 							"kindString": "Property",
@@ -2234,7 +4215,7 @@
 							}
 						},
 						{
-							"id": 111,
+							"id": 230,
 							"name": "mongodbURL",
 							"kind": 1024,
 							"kindString": "Property",
@@ -2257,7 +4238,7 @@
 							}
 						},
 						{
-							"id": 110,
+							"id": 229,
 							"name": "robEnabled",
 							"kind": 1024,
 							"kindString": "Property",
@@ -2278,7 +4259,7 @@
 							}
 						},
 						{
-							"id": 108,
+							"id": 227,
 							"name": "shopEnabled",
 							"kind": 1024,
 							"kindString": "Property",
@@ -2304,11 +4285,11 @@
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								107,
-								109,
-								111,
-								110,
-								108
+								226,
+								228,
+								230,
+								229,
+								227
 							]
 						}
 					],
@@ -2321,7 +4302,7 @@
 					]
 				},
 				{
-					"id": 112,
+					"id": 231,
 					"name": "UserEconomyTypes",
 					"kind": 256,
 					"kindString": "Interface",
@@ -2331,7 +4312,7 @@
 					},
 					"children": [
 						{
-							"id": 121,
+							"id": 240,
 							"name": "balance",
 							"kind": 1024,
 							"kindString": "Property",
@@ -2349,14 +4330,14 @@
 							"type": {
 								"type": "reflection",
 								"declaration": {
-									"id": 122,
+									"id": 241,
 									"name": "__type",
 									"kind": 65536,
 									"kindString": "Type literal",
 									"flags": {},
 									"children": [
 										{
-											"id": 124,
+											"id": 243,
 											"name": "bank",
 											"kind": 1024,
 											"kindString": "Property",
@@ -2377,7 +4358,7 @@
 											}
 										},
 										{
-											"id": 123,
+											"id": 242,
 											"name": "wallet",
 											"kind": 1024,
 											"kindString": "Property",
@@ -2403,8 +4384,8 @@
 											"title": "Properties",
 											"kind": 1024,
 											"children": [
-												124,
-												123
+												243,
+												242
 											]
 										}
 									]
@@ -2412,7 +4393,7 @@
 							}
 						},
 						{
-							"id": 113,
+							"id": 232,
 							"name": "bankLimit",
 							"kind": 1024,
 							"kindString": "Property",
@@ -2433,7 +4414,7 @@
 							}
 						},
 						{
-							"id": 116,
+							"id": 235,
 							"name": "dailyStreak",
 							"kind": 1024,
 							"kindString": "Property",
@@ -2454,7 +4435,7 @@
 							}
 						},
 						{
-							"id": 115,
+							"id": 234,
 							"name": "dailyTimeout",
 							"kind": 1024,
 							"kindString": "Property",
@@ -2475,7 +4456,7 @@
 							}
 						},
 						{
-							"id": 114,
+							"id": 233,
 							"name": "itemsOwned",
 							"kind": 1024,
 							"kindString": "Property",
@@ -2499,7 +4480,7 @@
 							}
 						},
 						{
-							"id": 120,
+							"id": 239,
 							"name": "monthlyStreak",
 							"kind": 1024,
 							"kindString": "Property",
@@ -2520,7 +4501,7 @@
 							}
 						},
 						{
-							"id": 119,
+							"id": 238,
 							"name": "monthlyTimeout",
 							"kind": 1024,
 							"kindString": "Property",
@@ -2541,7 +4522,7 @@
 							}
 						},
 						{
-							"id": 118,
+							"id": 237,
 							"name": "weeklyStreak",
 							"kind": 1024,
 							"kindString": "Property",
@@ -2562,7 +4543,7 @@
 							}
 						},
 						{
-							"id": 117,
+							"id": 236,
 							"name": "weeklyTimeout",
 							"kind": 1024,
 							"kindString": "Property",
@@ -2588,15 +4569,15 @@
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								121,
-								113,
-								116,
-								115,
-								114,
-								120,
-								119,
-								118,
-								117
+								240,
+								232,
+								235,
+								234,
+								233,
+								239,
+								238,
+								237,
+								236
 							]
 						}
 					],
@@ -2607,6 +4588,64 @@
 							"character": 17
 						}
 					]
+				},
+				{
+					"id": 245,
+					"name": "EconomyCoolDownOption",
+					"kind": 4194304,
+					"kindString": "Type alias",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "util/typings.ts",
+							"line": 49,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "literal",
+								"value": "daily"
+							},
+							{
+								"type": "literal",
+								"value": "weekly"
+							},
+							{
+								"type": "literal",
+								"value": "monthly"
+							}
+						]
+					}
+				},
+				{
+					"id": 244,
+					"name": "EconomyMethodOption",
+					"kind": 4194304,
+					"kindString": "Type alias",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "util/typings.ts",
+							"line": 47,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "literal",
+								"value": "wallet"
+							},
+							{
+								"type": "literal",
+								"value": "bank"
+							}
+						]
+					}
 				}
 			],
 			"groups": [
@@ -2614,8 +4653,16 @@
 					"title": "Interfaces",
 					"kind": 256,
 					"children": [
-						106,
-						112
+						225,
+						231
+					]
+				},
+				{
+					"title": "Type aliases",
+					"kind": 4194304,
+					"children": [
+						245,
+						244
 					]
 				}
 			],
@@ -2633,15 +4680,18 @@
 			"title": "Modules",
 			"kind": 2,
 			"children": [
-				41,
+				42,
 				1,
 				5,
-				69,
-				77,
-				91,
+				70,
+				78,
+				80,
 				92,
-				101,
-				105
+				93,
+				136,
+				211,
+				220,
+				224
 			]
 		}
 	]

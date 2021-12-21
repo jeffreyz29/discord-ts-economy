@@ -1,6 +1,7 @@
-import type { Document, Model } from "mongoose";
+import type { Model } from "mongoose";
 import { IDataBaseController } from ".";
 import { UserDataSchema, UserEconomyStructure } from "./schema";
+import { key_db_options } from "./types";
 
 /**
  * The Database Controller manages the main functionality of the database and our cache system.
@@ -34,11 +35,7 @@ export class DataBaseController extends IDataBaseController {
    * @param {any} [defaultValue] - Default value if not found or null.
    * @returns {any}
    */
-  public get(
-    id: string,
-    key: string,
-    defaultValue: any
-  ): Document<string, string, any> {
+  public get(id: string, key: key_db_options, defaultValue: any): any {
     if (this.items.has(id)) {
       const value = this.items.get(id)[key];
       return value == null ? defaultValue : value;
@@ -53,17 +50,13 @@ export class DataBaseController extends IDataBaseController {
    * @param {any} value - The value.
    * @returns {Promise<any>} - Mongoose query object|document
    */
-  public async set(
-    id: string,
-    key: string,
-    value: any
-  ): Promise<Document<string, string, any>> {
+  public async set(id: string, key: key_db_options, value: any): Promise<any> {
     // gets the cache first before writting to the db
     const data = this.items.get(id) || {};
     data[key] = value;
     this.items.set(id, data);
 
-    const doc = await this.getDocument(id) as any
+    const doc = (await this.getDocument(id)) as any;
     doc.settings[key] = value;
     doc.markModified("settings");
     return doc.save();
@@ -76,14 +69,11 @@ export class DataBaseController extends IDataBaseController {
    * @param {string} key - The key to delete.
    * @returns {Promise<any>} - Mongoose query object|document
    */
-  public async delete(
-    id: string,
-    key: string
-  ): Promise<Document<any, any, any>> {
+  public async delete(id: string, key: key_db_options): Promise<any> {
     const data = this.items.get(id) || {};
     delete data[key];
 
-    const doc = await this.getDocument(id) as any
+    const doc = (await this.getDocument(id)) as any;
     delete doc.settings[key];
     doc.markModified("settings");
     return doc.save();
@@ -105,11 +95,31 @@ export class DataBaseController extends IDataBaseController {
    * @param {string} id - ID of document
    * @returns {Document<any, any, any>} - Mongoose query object|document
    */
-  public async getDocument(id: string) {
+  public async getDocument(id: string): Promise<
+    UserEconomyStructure & {
+      _id: any;
+    }
+  > {
     const obj = await this.model.findOne({ id });
     if (!obj) {
       // eslint-disable-next-line new-cap
-      const newDoc = await new this.model({ id, settings: {} }).save();
+      const newDoc = await new this.model({
+        id,
+        settings: {
+          balance: {
+            wallet: 0,
+            bank: 0,
+          },
+          bankLimit: 5000,
+          dailyStreak: null,
+          dailyTimeout: null,
+          itemsOwned: [],
+          weeklyStreak: null,
+          weeklyTimeout: null,
+          monthlyStreak: null,
+          monthlyTimeout: null,
+        },
+      }).save();
       return newDoc;
     }
 

@@ -16,3 +16,9 @@ Please leave a star and join our discord for more updates!
 
 [Discord](https://discord.com/invite/N79DZsm3m2)
 
+## Highlights
+
+- `🍃`MongoDB Support.
+- `🌀`Build with typescript.
+- `⚡`Caching for quick load times.
+- `🤖` made for Discord.js first.

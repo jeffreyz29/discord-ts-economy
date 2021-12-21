@@ -2,15 +2,21 @@ import { mongodb_connect_function } from "./database/connection";
 import { ErrorMessage } from "./util/functions";
 import { EconomyConfigOptions } from "./util/typings";
 import { DataBaseController } from "./database/controller";
+import { fetchManager } from "./managers/fetch";
+import { CurrencyHandler } from "./structures/currency";
 
 /**
  * The Lewd Labs Economy for discord bots with mongodb
  */
-export class Economy {
+export class IEconomy {
   /** Our constructor config options */
   public config: EconomyConfigOptions;
   /** Allows the raw db function to be accessed throughout the Economy for more user customization. */
   public db: DataBaseController = new DataBaseController();
+  /** Controls fetch methods four our economy */
+  public fetchManager: fetchManager = new fetchManager();
+  /** Controls user ballance methods */
+  public currencyHandler: CurrencyHandler = new CurrencyHandler();
   public constructor(configOptions: EconomyConfigOptions) {
     if (!configOptions) {
       throw new Error(
@@ -32,27 +38,6 @@ export class Economy {
         )
       );
     } else this.config = configOptions;
-  }
-
-  /**
-   * The Raw user object fetched from our cache or db.
-   * This function is internal and not used by you the user.
-   * @param target 
-   * @returns 
-   */
-  //@ts-ignore
-  private async getRawUser(target: string) {
-    // we call the cache
-    let userData = this.db.get(target, "Economy", null);
-    // if no cache is found for this user, we will search the db itself.
-    if (!userData) {
-      // Before creating the new data we will search for a document one last time.
-      // sometimes a user document can exist but not be in cache.
-      let e = await this.db.getDocument(target);
-      return e;
-    }
-
-    return userData;
   }
 
   /**

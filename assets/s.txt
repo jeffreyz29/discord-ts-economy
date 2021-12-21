@@ -1,0 +1,12 @@
+    bankLimit: ,
+    itemsOwned: ,
+    dailyTimeout: ,
+    dailyStreak: ,
+    weeklyTimeout: ,
+    weeklyStreak: ,
+    monthlyTimeout: ,
+    monthlyStreak:,
+    balance: {
+        wallet: ,
+        bank: 
+    }

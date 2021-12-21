@@ -6,7 +6,7 @@
   "hideGenerator": true,
   "lightHighlightTheme": "github-light",
   "darkHighlightTheme": "github-dark",
-  "name": "Lewd.labs Economy",
+  "name": "Lewd labs Economy",
   "out": "./docs",
   "readme": "./README.md",
   "tsconfig": "./tsconfig.json"

@@ -2,7 +2,7 @@
  * @internal
  * Custom error messages function
  * @param msg the Error message
- * @returns 
+ * @returns
  */
 export function ErrorMessage(msg: string) {
   return (

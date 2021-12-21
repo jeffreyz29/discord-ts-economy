@@ -4,7 +4,6 @@
  * ? ----------------------------- Test File -----------------------------
  */
 
-
 const mongo = require("mongoose");
 const { Economy } = require("../dist/index");
 const config = require("./config.json");
