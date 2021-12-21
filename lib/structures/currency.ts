@@ -204,7 +204,7 @@ export class CurrencyHandler {
   }
 
   /**
-   * All0ows users to pay others from their own economy account.
+   * Allows users to pay others from their own economy account.
    * @param amount of currency you wish to give the user
    * @param targetUser the user who will pay
    * @param targetToPay the user who will receive the amount

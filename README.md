@@ -6,7 +6,8 @@
  * ? ----------------------------- Economy -----------------------------------
 ```
 
-Please leave a star and join our discord for more updates!
+⚠️ The package is still in development and not ready for production. Please leave a star and join our discord for more updates! 
+
 
 ## Helpful links
 

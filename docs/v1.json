@@ -1400,12 +1400,13 @@
 							"kindString": "Property",
 							"flags": {},
 							"comment": {
-								"shortText": "The Discord user Id."
+								"shortText": "The Mongodb Document ID.",
+								"text": "This is different from the internal _id in mongodb and is used with our DatabaseController class.\n"
 							},
 							"sources": [
 								{
 									"fileName": "database/schema.ts",
-									"line": 6,
+									"line": 10,
 									"character": 2
 								}
 							],
@@ -1430,7 +1431,7 @@
 							"sources": [
 								{
 									"fileName": "database/schema.ts",
-									"line": 8,
+									"line": 12,
 									"character": 2
 								}
 							],
@@ -1473,7 +1474,7 @@
 					"sources": [
 						{
 							"fileName": "database/schema.ts",
-							"line": 25,
+							"line": 29,
 							"character": 13
 						}
 					],
@@ -3336,7 +3337,7 @@
 									"kindString": "Call signature",
 									"flags": {},
 									"comment": {
-										"shortText": "All0ows users to pay others from their own economy account.",
+										"shortText": "Allows users to pay others from their own economy account.",
 										"returns": "paid amount\n"
 									},
 									"parameters": [
