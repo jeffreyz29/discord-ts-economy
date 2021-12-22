@@ -6,8 +6,7 @@
  * ? ----------------------------- Economy -----------------------------------
 ```
 
-⚠️ The package is still in development and not ready for production. Please leave a star and join our discord for more updates! 
-
+⚠️ The package is still in development and not ready for production. Please leave a star and join our discord for more updates!
 
 ## Helpful links
 
@@ -17,9 +16,11 @@
 
 [Discord](https://discord.com/invite/N79DZsm3m2)
 
+[Guide](https://lewd-labs.github.io/xyz/)
+
 ## Highlights
 
-- `🍃`MongoDB Support.
-- `🌀`Build with typescript.
-- `⚡`Caching for quick load times.
-- `🤖` made for Discord.js first.
+- `🍃` Power by MongoDB.
+- `🌀` Build with typescript.
+- `⚡` Caching for quick load times.
+- `🤖` Made for Discord.js first.

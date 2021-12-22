@@ -67,23 +67,23 @@ export class fetchManager {
     switch (coolDownOption) {
       case "daily":
         return {
-          dailyTimeout: u.dailyTimeout,
-          dailyStreak: u.dailyStreak,
+          dailyTimeout: u.daily.dailyTimeout,
+          dailyStreak: u.daily.dailyStreak,
         };
       case "weekly":
         return {
-          weeklyTimeout: u.weeklyTimeout,
-          weeklyStreak: u.weeklyStreak,
+          weeklyTimeout: u.weekly.weeklyTimeout,
+          weeklyStreak: u.weekly.weeklyStreak,
         };
       case "monthly":
         return {
-          monthlyTimeout: u.monthlyTimeout,
-          monthlyStreak: u.monthlyStreak,
+          monthlyTimeout: u.monthly.monthlyTimeout,
+          monthlyStreak: u.monthly.monthlyStreak,
         };
       default:
         return {
-          dailyTimeout: u.dailyTimeout,
-          dailyStreak: u.dailyStreak,
+          dailyTimeout: u.daily.dailyTimeout,
+          dailyStreak: u.daily.dailyStreak,
         };
     }
   }

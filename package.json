@@ -1,13 +1,12 @@
 {
   "name": "@lewdlabs/economy",
-  "version": "0.0.2",
-  "description": "A mongodb discord bot economy system.",
-  "main": "./test/__db__.js",
-  "types": "./types",
+  "version": "0.1.4",
+  "description": "A simple economy system using mongodb and javascript.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node ./test/__db__.js",
     "dev": "ts-node ./lib/index.ts",
     "prod:dev": "yarn run build && node .",
+    "make": "yarn run format && yarn run build && yarn run docs",
     "build": "tsc --skipLibCheck",
     "format": "prettier --ignore-path .gitignore --write .",
     "update": "yarn upgrade-interactive --latest",
@@ -30,11 +29,10 @@
     "dotenv": "^10.0.0",
     "prettier": "^2.4.1",
     "ts-node": "^10.4.0",
+    "typedoc": "^0.22.10",
     "typescript": "^4.4.4"
   },
   "dependencies": {
-    "@discordjs/collection": "^0.3.2",
-    "mongoose": "^6.1.2",
-    "typedoc": "^0.22.10"
+    "mongoose": "^6.1.2"
   }
 }

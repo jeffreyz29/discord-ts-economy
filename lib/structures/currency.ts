@@ -26,13 +26,10 @@ export class CurrencyHandler {
       bank: 0,
     });
     await this.db.set(targetUser, "bankLimit", 5000);
-    await this.db.set(targetUser, "dailyStreak", null);
-    await this.db.set(targetUser, "dailyTimeout", null);
+    await this.db.set(targetUser, "daily", {});
     await this.db.set(targetUser, "itemsOwned", []);
-    await this.db.set(targetUser, "weeklyStreak", null);
-    await this.db.set(targetUser, "weeklyTimeout", null);
-    await this.db.set(targetUser, "monthlyStreak", null);
-    await this.db.set(targetUser, "monthlyTimeout", null);
+    await this.db.set(targetUser, "weekly", {});
+    await this.db.set(targetUser, "monthly", {});
     return "User Data Created.";
   }
 
@@ -226,12 +223,11 @@ export class CurrencyHandler {
     let u2 = await this.fetchManager.fetchUser(targetToPay);
 
     let check = u1.balance.wallet;
-    if (check < amount)
-      return "Your wallet is to low to pay this user.";
+    if (check < amount) return "Your wallet is to low to pay this user.";
     else {
       await this.db.set(targetUser, "balance", {
         wallet: u1.balance.wallet - amount,
-        bank: u1.balance.bank ,
+        bank: u1.balance.bank,
       });
       await this.db.set(targetToPay, "balance", {
         wallet: u2.balance.wallet + amount,
@@ -239,8 +235,90 @@ export class CurrencyHandler {
       });
       return {
         paid: amount,
-        userWallet: u1.balance.wallet - amount,
-        newUserWallet: u2.balance.wallet + amount
+        userWallet: u1.balance.wallet,
+        newUserWallet: u2.balance.wallet,
+      };
+    }
+  }
+  /**
+   *
+   * @param targetUser the discord user id
+   * @param minEarn the minimum amount the work function will give the user
+   * @param maxEarn the max amount the work function will give the user
+   * @param failChance the fail rate divided by 100.
+   * @returns A random number added to the users balance
+   */
+  public async work(
+    targetUser: string,
+    minEarn: number,
+    maxEarn: number,
+    failChance?: number
+  ) {
+    if (!targetUser || !minEarn || !maxEarn) {
+      throw new Error(
+        ErrorMessage("You are missing the valid options for this method.")
+      );
+    }
+    if (isNaN(minEarn) || isNaN(maxEarn)) {
+      throw new Error(ErrorMessage("option is not type Number!"));
+    }
+
+    // if no option is passed it will default to 20%
+    if (!failChance) failChance = 20;
+
+    let failPercent = Math.random() < failChance / 100;
+    if (failPercent) {
+      return false;
+    } else {
+      let amount = Math.floor(
+        Math.random() * (maxEarn - minEarn + 1) + minEarn
+      );
+
+      let u = await this.fetchManager.fetchUser(targetUser);
+      await this.db.set(targetUser, "balance", {
+        wallet: u.balance.wallet + amount,
+        bank: u.balance.bank,
+      });
+      return {
+        earned: amount,
+        bank: u.balance.bank,
+        wallet: u.balance.wallet,
+      };
+    }
+  }
+
+  public async daily(targetUser: string, amount: number) {
+    if (!targetUser || !amount) {
+      throw new Error(
+        ErrorMessage("You are missing the valid options for this method.")
+      );
+    }
+
+    let u = await this.fetchManager.fetchUser(targetUser);
+
+    // if the daily function was used in the last 24 hours, return
+    if (Date.now() < u.daily.dailyTimeout + 86400000) {
+      return false;
+    } else {
+      if (Date.now() > u.daily.dailyTimeout + 86400000 * 2)
+        u.daily.dailyStreak = 0;
+      else u.daily.dailyStreak + 1;
+
+      await this.db.set(targetUser, "daily", {
+        dailyStreak: u.daily.dailyStreak,
+        dailyTimeout: (u.daily.dailyTimeout = Date.now()),
+      });
+
+      await this.db.set(targetUser, "balance", {
+        wallet: u.balance.wallet + amount,
+        bank: u.balance.bank,
+      });
+
+      return {
+        earned: amount,
+        bank: u.balance.bank,
+        wallet: u.balance.wallet,
+        dailyStreak: u.daily.dailyStreak,
       };
     }
   }

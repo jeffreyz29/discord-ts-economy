@@ -2,9 +2,9 @@ import { Document, model, Schema } from "mongoose";
 
 /** The mongodb model structure. This is required to use with this package*/
 export interface UserEconomyStructure extends Document {
-  /** 
+  /**
    * The Mongodb Document ID.
-   * 
+   *
    * This is different from the internal _id in mongodb and is used with our DatabaseController class.
    */
   id: string;

@@ -1,0 +1,3 @@
+ Future changes: 
+    
+    Work with the cache more and use less db calls. This will be done later as I want a good working version for now.

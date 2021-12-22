@@ -22,18 +22,24 @@ export interface UserEconomyTypes {
   bankLimit: number;
   /** All the items owned by the user from the shop */
   itemsOwned: Array<any>;
-  /** The last cached time the daily command was used. */
-  dailyTimeout: number;
-  /** The daily streak each time the daily command is used. */
-  dailyStreak: number;
-  /** The last cached time the weekly command was used. */
-  weeklyTimeout: number;
-  /** The last cached time the weekly command was used. */
-  weeklyStreak: number;
-  /** The last cached time the monthly command was used. */
-  monthlyTimeout: number;
-  /** The last cached time the monthly command was used. */
-  monthlyStreak: number;
+  daily: {
+    /** The last cached time the daily command was used. */
+    dailyTimeout: number;
+    /** The daily streak each time the daily command is used. */
+    dailyStreak: number;
+  };
+  weekly: {
+    /** The last cached time the weekly command was used. */
+    weeklyTimeout: number;
+    /** The last cached time the weekly command was used. */
+    weeklyStreak: number;
+  };
+  monthly: {
+    /** The last cached time the monthly command was used. */
+    monthlyTimeout: number;
+    /** The last cached time the monthly command was used. */
+    monthlyStreak: number;
+  };
   /** Where all the money is stored in the economy */
   balance: {
     /** The public user storage that can be robbed. */

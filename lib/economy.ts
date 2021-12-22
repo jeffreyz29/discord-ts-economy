@@ -17,6 +17,10 @@ export class IEconomy {
   public fetchManager: fetchManager = new fetchManager();
   /** Controls user ballance methods */
   public currencyHandler: CurrencyHandler = new CurrencyHandler();
+  /**
+   * Constructor
+   * @param configOptions The options to pass to the constructor. These are required.
+   */
   public constructor(configOptions: EconomyConfigOptions) {
     if (!configOptions) {
       throw new Error(

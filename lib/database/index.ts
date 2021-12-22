@@ -1,16 +1,16 @@
-import { Collection } from "@discordjs/collection";
 import { Model } from "mongoose";
 import IModuleError from "../util/errors";
 import { UserEconomyStructure } from "./schema";
+import { ICache } from "../cache";
 
 export class IDataBaseController {
   /** The cache collection for our DataBase. */
-  public items: Collection<string, any>;
+  public items: ICache<string, any>;
   /** The mongodb Model for our database. If non is passed then the default model will be used.*/
   public model!: Model<UserEconomyStructure>;
   constructor() {
     // Creating our new cache when the Economy is loaded.
-    this.items = new Collection();
+    this.items = new ICache();
   }
 
   /**

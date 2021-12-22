@@ -111,13 +111,19 @@ export class DataBaseController extends IDataBaseController {
             bank: 0,
           },
           bankLimit: 5000,
-          dailyStreak: null,
-          dailyTimeout: null,
+          daily: {
+            dailyStreak: 0,
+            dailyTimeout: 0,
+          },
           itemsOwned: [],
-          weeklyStreak: null,
-          weeklyTimeout: null,
-          monthlyStreak: null,
-          monthlyTimeout: null,
+          weekly: {
+            weeklyStreak: 0,
+            weeklyTimeout: 0,
+          },
+          monthly: {
+            monthlyStreak: 0,
+            monthlyTimeout: 0,
+          },
         },
       }).save();
       return newDoc;
