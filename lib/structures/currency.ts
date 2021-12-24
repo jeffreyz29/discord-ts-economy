@@ -1,11 +1,23 @@
 import { ErrorMessage } from "../util/functions";
 import type { EconomyMethodOption } from "../typings/typings";
-import { ManagerBase } from "../util/manager";
+import { DataBaseController } from "..";
+import { fetchManager } from "../managers/fetch";
 
 /**
  * The class to handler user balance methods.
  */
-export class CurrencyHandler extends ManagerBase {
+export class CurrencyHandler {
+  public fetchManager: fetchManager = new fetchManager();
+  public db: DataBaseController = new DataBaseController();
+
+  /**
+   * Loads all the economy data to our ram for quick access.
+   *
+   * WARNING: You only ned to call this function once in your program.
+   */
+  public init(): void {
+    this.db.init();
+  }
   /**
    * Fetches for a users ballance
    * @param targetUser the discord user
@@ -113,7 +125,6 @@ export class CurrencyHandler extends ManagerBase {
         bank: u.balance.bank + amount,
       };
     }
-    return "Failed to add the new balance.";
   }
   /**
    * Subtract's value to a users wallet or bank.
@@ -208,8 +219,8 @@ export class CurrencyHandler extends ManagerBase {
       });
       return {
         paid: amount,
-        userWallet: u1.balance.wallet,
-        newUserWallet: u2.balance.wallet,
+        userWallet: u1.balance.wallet - amount,
+        newUserWallet: u2.balance.wallet + amount,
       };
     }
   }
@@ -255,7 +266,7 @@ export class CurrencyHandler extends ManagerBase {
       return {
         earned: amount,
         bank: u.balance.bank,
-        wallet: u.balance.wallet,
+        wallet: u.balance.wallet + amount,
       };
     }
   }
@@ -288,8 +299,33 @@ export class CurrencyHandler extends ManagerBase {
 
       return {
         amount: amount,
-        wallet: u.balance.wallet,
-        bank: u.balance.bank,
+        wallet: u.balance.wallet - amount,
+        bank: u.balance.bank + amount,
+      };
+    }
+  }
+  public async withdraw(targetUser: string, amount: number) {
+    if (!targetUser || !amount) {
+      throw new Error(
+        ErrorMessage("You are missing the valid options for this method.")
+      );
+    } else if (isNaN(amount)) {
+      throw new Error(ErrorMessage("amount option is not type Number!"));
+    }
+    let u = await this.fetchManager.fetchUser(targetUser);
+
+    if (amount > u.balance.bank) {
+      return false;
+    } else {
+      await this.db.set(targetUser, "balance", {
+        wallet: u.balance.wallet + amount,
+        bank: u.balance.bank - amount,
+      });
+
+      return {
+        amount: amount,
+        wallet: u.balance.wallet + amount,
+        bank: u.balance.bank - amount,
       };
     }
   }

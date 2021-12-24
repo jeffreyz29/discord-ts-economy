@@ -6,7 +6,7 @@
  * ? ------------------------ Discord TS Economy ---------------------------
 ```
 
-![GitHub issues](https://img.shields.io/github/issues/lewd-labs/discord-easy-economy?style=for-the-badge) ![GitHub pull requests](https://img.shields.io/github/issues-pr/lewd-labs/discord-easy-economy?style=for-the-badge) ![GitHub Repo stars](https://img.shields.io/github/stars/lewd-labs/discord-easy-economy?style=for-the-badge) ![npm](https://img.shields.io/npm/v/discord-ts-economy?style=for-the-badge)
+![GitHub issues](https://img.shields.io/github/issues/lewd-labs/discord-easy-economy?style=for-the-badge) ![GitHub pull requests](https://img.shields.io/github/issues-pr/lewd-labs/discord-easy-economy?style=for-the-badge) ![GitHub Repo stars](https://img.shields.io/github/stars/lewd-labs/discord-easy-economy?style=for-the-badge) ![npm](https://img.shields.io/npm/v/discord-ts-economy?style=for-the-badge) ![npm](https://img.shields.io/npm/dw/discord-ts-economy?style=for-the-badge)
 
 ⚠️ The package is still in beta-development and not ready for production. Please leave a star and join our discord for more updates!
 
@@ -20,31 +20,34 @@
 ### Example
 
 ```typescript
-import { Economy } from "discord-ts-economy";
+import { Economy, CurrencyHandler } from "discord-ts-economy";
 
 const eco = new Economy({
   // configuration options...
 });
 
+const currencyHandler = new CurrencyHandler();
+
 // a built in function to connect to mongodb
 eco.connect("mongodb connection string");
 
+// load all the documents from our db after connecting
+eco.init();
+
 // adds a value of 100 through 500 to a users wallet with a 10 percent fail chance.
-eco.currencyHandler.work("some_user_id", 100, 500, 10);
+currencyHandler.work("some_user_id", 100, 500, 10);
 ```
 
 _For a more complex example please read our [detailed guide](https://lewd-labs.github.io/xyz/)_
 
 ## Installation
 
-Use one of the commands listed below to install.
+Use one of the node package managers listed below to install.
 
 ```
 yarn add discord-ts-economy
-```
-or 
-```
 npm install discord-ts-economy
+pnpm add discord-ts-economy
 ```
 
 _Mongodb will be installed as well as the package dependency._

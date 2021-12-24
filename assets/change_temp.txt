@@ -1,0 +1,26 @@
+# New package version [v] `⭐`
+
+## Breaking changes
+
+- 
+- 
+- 
+
+## New Features
+
+- 
+- 
+- 
+
+## Changes
+
+- 
+- 
+- 
+
+## Bug fixes
+
+- 
+- 
+- 
+

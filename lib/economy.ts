@@ -1,10 +1,9 @@
 import { mongodb_connect_function } from "./database/connection";
 import { ErrorMessage } from "./util/functions";
 import type { EconomyConfigOptions } from "./typings/typings";
-import { DataBaseController } from "./database/controller";
-import { fetchManager } from "./managers/fetch";
-import { CurrencyHandler } from "./structures/currency";
-import { RewardManager } from "./managers/reward";
+// import { fetchManager } from "./managers/fetch";
+// import { CurrencyHandler } from "./structures/currency";
+// import { RewardManager } from "./managers/reward";
 
 /**
  * The Lewd Labs Economy for discord bots with mongodb
@@ -12,14 +11,7 @@ import { RewardManager } from "./managers/reward";
 export class IEconomy {
   /** Our constructor config options */
   public config!: EconomyConfigOptions;
-  /** Allows the raw db function to be accessed throughout the Economy for more user customization. */
-  private db: DataBaseController = new DataBaseController();
-  /** Controls fetch methods four our economy */
-  public fetchManager: fetchManager = new fetchManager();
-  /** Controls user ballance methods */
-  public currencyHandler: CurrencyHandler = new CurrencyHandler();
-  /** controls common reward methods */
-  public RewardManager: RewardManager = new RewardManager();
+  // /** Controls fetch methods four our economy */
   /**
    * Constructor
    * @param configOptions The options to pass to the constructor. These are required.
@@ -42,6 +34,14 @@ export class IEconomy {
         );
       }
       this.config = configOptions;
+    } else {
+      let defaultOptions: EconomyConfigOptions = {
+        currency: "$",
+        defaultBankLimit: 10000,
+        shopEnabled: false,
+        robEnabled: true,
+      };
+      this.config = defaultOptions;
     }
   }
 
@@ -51,14 +51,9 @@ export class IEconomy {
    * @param url Your mongodb URL
    * @see https://www.mongodb.com/ for support with setting up your database.
    */
-  public async connect(url: string): Promise<void> {
+  public connect(url: string): void {
     if (!url)
       throw new Error(ErrorMessage("No URL passed for database connection."));
     else mongodb_connect_function(url);
-  }
-
-  /** Loads all the db documents */
-  public init(): void {
-    this.db.init();
   }
 }

@@ -8,7 +8,8 @@ import type { key_db_options } from "./types";
  * The Database Controller manages the main functionality of the database and our cache system.
  */
 export class DataBaseController extends IDataBaseController {
-  private eco = new IEconomy();
+  /** Allows native db functions to access the economy config constructor */
+  public config = new IEconomy().config;
   public constructor(model?: Model<UserEconomyStructure>) {
     super();
     // if a model is  inserted then use that and not the default
@@ -113,7 +114,7 @@ export class DataBaseController extends IDataBaseController {
             wallet: 0,
             bank: 0,
           },
-          bankLimit: this.eco.config.defaultBankLimit || 10000,
+          bankLimit: this.config.defaultBankLimit || 10000,
           daily: {
             dailyStreak: 0,
             dailyTimeout: 0,

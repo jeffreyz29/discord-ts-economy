@@ -1,9 +1,8 @@
 {
   "name": "discord-ts-economy",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A simple discord bot economy system using mongodb and typescript.",
   "main": "./out/index.js",
-  "types": "./types",
   "files": [
     "out"
   ],
@@ -44,7 +43,7 @@
   "bugs": {
     "url": "https://github.com/lewd-labs/Economy/issues"
   },
-  "homepage": "https://github.com/lewd-labs/Economy#readme",
+  "homepage": "https://lewd-labs.github.io/xyz/",
   "devDependencies": {
     "@types/node": "^17.0.0",
     "dotenv": "^10.0.0",
@@ -53,6 +52,8 @@
     "typescript": "^4.4.4"
   },
   "dependencies": {
-    "mongoose": "^6.1.2"
+    "@discordjs/collection": "0.3.2",
+    "mongoose": "^6.1.2",
+    "tslib": "^2.3.1"
   }
 }

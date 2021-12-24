@@ -1,12 +1,31 @@
-import { ManagerBase } from "../util/manager";
+import { DataBaseController } from "..";
 import { ErrorMessage } from "../util/functions";
+import { fetchManager } from "./fetch";
 
 /**
  * The reward manager is a class used to control economy rewards.
  *
  * All these functions are responsible for connecting our data to mongodb and user states.
  */
-export class RewardManager extends ManagerBase {
+export class RewardManager {
+  private fetchManager: fetchManager = new fetchManager();
+  private db: DataBaseController = new DataBaseController();
+
+  /**
+   * Loads all the economy data to our ram for quick access.
+   *
+   * WARNING: You only ned to call this function once in your program.
+   */
+  public init(): void {
+    this.db.init();
+  }
+
+  /**
+   * The daily reward adds a value to the users wallet every 24 hours.
+   * @param targetUser the id to fetch from our db
+   * @param amount of money to give the user
+   * @returns
+   */
   public async daily(targetUser: string, amount?: number) {
     if (!targetUser || !amount) {
       throw new Error(
