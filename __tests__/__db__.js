@@ -4,7 +4,7 @@
  * ? ----------------------------- Test File -----------------------------
  */
 
-const { Economy } = require("../dist/index");
+const { Economy } = require("../out/index");
 const config = require("./config.json");
 
 async function test() {

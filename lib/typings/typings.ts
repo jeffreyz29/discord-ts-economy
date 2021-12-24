@@ -3,15 +3,21 @@
  */
 export interface EconomyConfigOptions {
   /** The namne of your economys currency */
-  currency: string;
+  currency?: string;
   /** If users can buy Items for your economy */
-  shopEnabled: boolean;
+  shopEnabled?: boolean;
   /** The default bank size allows for a user before updating.*/
-  defaultBankLimit: number;
+  defaultBankLimit?: number;
   /** If robbing is allowed in your economy. */
-  robEnabled: boolean;
+  robEnabled?: boolean;
   /** Optional Connection string for mongodb. If not provided you will have to create your own connection.*/
   mongodbURL?: string;
+  /** The total daily maximum amount of currency generated for the reward manager. */
+  dailyAmount?: number;
+  /** The total weekly maximum amount of currency generated for the reward manager. */
+  weeklyAmount?: number;
+  /** The total monthly maximum amount of currency generated for the reward manager. */
+  monthlyAmount?: number;
 }
 
 /** Typings for the User Data in our Economy. */
@@ -23,22 +29,22 @@ export interface UserEconomyTypes {
   /** All the items owned by the user from the shop */
   itemsOwned: Array<any>;
   daily: {
-    /** The last cached time the daily command was used. */
-    dailyTimeout: number;
     /** The daily streak each time the daily command is used. */
     dailyStreak: number;
+    /** The last cached time the daily command was used. */
+    dailyTimeout: number;
   };
   weekly: {
     /** The last cached time the weekly command was used. */
-    weeklyTimeout: number;
-    /** The last cached time the weekly command was used. */
     weeklyStreak: number;
+    /** The last cached time the weekly command was used. */
+    weeklyTimeout: number;
   };
   monthly: {
     /** The last cached time the monthly command was used. */
-    monthlyTimeout: number;
-    /** The last cached time the monthly command was used. */
     monthlyStreak: number;
+    /** The last cached time the monthly command was used. */
+    monthlyTimeout: number;
   };
   /** Where all the money is stored in the economy */
   balance: {
@@ -48,8 +54,28 @@ export interface UserEconomyTypes {
      */
     bank: number;
   };
+  /** All user job and work information */
+  jobConfig: {
+    /** The time limit to use the work command again. */
+    workTimeOut: number;
+    /** The type of job the user has. */
+    workJob: EconomyJobStructure;
+  };
 }
 
 export type EconomyMethodOption = "wallet" | "bank";
 
 export type EconomyCoolDownOption = "daily" | "weekly" | "monthly";
+
+/** The structure for the job system and hierarchy in the economy. */
+export interface EconomyJobStructure {
+  lowClass: lowJobList;
+  middleClass: middleJobList;
+  highClass: highEndCome;
+}
+
+export type lowJobList = "taxi driver" | "mailman";
+
+export type middleJobList = "banker" | "lawyer";
+
+export type highEndCome = "basketball player";

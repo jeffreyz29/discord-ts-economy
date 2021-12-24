@@ -1,18 +1,16 @@
-import { DataBaseController } from "..";
+import { ManagerBase } from "../util/manager";
 import { ErrorMessage } from "../util/functions";
-import {
+import type {
   EconomyCoolDownOption,
   EconomyMethodOption,
   UserEconomyTypes,
-} from "../util/typings";
+} from "../typings/typings";
 
 /**
  * Allows easy internal control over all fetch based functions in our package
  * These methods control common acts like fetching for user data, ballance, and more.
  */
-export class fetchManager {
-  private db: DataBaseController = new DataBaseController();
-
+export class fetchManager extends ManagerBase {
   /**
    * Searches the db for our user document.
    * If non is found then an empty object will be created under the base db settings object.

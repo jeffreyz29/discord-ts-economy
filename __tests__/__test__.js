@@ -5,7 +5,7 @@
  */
 
 const mongo = require("mongoose");
-const { Economy } = require("../dist/index");
+const { Economy } = require("../out/index");
 const config = require("./config.json");
 
 const on = async () => {

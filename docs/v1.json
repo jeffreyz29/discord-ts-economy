@@ -12,7 +12,7 @@
 			"flags": {},
 			"children": [
 				{
-					"id": 736,
+					"id": 799,
 					"name": "ICache",
 					"kind": 16777216,
 					"kindString": "Reference",
@@ -32,7 +32,7 @@
 					"title": "References",
 					"kind": 16777216,
 					"children": [
-						736
+						799
 					]
 				}
 			],
@@ -7648,21 +7648,21 @@
 			]
 		},
 		{
-			"id": 507,
+			"id": 508,
 			"name": "database",
 			"kind": 2,
 			"kindString": "Module",
 			"flags": {},
 			"children": [
 				{
-					"id": 508,
+					"id": 509,
 					"name": "IDataBaseController",
 					"kind": 128,
 					"kindString": "Class",
 					"flags": {},
 					"children": [
 						{
-							"id": 509,
+							"id": 510,
 							"name": "constructor",
 							"kind": 512,
 							"kindString": "Constructor",
@@ -7676,21 +7676,21 @@
 							],
 							"signatures": [
 								{
-									"id": 510,
+									"id": 511,
 									"name": "new IDataBaseController",
 									"kind": 16384,
 									"kindString": "Constructor signature",
 									"flags": {},
 									"type": {
 										"type": "reference",
-										"id": 508,
+										"id": 509,
 										"name": "IDataBaseController"
 									}
 								}
 							]
 						},
 						{
-							"id": 511,
+							"id": 512,
 							"name": "items",
 							"kind": 1024,
 							"kindString": "Property",
@@ -7724,7 +7724,7 @@
 							}
 						},
 						{
-							"id": 512,
+							"id": 513,
 							"name": "model",
 							"kind": 1024,
 							"kindString": "Property",
@@ -7746,18 +7746,8 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"id": 536,
+										"id": 537,
 										"name": "UserEconomyStructure"
-									},
-									{
-										"type": "reflection",
-										"declaration": {
-											"id": 513,
-											"name": "__type",
-											"kind": 65536,
-											"kindString": "Type literal",
-											"flags": {}
-										}
 									},
 									{
 										"type": "reflection",
@@ -7778,13 +7768,23 @@
 											"kindString": "Type literal",
 											"flags": {}
 										}
+									},
+									{
+										"type": "reflection",
+										"declaration": {
+											"id": 516,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {}
+										}
 									}
 								],
 								"name": "Model"
 							}
 						},
 						{
-							"id": 532,
+							"id": 533,
 							"name": "clear",
 							"kind": 2048,
 							"kindString": "Method",
@@ -7800,7 +7800,7 @@
 							],
 							"signatures": [
 								{
-									"id": 533,
+									"id": 534,
 									"name": "clear",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -7817,7 +7817,7 @@
 									},
 									"parameters": [
 										{
-											"id": 534,
+											"id": 535,
 											"name": "id",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -7845,7 +7845,7 @@
 							]
 						},
 						{
-							"id": 528,
+							"id": 529,
 							"name": "delete",
 							"kind": 2048,
 							"kindString": "Method",
@@ -7861,7 +7861,7 @@
 							],
 							"signatures": [
 								{
-									"id": 529,
+									"id": 530,
 									"name": "delete",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -7878,7 +7878,7 @@
 									},
 									"parameters": [
 										{
-											"id": 530,
+											"id": 531,
 											"name": "id",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -7892,7 +7892,7 @@
 											}
 										},
 										{
-											"id": 531,
+											"id": 532,
 											"name": "key",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -7920,7 +7920,7 @@
 							]
 						},
 						{
-							"id": 518,
+							"id": 519,
 							"name": "get",
 							"kind": 2048,
 							"kindString": "Method",
@@ -7936,7 +7936,7 @@
 							],
 							"signatures": [
 								{
-									"id": 519,
+									"id": 520,
 									"name": "get",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -7953,7 +7953,7 @@
 									},
 									"parameters": [
 										{
-											"id": 520,
+											"id": 521,
 											"name": "id",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -7967,7 +7967,7 @@
 											}
 										},
 										{
-											"id": 521,
+											"id": 522,
 											"name": "key",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -7981,7 +7981,7 @@
 											}
 										},
 										{
-											"id": 522,
+											"id": 523,
 											"name": "defaultValue",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -8000,7 +8000,7 @@
 							]
 						},
 						{
-							"id": 516,
+							"id": 517,
 							"name": "init",
 							"kind": 2048,
 							"kindString": "Method",
@@ -8016,7 +8016,7 @@
 							],
 							"signatures": [
 								{
-									"id": 517,
+									"id": 518,
 									"name": "init",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -8039,7 +8039,7 @@
 							]
 						},
 						{
-							"id": 523,
+							"id": 524,
 							"name": "set",
 							"kind": 2048,
 							"kindString": "Method",
@@ -8055,7 +8055,7 @@
 							],
 							"signatures": [
 								{
-									"id": 524,
+									"id": 525,
 									"name": "set",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -8072,7 +8072,7 @@
 									},
 									"parameters": [
 										{
-											"id": 525,
+											"id": 526,
 											"name": "id",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -8086,7 +8086,7 @@
 											}
 										},
 										{
-											"id": 526,
+											"id": 527,
 											"name": "key",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -8100,7 +8100,7 @@
 											}
 										},
 										{
-											"id": 527,
+											"id": 528,
 											"name": "value",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -8133,26 +8133,26 @@
 							"title": "Constructors",
 							"kind": 512,
 							"children": [
-								509
+								510
 							]
 						},
 						{
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								511,
-								512
+								512,
+								513
 							]
 						},
 						{
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								532,
-								528,
-								518,
-								516,
-								523
+								533,
+								529,
+								519,
+								517,
+								524
 							]
 						}
 					],
@@ -8177,7 +8177,7 @@
 					"title": "Classes",
 					"kind": 128,
 					"children": [
-						508
+						509
 					]
 				}
 			],
@@ -8301,7 +8301,7 @@
 							"sources": [
 								{
 									"fileName": "lib/database/controller.ts",
-									"line": 10,
+									"line": 12,
 									"character": 2
 								}
 							],
@@ -8326,7 +8326,7 @@
 												"typeArguments": [
 													{
 														"type": "reference",
-														"id": 536,
+														"id": 537,
 														"name": "UserEconomyStructure"
 													},
 													{
@@ -8371,19 +8371,41 @@
 									},
 									"overwrites": {
 										"type": "reference",
-										"id": 510,
+										"id": 511,
 										"name": "IDataBaseController.constructor"
 									}
 								}
 							],
 							"overwrites": {
 								"type": "reference",
-								"id": 509,
+								"id": 510,
 								"name": "IDataBaseController.constructor"
 							}
 						},
 						{
-							"id": 502,
+							"id": 478,
+							"name": "eco",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPrivate": true
+							},
+							"sources": [
+								{
+									"fileName": "lib/database/controller.ts",
+									"line": 11,
+									"character": 10
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 547,
+								"name": "IEconomy"
+							},
+							"defaultValue": "..."
+						},
+						{
+							"id": 503,
 							"name": "items",
 							"kind": 1024,
 							"kindString": "Property",
@@ -8417,12 +8439,12 @@
 							},
 							"inheritedFrom": {
 								"type": "reference",
-								"id": 511,
+								"id": 512,
 								"name": "IDataBaseController.items"
 							}
 						},
 						{
-							"id": 503,
+							"id": 504,
 							"name": "model",
 							"kind": 1024,
 							"kindString": "Property",
@@ -8444,18 +8466,8 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"id": 536,
+										"id": 537,
 										"name": "UserEconomyStructure"
-									},
-									{
-										"type": "reflection",
-										"declaration": {
-											"id": 504,
-											"name": "__type",
-											"kind": 65536,
-											"kindString": "Type literal",
-											"flags": {}
-										}
 									},
 									{
 										"type": "reflection",
@@ -8476,18 +8488,28 @@
 											"kindString": "Type literal",
 											"flags": {}
 										}
+									},
+									{
+										"type": "reflection",
+										"declaration": {
+											"id": 507,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {}
+										}
 									}
 								],
 								"name": "Model"
 							},
 							"inheritedFrom": {
 								"type": "reference",
-								"id": 512,
+								"id": 513,
 								"name": "IDataBaseController.model"
 							}
 						},
 						{
-							"id": 494,
+							"id": 495,
 							"name": "clear",
 							"kind": 2048,
 							"kindString": "Method",
@@ -8497,13 +8519,13 @@
 							"sources": [
 								{
 									"fileName": "lib/database/controller.ts",
-									"line": 87,
+									"line": 89,
 									"character": 15
 								}
 							],
 							"signatures": [
 								{
-									"id": 495,
+									"id": 496,
 									"name": "clear",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -8514,7 +8536,7 @@
 									},
 									"parameters": [
 										{
-											"id": 496,
+											"id": 497,
 											"name": "id",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -8540,19 +8562,19 @@
 									},
 									"overwrites": {
 										"type": "reference",
-										"id": 533,
+										"id": 534,
 										"name": "IDataBaseController.clear"
 									}
 								}
 							],
 							"overwrites": {
 								"type": "reference",
-								"id": 532,
+								"id": 533,
 								"name": "IDataBaseController.clear"
 							}
 						},
 						{
-							"id": 490,
+							"id": 491,
 							"name": "delete",
 							"kind": 2048,
 							"kindString": "Method",
@@ -8562,13 +8584,13 @@
 							"sources": [
 								{
 									"fileName": "lib/database/controller.ts",
-									"line": 72,
+									"line": 74,
 									"character": 15
 								}
 							],
 							"signatures": [
 								{
-									"id": 491,
+									"id": 492,
 									"name": "delete",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -8579,7 +8601,7 @@
 									},
 									"parameters": [
 										{
-											"id": 492,
+											"id": 493,
 											"name": "id",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -8593,7 +8615,7 @@
 											}
 										},
 										{
-											"id": 493,
+											"id": 494,
 											"name": "key",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -8603,7 +8625,7 @@
 											},
 											"type": {
 												"type": "reference",
-												"id": 544,
+												"id": 545,
 												"name": "key_db_options"
 											}
 										}
@@ -8620,19 +8642,19 @@
 									},
 									"overwrites": {
 										"type": "reference",
-										"id": 529,
+										"id": 530,
 										"name": "IDataBaseController.delete"
 									}
 								}
 							],
 							"overwrites": {
 								"type": "reference",
-								"id": 528,
+								"id": 529,
 								"name": "IDataBaseController.delete"
 							}
 						},
 						{
-							"id": 480,
+							"id": 481,
 							"name": "get",
 							"kind": 2048,
 							"kindString": "Method",
@@ -8642,13 +8664,13 @@
 							"sources": [
 								{
 									"fileName": "lib/database/controller.ts",
-									"line": 38,
+									"line": 40,
 									"character": 9
 								}
 							],
 							"signatures": [
 								{
-									"id": 481,
+									"id": 482,
 									"name": "get",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -8659,7 +8681,7 @@
 									},
 									"parameters": [
 										{
-											"id": 482,
+											"id": 483,
 											"name": "id",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -8673,7 +8695,7 @@
 											}
 										},
 										{
-											"id": 483,
+											"id": 484,
 											"name": "key",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -8683,12 +8705,12 @@
 											},
 											"type": {
 												"type": "reference",
-												"id": 544,
+												"id": 545,
 												"name": "key_db_options"
 											}
 										},
 										{
-											"id": 484,
+											"id": 485,
 											"name": "defaultValue",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -8705,19 +8727,19 @@
 									},
 									"overwrites": {
 										"type": "reference",
-										"id": 519,
+										"id": 520,
 										"name": "IDataBaseController.get"
 									}
 								}
 							],
 							"overwrites": {
 								"type": "reference",
-								"id": 518,
+								"id": 519,
 								"name": "IDataBaseController.get"
 							}
 						},
 						{
-							"id": 497,
+							"id": 498,
 							"name": "getDocument",
 							"kind": 2048,
 							"kindString": "Method",
@@ -8727,13 +8749,13 @@
 							"sources": [
 								{
 									"fileName": "lib/database/controller.ts",
-									"line": 98,
+									"line": 100,
 									"character": 15
 								}
 							],
 							"signatures": [
 								{
-									"id": 498,
+									"id": 499,
 									"name": "getDocument",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -8744,7 +8766,7 @@
 									},
 									"parameters": [
 										{
-											"id": 499,
+											"id": 500,
 											"name": "id",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -8766,20 +8788,20 @@
 												"types": [
 													{
 														"type": "reference",
-														"id": 536,
+														"id": 537,
 														"name": "UserEconomyStructure"
 													},
 													{
 														"type": "reflection",
 														"declaration": {
-															"id": 500,
+															"id": 501,
 															"name": "__type",
 															"kind": 65536,
 															"kindString": "Type literal",
 															"flags": {},
 															"children": [
 																{
-																	"id": 501,
+																	"id": 502,
 																	"name": "_id",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -8787,7 +8809,7 @@
 																	"sources": [
 																		{
 																			"fileName": "lib/database/controller.ts",
-																			"line": 100,
+																			"line": 102,
 																			"character": 6
 																		}
 																	],
@@ -8802,7 +8824,7 @@
 																	"title": "Properties",
 																	"kind": 1024,
 																	"children": [
-																		501
+																		502
 																	]
 																}
 															]
@@ -8817,7 +8839,7 @@
 							]
 						},
 						{
-							"id": 478,
+							"id": 479,
 							"name": "init",
 							"kind": 2048,
 							"kindString": "Method",
@@ -8827,13 +8849,13 @@
 							"sources": [
 								{
 									"fileName": "lib/database/controller.ts",
-									"line": 23,
+									"line": 25,
 									"character": 15
 								}
 							],
 							"signatures": [
 								{
-									"id": 479,
+									"id": 480,
 									"name": "init",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -8853,19 +8875,19 @@
 									},
 									"overwrites": {
 										"type": "reference",
-										"id": 517,
+										"id": 518,
 										"name": "IDataBaseController.init"
 									}
 								}
 							],
 							"overwrites": {
 								"type": "reference",
-								"id": 516,
+								"id": 517,
 								"name": "IDataBaseController.init"
 							}
 						},
 						{
-							"id": 485,
+							"id": 486,
 							"name": "set",
 							"kind": 2048,
 							"kindString": "Method",
@@ -8875,13 +8897,13 @@
 							"sources": [
 								{
 									"fileName": "lib/database/controller.ts",
-									"line": 53,
+									"line": 55,
 									"character": 15
 								}
 							],
 							"signatures": [
 								{
-									"id": 486,
+									"id": 487,
 									"name": "set",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -8892,7 +8914,7 @@
 									},
 									"parameters": [
 										{
-											"id": 487,
+											"id": 488,
 											"name": "id",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -8906,7 +8928,7 @@
 											}
 										},
 										{
-											"id": 488,
+											"id": 489,
 											"name": "key",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -8916,12 +8938,12 @@
 											},
 											"type": {
 												"type": "reference",
-												"id": 544,
+												"id": 545,
 												"name": "key_db_options"
 											}
 										},
 										{
-											"id": 489,
+											"id": 490,
 											"name": "value",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -8947,14 +8969,14 @@
 									},
 									"overwrites": {
 										"type": "reference",
-										"id": 524,
+										"id": 525,
 										"name": "IDataBaseController.set"
 									}
 								}
 							],
 							"overwrites": {
 								"type": "reference",
-								"id": 523,
+								"id": 524,
 								"name": "IDataBaseController.set"
 							}
 						}
@@ -8971,34 +8993,35 @@
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								502,
-								503
+								478,
+								503,
+								504
 							]
 						},
 						{
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								494,
-								490,
-								480,
-								497,
-								478,
-								485
+								495,
+								491,
+								481,
+								498,
+								479,
+								486
 							]
 						}
 					],
 					"sources": [
 						{
 							"fileName": "lib/database/controller.ts",
-							"line": 9,
+							"line": 10,
 							"character": 13
 						}
 					],
 					"extendedTypes": [
 						{
 							"type": "reference",
-							"id": 508,
+							"id": 509,
 							"name": "IDataBaseController"
 						}
 					]
@@ -9022,14 +9045,14 @@
 			]
 		},
 		{
-			"id": 535,
+			"id": 536,
 			"name": "database/schema",
 			"kind": 2,
 			"kindString": "Module",
 			"flags": {},
 			"children": [
 				{
-					"id": 536,
+					"id": 537,
 					"name": "UserEconomyStructure",
 					"kind": 256,
 					"kindString": "Interface",
@@ -9039,7 +9062,7 @@
 					},
 					"children": [
 						{
-							"id": 537,
+							"id": 538,
 							"name": "id",
 							"kind": 1024,
 							"kindString": "Property",
@@ -9065,7 +9088,7 @@
 							}
 						},
 						{
-							"id": 538,
+							"id": 539,
 							"name": "settings",
 							"kind": 1024,
 							"kindString": "Property",
@@ -9091,8 +9114,8 @@
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								537,
-								538
+								538,
+								539
 							]
 						}
 					],
@@ -9111,7 +9134,7 @@
 					]
 				},
 				{
-					"id": 539,
+					"id": 540,
 					"name": "UserDataSchema",
 					"kind": 32,
 					"kindString": "Variable",
@@ -9128,18 +9151,8 @@
 						"typeArguments": [
 							{
 								"type": "reference",
-								"id": 536,
+								"id": 537,
 								"name": "UserEconomyStructure"
-							},
-							{
-								"type": "reflection",
-								"declaration": {
-									"id": 540,
-									"name": "__type",
-									"kind": 65536,
-									"kindString": "Type literal",
-									"flags": {}
-								}
 							},
 							{
 								"type": "reflection",
@@ -9160,6 +9173,16 @@
 									"kindString": "Type literal",
 									"flags": {}
 								}
+							},
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 543,
+									"name": "__type",
+									"kind": 65536,
+									"kindString": "Type literal",
+									"flags": {}
+								}
 							}
 						],
 						"name": "Model"
@@ -9172,14 +9195,14 @@
 					"title": "Interfaces",
 					"kind": 256,
 					"children": [
-						536
+						537
 					]
 				},
 				{
 					"title": "Variables",
 					"kind": 32,
 					"children": [
-						539
+						540
 					]
 				}
 			],
@@ -9192,14 +9215,14 @@
 			]
 		},
 		{
-			"id": 543,
+			"id": 544,
 			"name": "database/types",
 			"kind": 2,
 			"kindString": "Module",
 			"flags": {},
 			"children": [
 				{
-					"id": 544,
+					"id": 545,
 					"name": "key_db_options",
 					"kind": 4194304,
 					"kindString": "Type alias",
@@ -9247,7 +9270,7 @@
 					"title": "Type aliases",
 					"kind": 4194304,
 					"children": [
-						544
+						545
 					]
 				}
 			],
@@ -9260,14 +9283,14 @@
 			]
 		},
 		{
-			"id": 545,
+			"id": 546,
 			"name": "economy",
 			"kind": 2,
 			"kindString": "Module",
 			"flags": {},
 			"children": [
 				{
-					"id": 546,
+					"id": 547,
 					"name": "IEconomy",
 					"kind": 128,
 					"kindString": "Class",
@@ -9277,7 +9300,7 @@
 					},
 					"children": [
 						{
-							"id": 547,
+							"id": 548,
 							"name": "constructor",
 							"kind": 512,
 							"kindString": "Constructor",
@@ -9287,13 +9310,13 @@
 							"sources": [
 								{
 									"fileName": "lib/economy.ts",
-									"line": 24,
+									"line": 27,
 									"character": 2
 								}
 							],
 							"signatures": [
 								{
-									"id": 548,
+									"id": 549,
 									"name": "new IEconomy",
 									"kind": 16384,
 									"kindString": "Constructor signature",
@@ -9303,31 +9326,58 @@
 									},
 									"parameters": [
 										{
-											"id": 549,
+											"id": 550,
 											"name": "configOptions",
 											"kind": 32768,
 											"kindString": "Parameter",
-											"flags": {},
+											"flags": {
+												"isOptional": true
+											},
 											"comment": {
 												"shortText": "The options to pass to the constructor. These are required.\n"
 											},
 											"type": {
 												"type": "reference",
-												"id": 709,
+												"id": 735,
 												"name": "EconomyConfigOptions"
 											}
 										}
 									],
 									"type": {
 										"type": "reference",
-										"id": 546,
+										"id": 547,
 										"name": "IEconomy"
 									}
 								}
 							]
 						},
 						{
-							"id": 550,
+							"id": 555,
+							"name": "RewardManager",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPublic": true
+							},
+							"comment": {
+								"shortText": "controls common reward methods"
+							},
+							"sources": [
+								{
+									"fileName": "lib/economy.ts",
+									"line": 22,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 611,
+								"name": "RewardManager"
+							},
+							"defaultValue": "..."
+						},
+						{
+							"id": 551,
 							"name": "config",
 							"kind": 1024,
 							"kindString": "Property",
@@ -9340,18 +9390,18 @@
 							"sources": [
 								{
 									"fileName": "lib/economy.ts",
-									"line": 13,
+									"line": 14,
 									"character": 9
 								}
 							],
 							"type": {
 								"type": "reference",
-								"id": 709,
+								"id": 735,
 								"name": "EconomyConfigOptions"
 							}
 						},
 						{
-							"id": 553,
+							"id": 554,
 							"name": "currencyHandler",
 							"kind": 1024,
 							"kindString": "Property",
@@ -9364,24 +9414,24 @@
 							"sources": [
 								{
 									"fileName": "lib/economy.ts",
-									"line": 19,
+									"line": 20,
 									"character": 9
 								}
 							],
 							"type": {
 								"type": "reference",
-								"id": 602,
+								"id": 641,
 								"name": "CurrencyHandler"
 							},
 							"defaultValue": "..."
 						},
 						{
-							"id": 551,
+							"id": 552,
 							"name": "db",
 							"kind": 1024,
 							"kindString": "Property",
 							"flags": {
-								"isPublic": true
+								"isPrivate": true
 							},
 							"comment": {
 								"shortText": "Allows the raw db function to be accessed throughout the Economy for more user customization."
@@ -9389,8 +9439,8 @@
 							"sources": [
 								{
 									"fileName": "lib/economy.ts",
-									"line": 15,
-									"character": 9
+									"line": 16,
+									"character": 10
 								}
 							],
 							"type": {
@@ -9401,7 +9451,7 @@
 							"defaultValue": "..."
 						},
 						{
-							"id": 552,
+							"id": 553,
 							"name": "fetchManager",
 							"kind": 1024,
 							"kindString": "Property",
@@ -9414,19 +9464,19 @@
 							"sources": [
 								{
 									"fileName": "lib/economy.ts",
-									"line": 17,
+									"line": 18,
 									"character": 9
 								}
 							],
 							"type": {
 								"type": "reference",
-								"id": 559,
+								"id": 563,
 								"name": "fetchManager"
 							},
 							"defaultValue": "..."
 						},
 						{
-							"id": 554,
+							"id": 556,
 							"name": "connect",
 							"kind": 2048,
 							"kindString": "Method",
@@ -9436,13 +9486,13 @@
 							"sources": [
 								{
 									"fileName": "lib/economy.ts",
-									"line": 53,
+									"line": 54,
 									"character": 15
 								}
 							],
 							"signatures": [
 								{
-									"id": 555,
+									"id": 557,
 									"name": "connect",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -9458,7 +9508,7 @@
 									},
 									"parameters": [
 										{
-											"id": 556,
+											"id": 558,
 											"name": "url",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -9484,6 +9534,38 @@
 									}
 								}
 							]
+						},
+						{
+							"id": 559,
+							"name": "init",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true
+							},
+							"sources": [
+								{
+									"fileName": "lib/economy.ts",
+									"line": 61,
+									"character": 9
+								}
+							],
+							"signatures": [
+								{
+									"id": 560,
+									"name": "init",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Loads all the db documents"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
 						}
 					],
 					"groups": [
@@ -9491,31 +9573,33 @@
 							"title": "Constructors",
 							"kind": 512,
 							"children": [
-								547
+								548
 							]
 						},
 						{
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								550,
-								553,
+								555,
 								551,
-								552
+								554,
+								552,
+								553
 							]
 						},
 						{
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								554
+								556,
+								559
 							]
 						}
 					],
 					"sources": [
 						{
 							"fileName": "lib/economy.ts",
-							"line": 11,
+							"line": 12,
 							"character": 13
 						}
 					]
@@ -9526,7 +9610,7 @@
 					"title": "Classes",
 					"kind": 128,
 					"children": [
-						546
+						547
 					]
 				}
 			],
@@ -9539,14 +9623,14 @@
 			]
 		},
 		{
-			"id": 557,
+			"id": 561,
 			"name": "index",
 			"kind": 2,
 			"kindString": "Module",
 			"flags": {},
 			"children": [
 				{
-					"id": 738,
+					"id": 801,
 					"name": "DataBaseController",
 					"kind": 16777216,
 					"kindString": "Reference",
@@ -9561,7 +9645,7 @@
 					"target": 471
 				},
 				{
-					"id": 737,
+					"id": 800,
 					"name": "Economy",
 					"kind": 16777216,
 					"kindString": "Reference",
@@ -9573,7 +9657,7 @@
 							"character": 9
 						}
 					],
-					"target": 546
+					"target": 547
 				}
 			],
 			"groups": [
@@ -9581,8 +9665,8 @@
 					"title": "References",
 					"kind": 16777216,
 					"children": [
-						738,
-						737
+						801,
+						800
 					]
 				}
 			],
@@ -9595,14 +9679,14 @@
 			]
 		},
 		{
-			"id": 558,
+			"id": 562,
 			"name": "managers/fetch",
 			"kind": 2,
 			"kindString": "Module",
 			"flags": {},
 			"children": [
 				{
-					"id": 559,
+					"id": 563,
 					"name": "fetchManager",
 					"kind": 128,
 					"kindString": "Class",
@@ -9612,39 +9696,76 @@
 					},
 					"children": [
 						{
-							"id": 560,
+							"id": 564,
 							"name": "constructor",
 							"kind": 512,
 							"kindString": "Constructor",
 							"flags": {},
 							"signatures": [
 								{
-									"id": 561,
+									"id": 565,
 									"name": "new fetchManager",
 									"kind": 16384,
 									"kindString": "Constructor signature",
 									"flags": {},
 									"type": {
 										"type": "reference",
-										"id": 559,
+										"id": 563,
 										"name": "fetchManager"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 792,
+										"name": "ManagerBase.constructor"
 									}
 								}
-							]
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 791,
+								"name": "ManagerBase.constructor"
+							}
 						},
 						{
-							"id": 562,
+							"id": 607,
+							"name": "_options",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPublic": true
+							},
+							"sources": [
+								{
+									"fileName": "lib/util/manager.ts",
+									"line": 14,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 547,
+								"name": "IEconomy"
+							},
+							"defaultValue": "...",
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 796,
+								"name": "ManagerBase._options"
+							}
+						},
+						{
+							"id": 606,
 							"name": "db",
 							"kind": 1024,
 							"kindString": "Property",
 							"flags": {
-								"isPrivate": true
+								"isPublic": true
 							},
 							"sources": [
 								{
-									"fileName": "lib/managers/fetch.ts",
-									"line": 14,
-									"character": 10
+									"fileName": "lib/util/manager.ts",
+									"line": 13,
+									"character": 9
 								}
 							],
 							"type": {
@@ -9652,10 +9773,68 @@
 								"id": 471,
 								"name": "DataBaseController"
 							},
-							"defaultValue": "..."
+							"defaultValue": "...",
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 795,
+								"name": "ManagerBase.db"
+							}
 						},
 						{
-							"id": 566,
+							"id": 605,
+							"name": "fetchManager",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPublic": true
+							},
+							"sources": [
+								{
+									"fileName": "lib/util/manager.ts",
+									"line": 12,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 563,
+								"name": "fetchManager"
+							},
+							"defaultValue": "...",
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 794,
+								"name": "ManagerBase.fetchManager"
+							}
+						},
+						{
+							"id": 604,
+							"name": "utilities",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPublic": true
+							},
+							"sources": [
+								{
+									"fileName": "lib/util/manager.ts",
+									"line": 11,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "UtilityBase"
+							},
+							"defaultValue": "...",
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 793,
+								"name": "ManagerBase.utilities"
+							}
+						},
+						{
+							"id": 569,
 							"name": "fetchBalance",
 							"kind": 2048,
 							"kindString": "Method",
@@ -9665,13 +9844,13 @@
 							"sources": [
 								{
 									"fileName": "lib/managers/fetch.ts",
-									"line": 39,
+									"line": 37,
 									"character": 15
 								}
 							],
 							"signatures": [
 								{
-									"id": 567,
+									"id": 570,
 									"name": "fetchBalance",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -9682,7 +9861,7 @@
 									},
 									"parameters": [
 										{
-											"id": 568,
+											"id": 571,
 											"name": "targetUser",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -9696,7 +9875,7 @@
 											}
 										},
 										{
-											"id": 569,
+											"id": 572,
 											"name": "type",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -9708,7 +9887,7 @@
 											},
 											"type": {
 												"type": "reference",
-												"id": 734,
+												"id": 767,
 												"name": "EconomyMethodOption"
 											}
 										}
@@ -9726,14 +9905,14 @@
 													{
 														"type": "reflection",
 														"declaration": {
-															"id": 570,
+															"id": 573,
 															"name": "__type",
 															"kind": 65536,
 															"kindString": "Type literal",
 															"flags": {},
 															"children": [
 																{
-																	"id": 572,
+																	"id": 575,
 																	"name": "bank",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -9745,7 +9924,7 @@
 																	"defaultValue": "f.balance.bank"
 																},
 																{
-																	"id": 571,
+																	"id": 574,
 																	"name": "wallet",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -9762,8 +9941,8 @@
 																	"title": "Properties",
 																	"kind": 1024,
 																	"children": [
-																		572,
-																		571
+																		575,
+																		574
 																	]
 																}
 															]
@@ -9772,14 +9951,14 @@
 													{
 														"type": "reflection",
 														"declaration": {
-															"id": 573,
+															"id": 576,
 															"name": "__type",
 															"kind": 65536,
 															"kindString": "Type literal",
 															"flags": {},
 															"children": [
 																{
-																	"id": 574,
+																	"id": 577,
 																	"name": "bank",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -9791,7 +9970,7 @@
 																	"defaultValue": "f.balance.bank"
 																},
 																{
-																	"id": 575,
+																	"id": 578,
 																	"name": "wallet",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -9808,8 +9987,8 @@
 																	"title": "Properties",
 																	"kind": 1024,
 																	"children": [
-																		574,
-																		575
+																		577,
+																		578
 																	]
 																}
 															]
@@ -9824,7 +10003,7 @@
 							]
 						},
 						{
-							"id": 576,
+							"id": 579,
 							"name": "fetchCoolDowns",
 							"kind": 2048,
 							"kindString": "Method",
@@ -9834,20 +10013,20 @@
 							"sources": [
 								{
 									"fileName": "lib/managers/fetch.ts",
-									"line": 57,
+									"line": 55,
 									"character": 15
 								}
 							],
 							"signatures": [
 								{
-									"id": 577,
+									"id": 580,
 									"name": "fetchCoolDowns",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 578,
+											"id": 581,
 											"name": "targetUser",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -9858,14 +10037,14 @@
 											}
 										},
 										{
-											"id": 579,
+											"id": 582,
 											"name": "coolDownOption",
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
 											"type": {
 												"type": "reference",
-												"id": 735,
+												"id": 768,
 												"name": "EconomyCoolDownOption"
 											}
 										}
@@ -9879,14 +10058,14 @@
 													{
 														"type": "reflection",
 														"declaration": {
-															"id": 580,
+															"id": 583,
 															"name": "__type",
 															"kind": 65536,
 															"kindString": "Type literal",
 															"flags": {},
 															"children": [
 																{
-																	"id": 582,
+																	"id": 585,
 																	"name": "dailyStreak",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -9896,119 +10075,21 @@
 																		"name": "number"
 																	},
 																	"defaultValue": "u.daily.dailyStreak"
-																},
-																{
-																	"id": 581,
-																	"name": "dailyTimeout",
-																	"kind": 1024,
-																	"kindString": "Property",
-																	"flags": {},
-																	"type": {
-																		"type": "intrinsic",
-																		"name": "number"
-																	},
-																	"defaultValue": "u.daily.dailyTimeout"
-																},
-																{
-																	"id": 586,
-																	"name": "monthlyStreak",
-																	"kind": 1024,
-																	"kindString": "Property",
-																	"flags": {},
-																	"type": {
-																		"type": "intrinsic",
-																		"name": "undefined"
-																	},
-																	"defaultValue": "u.monthly.monthlyStreak"
-																},
-																{
-																	"id": 585,
-																	"name": "monthlyTimeout",
-																	"kind": 1024,
-																	"kindString": "Property",
-																	"flags": {},
-																	"type": {
-																		"type": "intrinsic",
-																		"name": "undefined"
-																	},
-																	"defaultValue": "u.monthly.monthlyTimeout"
 																},
 																{
 																	"id": 584,
-																	"name": "weeklyStreak",
-																	"kind": 1024,
-																	"kindString": "Property",
-																	"flags": {},
-																	"type": {
-																		"type": "intrinsic",
-																		"name": "undefined"
-																	},
-																	"defaultValue": "u.weekly.weeklyStreak"
-																},
-																{
-																	"id": 583,
-																	"name": "weeklyTimeout",
-																	"kind": 1024,
-																	"kindString": "Property",
-																	"flags": {},
-																	"type": {
-																		"type": "intrinsic",
-																		"name": "undefined"
-																	},
-																	"defaultValue": "u.weekly.weeklyTimeout"
-																}
-															],
-															"groups": [
-																{
-																	"title": "Properties",
-																	"kind": 1024,
-																	"children": [
-																		582,
-																		581,
-																		586,
-																		585,
-																		584,
-																		583
-																	]
-																}
-															]
-														}
-													},
-													{
-														"type": "reflection",
-														"declaration": {
-															"id": 587,
-															"name": "__type",
-															"kind": 65536,
-															"kindString": "Type literal",
-															"flags": {},
-															"children": [
-																{
-																	"id": 591,
-																	"name": "dailyStreak",
-																	"kind": 1024,
-																	"kindString": "Property",
-																	"flags": {},
-																	"type": {
-																		"type": "intrinsic",
-																		"name": "undefined"
-																	},
-																	"defaultValue": "u.daily.dailyStreak"
-																},
-																{
-																	"id": 590,
 																	"name": "dailyTimeout",
 																	"kind": 1024,
 																	"kindString": "Property",
 																	"flags": {},
 																	"type": {
 																		"type": "intrinsic",
-																		"name": "undefined"
+																		"name": "number"
 																	},
 																	"defaultValue": "u.daily.dailyTimeout"
 																},
 																{
-																	"id": 593,
+																	"id": 589,
 																	"name": "monthlyStreak",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -10020,7 +10101,7 @@
 																	"defaultValue": "u.monthly.monthlyStreak"
 																},
 																{
-																	"id": 592,
+																	"id": 588,
 																	"name": "monthlyTimeout",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -10032,26 +10113,26 @@
 																	"defaultValue": "u.monthly.monthlyTimeout"
 																},
 																{
-																	"id": 589,
+																	"id": 587,
 																	"name": "weeklyStreak",
 																	"kind": 1024,
 																	"kindString": "Property",
 																	"flags": {},
 																	"type": {
 																		"type": "intrinsic",
-																		"name": "number"
+																		"name": "undefined"
 																	},
 																	"defaultValue": "u.weekly.weeklyStreak"
 																},
 																{
-																	"id": 588,
+																	"id": 586,
 																	"name": "weeklyTimeout",
 																	"kind": 1024,
 																	"kindString": "Property",
 																	"flags": {},
 																	"type": {
 																		"type": "intrinsic",
-																		"name": "number"
+																		"name": "undefined"
 																	},
 																	"defaultValue": "u.weekly.weeklyTimeout"
 																}
@@ -10061,12 +10142,12 @@
 																	"title": "Properties",
 																	"kind": 1024,
 																	"children": [
-																		591,
-																		590,
-																		593,
-																		592,
+																		585,
+																		584,
 																		589,
-																		588
+																		588,
+																		587,
+																		586
 																	]
 																}
 															]
@@ -10075,14 +10156,14 @@
 													{
 														"type": "reflection",
 														"declaration": {
-															"id": 594,
+															"id": 590,
 															"name": "__type",
 															"kind": 65536,
 															"kindString": "Type literal",
 															"flags": {},
 															"children": [
 																{
-																	"id": 598,
+																	"id": 594,
 																	"name": "dailyStreak",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -10094,7 +10175,7 @@
 																	"defaultValue": "u.daily.dailyStreak"
 																},
 																{
-																	"id": 597,
+																	"id": 593,
 																	"name": "dailyTimeout",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -10113,7 +10194,7 @@
 																	"flags": {},
 																	"type": {
 																		"type": "intrinsic",
-																		"name": "number"
+																		"name": "undefined"
 																	},
 																	"defaultValue": "u.monthly.monthlyStreak"
 																},
@@ -10125,12 +10206,110 @@
 																	"flags": {},
 																	"type": {
 																		"type": "intrinsic",
+																		"name": "undefined"
+																	},
+																	"defaultValue": "u.monthly.monthlyTimeout"
+																},
+																{
+																	"id": 592,
+																	"name": "weeklyStreak",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "number"
+																	},
+																	"defaultValue": "u.weekly.weeklyStreak"
+																},
+																{
+																	"id": 591,
+																	"name": "weeklyTimeout",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "number"
+																	},
+																	"defaultValue": "u.weekly.weeklyTimeout"
+																}
+															],
+															"groups": [
+																{
+																	"title": "Properties",
+																	"kind": 1024,
+																	"children": [
+																		594,
+																		593,
+																		596,
+																		595,
+																		592,
+																		591
+																	]
+																}
+															]
+														}
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 597,
+															"name": "__type",
+															"kind": 65536,
+															"kindString": "Type literal",
+															"flags": {},
+															"children": [
+																{
+																	"id": 601,
+																	"name": "dailyStreak",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "undefined"
+																	},
+																	"defaultValue": "u.daily.dailyStreak"
+																},
+																{
+																	"id": 600,
+																	"name": "dailyTimeout",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "undefined"
+																	},
+																	"defaultValue": "u.daily.dailyTimeout"
+																},
+																{
+																	"id": 599,
+																	"name": "monthlyStreak",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "number"
+																	},
+																	"defaultValue": "u.monthly.monthlyStreak"
+																},
+																{
+																	"id": 598,
+																	"name": "monthlyTimeout",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
 																		"name": "number"
 																	},
 																	"defaultValue": "u.monthly.monthlyTimeout"
 																},
 																{
-																	"id": 600,
+																	"id": 603,
 																	"name": "weeklyStreak",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -10142,7 +10321,7 @@
 																	"defaultValue": "u.weekly.weeklyStreak"
 																},
 																{
-																	"id": 599,
+																	"id": 602,
 																	"name": "weeklyTimeout",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -10159,12 +10338,12 @@
 																	"title": "Properties",
 																	"kind": 1024,
 																	"children": [
-																		598,
-																		597,
-																		596,
-																		595,
+																		601,
 																		600,
-																		599
+																		599,
+																		598,
+																		603,
+																		602
 																	]
 																}
 															]
@@ -10179,7 +10358,7 @@
 							]
 						},
 						{
-							"id": 563,
+							"id": 566,
 							"name": "fetchUser",
 							"kind": 2048,
 							"kindString": "Method",
@@ -10189,13 +10368,13 @@
 							"sources": [
 								{
 									"fileName": "lib/managers/fetch.ts",
-									"line": 22,
+									"line": 20,
 									"character": 15
 								}
 							],
 							"signatures": [
 								{
-									"id": 564,
+									"id": 567,
 									"name": "fetchUser",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -10206,7 +10385,7 @@
 									},
 									"parameters": [
 										{
-											"id": 565,
+											"id": 568,
 											"name": "targetUser",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -10223,7 +10402,7 @@
 										"typeArguments": [
 											{
 												"type": "reference",
-												"id": 715,
+												"id": 744,
 												"name": "UserEconomyTypes"
 											}
 										],
@@ -10231,6 +10410,50 @@
 									}
 								}
 							]
+						},
+						{
+							"id": 608,
+							"name": "options",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true
+							},
+							"sources": [
+								{
+									"fileName": "lib/util/manager.ts",
+									"line": 19,
+									"character": 9
+								}
+							],
+							"signatures": [
+								{
+									"id": 609,
+									"name": "options",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "simple util to grab data from our Economy Constructor",
+										"returns": "EconomyConfigOptions\n"
+									},
+									"type": {
+										"type": "reference",
+										"id": 735,
+										"name": "EconomyConfigOptions"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 798,
+										"name": "ManagerBase.options"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 797,
+								"name": "ManagerBase.options"
+							}
 						}
 					],
 					"groups": [
@@ -10238,23 +10461,27 @@
 							"title": "Constructors",
 							"kind": 512,
 							"children": [
-								560
+								564
 							]
 						},
 						{
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								562
+								607,
+								606,
+								605,
+								604
 							]
 						},
 						{
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
+								569,
+								579,
 								566,
-								576,
-								563
+								608
 							]
 						}
 					],
@@ -10264,6 +10491,13 @@
 							"line": 13,
 							"character": 13
 						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"id": 790,
+							"name": "ManagerBase"
+						}
 					]
 				}
 			],
@@ -10272,7 +10506,7 @@
 					"title": "Classes",
 					"kind": 128,
 					"children": [
-						559
+						563
 					]
 				}
 			],
@@ -10285,56 +10519,94 @@
 			]
 		},
 		{
-			"id": 601,
-			"name": "structures/currency",
+			"id": 610,
+			"name": "managers/reward",
 			"kind": 2,
 			"kindString": "Module",
 			"flags": {},
 			"children": [
 				{
-					"id": 602,
-					"name": "CurrencyHandler",
+					"id": 611,
+					"name": "RewardManager",
 					"kind": 128,
 					"kindString": "Class",
 					"flags": {},
 					"comment": {
-						"shortText": "The class to handler user balance methods."
+						"shortText": "The reward manager is a class used to control economy rewards.",
+						"text": "All these functions are responsible for connecting our data to mongodb and user states.\n"
 					},
 					"children": [
 						{
-							"id": 603,
+							"id": 612,
 							"name": "constructor",
 							"kind": 512,
 							"kindString": "Constructor",
 							"flags": {},
 							"signatures": [
 								{
-									"id": 604,
-									"name": "new CurrencyHandler",
+									"id": 613,
+									"name": "new RewardManager",
 									"kind": 16384,
 									"kindString": "Constructor signature",
 									"flags": {},
 									"type": {
 										"type": "reference",
-										"id": 602,
-										"name": "CurrencyHandler"
+										"id": 611,
+										"name": "RewardManager"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 792,
+										"name": "ManagerBase.constructor"
 									}
 								}
-							]
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 791,
+								"name": "ManagerBase.constructor"
+							}
 						},
 						{
-							"id": 606,
+							"id": 627,
+							"name": "_options",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPublic": true
+							},
+							"sources": [
+								{
+									"fileName": "lib/util/manager.ts",
+									"line": 14,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 547,
+								"name": "IEconomy"
+							},
+							"defaultValue": "...",
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 796,
+								"name": "ManagerBase._options"
+							}
+						},
+						{
+							"id": 626,
 							"name": "db",
 							"kind": 1024,
 							"kindString": "Property",
 							"flags": {
-								"isPrivate": true
+								"isPublic": true
 							},
 							"sources": [
 								{
-									"fileName": "lib/structures/currency.ts",
-									"line": 11,
-									"character": 10
+									"fileName": "lib/util/manager.ts",
+									"line": 13,
+									"character": 9
 								}
 							],
 							"type": {
@@ -10342,293 +10614,68 @@
 								"id": 471,
 								"name": "DataBaseController"
 							},
-							"defaultValue": "..."
+							"defaultValue": "...",
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 795,
+								"name": "ManagerBase.db"
+							}
 						},
 						{
-							"id": 605,
+							"id": 625,
 							"name": "fetchManager",
 							"kind": 1024,
 							"kindString": "Property",
-							"flags": {
-								"isPrivate": true
-							},
-							"sources": [
-								{
-									"fileName": "lib/structures/currency.ts",
-									"line": 10,
-									"character": 10
-								}
-							],
-							"type": {
-								"type": "reference",
-								"id": 559,
-								"name": "fetchManager"
-							},
-							"defaultValue": "..."
-						},
-						{
-							"id": 639,
-							"name": "add",
-							"kind": 2048,
-							"kindString": "Method",
 							"flags": {
 								"isPublic": true
 							},
 							"sources": [
 								{
-									"fileName": "lib/structures/currency.ts",
-									"line": 107,
-									"character": 15
+									"fileName": "lib/util/manager.ts",
+									"line": 12,
+									"character": 9
 								}
 							],
-							"signatures": [
-								{
-									"id": 640,
-									"name": "add",
-									"kind": 4096,
-									"kindString": "Call signature",
-									"flags": {},
-									"comment": {
-										"shortText": "Add's value to a users wallet or bank.\nWhile similar to the set function, it will not overwrite the old storage",
-										"returns": "amount\n"
-									},
-									"parameters": [
-										{
-											"id": 641,
-											"name": "amount",
-											"kind": 32768,
-											"kindString": "Parameter",
-											"flags": {},
-											"comment": {
-												"shortText": "of currency you wish to give the user"
-											},
-											"type": {
-												"type": "intrinsic",
-												"name": "number"
-											}
-										},
-										{
-											"id": 642,
-											"name": "targetUser",
-											"kind": 32768,
-											"kindString": "Parameter",
-											"flags": {},
-											"comment": {
-												"shortText": "the discord user to target"
-											},
-											"type": {
-												"type": "intrinsic",
-												"name": "string"
-											}
-										},
-										{
-											"id": 643,
-											"name": "type",
-											"kind": 32768,
-											"kindString": "Parameter",
-											"flags": {},
-											"comment": {
-												"shortText": "wallet or bank option"
-											},
-											"type": {
-												"type": "reference",
-												"id": 734,
-												"name": "EconomyMethodOption"
-											}
-										}
-									],
-									"type": {
-										"type": "reference",
-										"typeArguments": [
-											{
-												"type": "union",
-												"types": [
-													{
-														"type": "literal",
-														"value": "Failed to add the new balance."
-													},
-													{
-														"type": "reflection",
-														"declaration": {
-															"id": 644,
-															"name": "__type",
-															"kind": 65536,
-															"kindString": "Type literal",
-															"flags": {},
-															"children": [
-																{
-																	"id": 647,
-																	"name": "bank",
-																	"kind": 1024,
-																	"kindString": "Property",
-																	"flags": {},
-																	"type": {
-																		"type": "intrinsic",
-																		"name": "undefined"
-																	},
-																	"defaultValue": "f.balance.bank"
-																},
-																{
-																	"id": 645,
-																	"name": "earned",
-																	"kind": 1024,
-																	"kindString": "Property",
-																	"flags": {},
-																	"type": {
-																		"type": "intrinsic",
-																		"name": "number"
-																	},
-																	"defaultValue": "amount"
-																},
-																{
-																	"id": 646,
-																	"name": "wallet",
-																	"kind": 1024,
-																	"kindString": "Property",
-																	"flags": {},
-																	"type": {
-																		"type": "intrinsic",
-																		"name": "number"
-																	},
-																	"defaultValue": "..."
-																}
-															],
-															"groups": [
-																{
-																	"title": "Properties",
-																	"kind": 1024,
-																	"children": [
-																		647,
-																		645,
-																		646
-																	]
-																}
-															]
-														}
-													},
-													{
-														"type": "reflection",
-														"declaration": {
-															"id": 648,
-															"name": "__type",
-															"kind": 65536,
-															"kindString": "Type literal",
-															"flags": {},
-															"children": [
-																{
-																	"id": 650,
-																	"name": "bank",
-																	"kind": 1024,
-																	"kindString": "Property",
-																	"flags": {},
-																	"type": {
-																		"type": "intrinsic",
-																		"name": "number"
-																	},
-																	"defaultValue": "..."
-																},
-																{
-																	"id": 649,
-																	"name": "earned",
-																	"kind": 1024,
-																	"kindString": "Property",
-																	"flags": {},
-																	"type": {
-																		"type": "intrinsic",
-																		"name": "number"
-																	},
-																	"defaultValue": "amount"
-																},
-																{
-																	"id": 651,
-																	"name": "wallet",
-																	"kind": 1024,
-																	"kindString": "Property",
-																	"flags": {},
-																	"type": {
-																		"type": "intrinsic",
-																		"name": "undefined"
-																	},
-																	"defaultValue": "f.balance.wallet"
-																}
-															],
-															"groups": [
-																{
-																	"title": "Properties",
-																	"kind": 1024,
-																	"children": [
-																		650,
-																		649,
-																		651
-																	]
-																}
-															]
-														}
-													}
-												]
-											}
-										],
-										"name": "Promise"
-									}
-								}
-							]
+							"type": {
+								"type": "reference",
+								"id": 563,
+								"name": "fetchManager"
+							},
+							"defaultValue": "...",
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 794,
+								"name": "ManagerBase.fetchManager"
+							}
 						},
 						{
-							"id": 607,
-							"name": "createUser",
-							"kind": 2048,
-							"kindString": "Method",
+							"id": 624,
+							"name": "utilities",
+							"kind": 1024,
+							"kindString": "Property",
 							"flags": {
-								"isPrivate": true
+								"isPublic": true
 							},
 							"sources": [
 								{
-									"fileName": "lib/structures/currency.ts",
-									"line": 18,
-									"character": 16
+									"fileName": "lib/util/manager.ts",
+									"line": 11,
+									"character": 9
 								}
 							],
-							"signatures": [
-								{
-									"id": 608,
-									"name": "createUser",
-									"kind": 4096,
-									"kindString": "Call signature",
-									"flags": {},
-									"comment": {
-										"shortText": "Creates the base user data for our economy."
-									},
-									"parameters": [
-										{
-											"id": 609,
-											"name": "targetUser",
-											"kind": 32768,
-											"kindString": "Parameter",
-											"flags": {},
-											"comment": {
-												"shortText": "\n"
-											},
-											"type": {
-												"type": "intrinsic",
-												"name": "string"
-											}
-										}
-									],
-									"type": {
-										"type": "reference",
-										"typeArguments": [
-											{
-												"type": "intrinsic",
-												"name": "string"
-											}
-										],
-										"name": "Promise"
-									}
-								}
-							]
+							"type": {
+								"type": "reference",
+								"name": "UtilityBase"
+							},
+							"defaultValue": "...",
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 793,
+								"name": "ManagerBase.utilities"
+							}
 						},
 						{
-							"id": 686,
+							"id": 614,
 							"name": "daily",
 							"kind": 2048,
 							"kindString": "Method",
@@ -10637,21 +10684,21 @@
 							},
 							"sources": [
 								{
-									"fileName": "lib/structures/currency.ts",
-									"line": 290,
+									"fileName": "lib/managers/reward.ts",
+									"line": 10,
 									"character": 15
 								}
 							],
 							"signatures": [
 								{
-									"id": 687,
+									"id": 615,
 									"name": "daily",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 688,
+											"id": 616,
 											"name": "targetUser",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -10662,11 +10709,13 @@
 											}
 										},
 										{
-											"id": 689,
+											"id": 617,
 											"name": "amount",
 											"kind": 32768,
 											"kindString": "Parameter",
-											"flags": {},
+											"flags": {
+												"isOptional": true
+											},
 											"type": {
 												"type": "intrinsic",
 												"name": "number"
@@ -10686,14 +10735,14 @@
 													{
 														"type": "reflection",
 														"declaration": {
-															"id": 690,
+															"id": 618,
 															"name": "__type",
 															"kind": 65536,
 															"kindString": "Type literal",
 															"flags": {},
 															"children": [
 																{
-																	"id": 692,
+																	"id": 620,
 																	"name": "bank",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -10705,7 +10754,7 @@
 																	"defaultValue": "u.balance.bank"
 																},
 																{
-																	"id": 694,
+																	"id": 622,
 																	"name": "dailyStreak",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -10717,7 +10766,19 @@
 																	"defaultValue": "u.daily.dailyStreak"
 																},
 																{
-																	"id": 691,
+																	"id": 623,
+																	"name": "dailyTimeout",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "number"
+																	},
+																	"defaultValue": "dailyTimeOUT"
+																},
+																{
+																	"id": 619,
 																	"name": "earned",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -10729,7 +10790,7 @@
 																	"defaultValue": "amount"
 																},
 																{
-																	"id": 693,
+																	"id": 621,
 																	"name": "wallet",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -10746,10 +10807,11 @@
 																	"title": "Properties",
 																	"kind": 1024,
 																	"children": [
-																		692,
-																		694,
-																		691,
-																		693
+																		620,
+																		622,
+																		623,
+																		619,
+																		621
 																	]
 																}
 															]
@@ -10764,7 +10826,867 @@
 							]
 						},
 						{
-							"id": 610,
+							"id": 628,
+							"name": "options",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true
+							},
+							"sources": [
+								{
+									"fileName": "lib/util/manager.ts",
+									"line": 19,
+									"character": 9
+								}
+							],
+							"signatures": [
+								{
+									"id": 629,
+									"name": "options",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "simple util to grab data from our Economy Constructor",
+										"returns": "EconomyConfigOptions\n"
+									},
+									"type": {
+										"type": "reference",
+										"id": 735,
+										"name": "EconomyConfigOptions"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 798,
+										"name": "ManagerBase.options"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 797,
+								"name": "ManagerBase.options"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"kind": 512,
+							"children": [
+								612
+							]
+						},
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								627,
+								626,
+								625,
+								624
+							]
+						},
+						{
+							"title": "Methods",
+							"kind": 2048,
+							"children": [
+								614,
+								628
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "lib/managers/reward.ts",
+							"line": 9,
+							"character": 13
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"id": 790,
+							"name": "ManagerBase"
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"kind": 128,
+					"children": [
+						611
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "lib/managers/reward.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 630,
+			"name": "managers/wallet",
+			"kind": 2,
+			"kindString": "Module",
+			"flags": {},
+			"children": [
+				{
+					"id": 631,
+					"name": "WalletManager",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {},
+					"comment": {
+						"shortText": "The Wallet manager class handles common methods with our economy currency and values."
+					},
+					"children": [
+						{
+							"id": 632,
+							"name": "constructor",
+							"kind": 512,
+							"kindString": "Constructor",
+							"flags": {},
+							"signatures": [
+								{
+									"id": 633,
+									"name": "new WalletManager",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"id": 631,
+										"name": "WalletManager"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 792,
+										"name": "ManagerBase.constructor"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 791,
+								"name": "ManagerBase.constructor"
+							}
+						},
+						{
+							"id": 637,
+							"name": "_options",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPublic": true
+							},
+							"sources": [
+								{
+									"fileName": "lib/util/manager.ts",
+									"line": 14,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 547,
+								"name": "IEconomy"
+							},
+							"defaultValue": "...",
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 796,
+								"name": "ManagerBase._options"
+							}
+						},
+						{
+							"id": 636,
+							"name": "db",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPublic": true
+							},
+							"sources": [
+								{
+									"fileName": "lib/util/manager.ts",
+									"line": 13,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 471,
+								"name": "DataBaseController"
+							},
+							"defaultValue": "...",
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 795,
+								"name": "ManagerBase.db"
+							}
+						},
+						{
+							"id": 635,
+							"name": "fetchManager",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPublic": true
+							},
+							"sources": [
+								{
+									"fileName": "lib/util/manager.ts",
+									"line": 12,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 563,
+								"name": "fetchManager"
+							},
+							"defaultValue": "...",
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 794,
+								"name": "ManagerBase.fetchManager"
+							}
+						},
+						{
+							"id": 634,
+							"name": "utilities",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPublic": true
+							},
+							"sources": [
+								{
+									"fileName": "lib/util/manager.ts",
+									"line": 11,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "UtilityBase"
+							},
+							"defaultValue": "...",
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 793,
+								"name": "ManagerBase.utilities"
+							}
+						},
+						{
+							"id": 638,
+							"name": "options",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true
+							},
+							"sources": [
+								{
+									"fileName": "lib/util/manager.ts",
+									"line": 19,
+									"character": 9
+								}
+							],
+							"signatures": [
+								{
+									"id": 639,
+									"name": "options",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "simple util to grab data from our Economy Constructor",
+										"returns": "EconomyConfigOptions\n"
+									},
+									"type": {
+										"type": "reference",
+										"id": 735,
+										"name": "EconomyConfigOptions"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 798,
+										"name": "ManagerBase.options"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 797,
+								"name": "ManagerBase.options"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"kind": 512,
+							"children": [
+								632
+							]
+						},
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								637,
+								636,
+								635,
+								634
+							]
+						},
+						{
+							"title": "Methods",
+							"kind": 2048,
+							"children": [
+								638
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "lib/managers/wallet.ts",
+							"line": 6,
+							"character": 13
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"id": 790,
+							"name": "ManagerBase"
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"kind": 128,
+					"children": [
+						631
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "lib/managers/wallet.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 640,
+			"name": "structures/currency",
+			"kind": 2,
+			"kindString": "Module",
+			"flags": {},
+			"children": [
+				{
+					"id": 641,
+					"name": "CurrencyHandler",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {},
+					"comment": {
+						"shortText": "The class to handler user balance methods."
+					},
+					"children": [
+						{
+							"id": 642,
+							"name": "constructor",
+							"kind": 512,
+							"kindString": "Constructor",
+							"flags": {},
+							"signatures": [
+								{
+									"id": 643,
+									"name": "new CurrencyHandler",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"id": 641,
+										"name": "CurrencyHandler"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 792,
+										"name": "ManagerBase.constructor"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 791,
+								"name": "ManagerBase.constructor"
+							}
+						},
+						{
+							"id": 731,
+							"name": "_options",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPublic": true
+							},
+							"sources": [
+								{
+									"fileName": "lib/util/manager.ts",
+									"line": 14,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 547,
+								"name": "IEconomy"
+							},
+							"defaultValue": "...",
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 796,
+								"name": "ManagerBase._options"
+							}
+						},
+						{
+							"id": 730,
+							"name": "db",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPublic": true
+							},
+							"sources": [
+								{
+									"fileName": "lib/util/manager.ts",
+									"line": 13,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 471,
+								"name": "DataBaseController"
+							},
+							"defaultValue": "...",
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 795,
+								"name": "ManagerBase.db"
+							}
+						},
+						{
+							"id": 729,
+							"name": "fetchManager",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPublic": true
+							},
+							"sources": [
+								{
+									"fileName": "lib/util/manager.ts",
+									"line": 12,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 563,
+								"name": "fetchManager"
+							},
+							"defaultValue": "...",
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 794,
+								"name": "ManagerBase.fetchManager"
+							}
+						},
+						{
+							"id": 728,
+							"name": "utilities",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPublic": true
+							},
+							"sources": [
+								{
+									"fileName": "lib/util/manager.ts",
+									"line": 11,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "UtilityBase"
+							},
+							"defaultValue": "...",
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 793,
+								"name": "ManagerBase.utilities"
+							}
+						},
+						{
+							"id": 673,
+							"name": "add",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true
+							},
+							"sources": [
+								{
+									"fileName": "lib/structures/currency.ts",
+									"line": 80,
+									"character": 15
+								}
+							],
+							"signatures": [
+								{
+									"id": 674,
+									"name": "add",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Add's value to a users wallet or bank.\nWhile similar to the set function, it will not overwrite the old storage",
+										"returns": "amount\n"
+									},
+									"parameters": [
+										{
+											"id": 675,
+											"name": "amount",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"shortText": "of currency you wish to give the user"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 676,
+											"name": "targetUser",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"shortText": "the discord user to target"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 677,
+											"name": "type",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"shortText": "wallet or bank option"
+											},
+											"type": {
+												"type": "reference",
+												"id": 767,
+												"name": "EconomyMethodOption"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "union",
+												"types": [
+													{
+														"type": "literal",
+														"value": "Failed to add the new balance."
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 678,
+															"name": "__type",
+															"kind": 65536,
+															"kindString": "Type literal",
+															"flags": {},
+															"children": [
+																{
+																	"id": 681,
+																	"name": "bank",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "undefined"
+																	},
+																	"defaultValue": "f.balance.bank"
+																},
+																{
+																	"id": 679,
+																	"name": "earned",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "number"
+																	},
+																	"defaultValue": "amount"
+																},
+																{
+																	"id": 680,
+																	"name": "wallet",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "number"
+																	},
+																	"defaultValue": "..."
+																}
+															],
+															"groups": [
+																{
+																	"title": "Properties",
+																	"kind": 1024,
+																	"children": [
+																		681,
+																		679,
+																		680
+																	]
+																}
+															]
+														}
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 682,
+															"name": "__type",
+															"kind": 65536,
+															"kindString": "Type literal",
+															"flags": {},
+															"children": [
+																{
+																	"id": 684,
+																	"name": "bank",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "number"
+																	},
+																	"defaultValue": "..."
+																},
+																{
+																	"id": 683,
+																	"name": "earned",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "number"
+																	},
+																	"defaultValue": "amount"
+																},
+																{
+																	"id": 685,
+																	"name": "wallet",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "undefined"
+																	},
+																	"defaultValue": "f.balance.wallet"
+																}
+															],
+															"groups": [
+																{
+																	"title": "Properties",
+																	"kind": 1024,
+																	"children": [
+																		684,
+																		683,
+																		685
+																	]
+																}
+															]
+														}
+													}
+												]
+											}
+										],
+										"name": "Promise"
+									}
+								}
+							]
+						},
+						{
+							"id": 720,
+							"name": "deposit",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true
+							},
+							"sources": [
+								{
+									"fileName": "lib/structures/currency.ts",
+									"line": 268,
+									"character": 15
+								}
+							],
+							"signatures": [
+								{
+									"id": 721,
+									"name": "deposit",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {},
+									"parameters": [
+										{
+											"id": 722,
+											"name": "targetUser",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"shortText": "the db ID to fetch"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 723,
+											"name": "amount",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"shortText": "of money you wish to deposit to your bank\n"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "union",
+												"types": [
+													{
+														"type": "literal",
+														"value": false
+													},
+													{
+														"type": "literal",
+														"value": "full_bank"
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 724,
+															"name": "__type",
+															"kind": 65536,
+															"kindString": "Type literal",
+															"flags": {},
+															"children": [
+																{
+																	"id": 725,
+																	"name": "amount",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "number"
+																	},
+																	"defaultValue": "amount"
+																},
+																{
+																	"id": 727,
+																	"name": "bank",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "number"
+																	},
+																	"defaultValue": "u.balance.bank"
+																},
+																{
+																	"id": 726,
+																	"name": "wallet",
+																	"kind": 1024,
+																	"kindString": "Property",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "number"
+																	},
+																	"defaultValue": "u.balance.wallet"
+																}
+															],
+															"groups": [
+																{
+																	"title": "Properties",
+																	"kind": 1024,
+																	"children": [
+																		725,
+																		727,
+																		726
+																	]
+																}
+															]
+														}
+													}
+												]
+											}
+										],
+										"name": "Promise"
+									}
+								}
+							]
+						},
+						{
+							"id": 644,
 							"name": "fetch",
 							"kind": 2048,
 							"kindString": "Method",
@@ -10774,13 +11696,13 @@
 							"sources": [
 								{
 									"fileName": "lib/structures/currency.ts",
-									"line": 41,
+									"line": 14,
 									"character": 9
 								}
 							],
 							"signatures": [
 								{
-									"id": 611,
+									"id": 645,
 									"name": "fetch",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -10791,7 +11713,7 @@
 									},
 									"parameters": [
 										{
-											"id": 612,
+											"id": 646,
 											"name": "targetUser",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -10808,14 +11730,14 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 613,
+											"id": 647,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
 											"flags": {},
 											"children": [
 												{
-													"id": 614,
+													"id": 648,
 													"name": "bank",
 													"kind": 1024,
 													"kindString": "Property",
@@ -10833,14 +11755,14 @@
 																	{
 																		"type": "reflection",
 																		"declaration": {
-																			"id": 615,
+																			"id": 649,
 																			"name": "__type",
 																			"kind": 65536,
 																			"kindString": "Type literal",
 																			"flags": {},
 																			"children": [
 																				{
-																					"id": 617,
+																					"id": 651,
 																					"name": "bank",
 																					"kind": 1024,
 																					"kindString": "Property",
@@ -10852,7 +11774,7 @@
 																					"defaultValue": "f.balance.bank"
 																				},
 																				{
-																					"id": 616,
+																					"id": 650,
 																					"name": "wallet",
 																					"kind": 1024,
 																					"kindString": "Property",
@@ -10869,8 +11791,8 @@
 																					"title": "Properties",
 																					"kind": 1024,
 																					"children": [
-																						617,
-																						616
+																						651,
+																						650
 																					]
 																				}
 																			]
@@ -10879,14 +11801,14 @@
 																	{
 																		"type": "reflection",
 																		"declaration": {
-																			"id": 618,
+																			"id": 652,
 																			"name": "__type",
 																			"kind": 65536,
 																			"kindString": "Type literal",
 																			"flags": {},
 																			"children": [
 																				{
-																					"id": 619,
+																					"id": 653,
 																					"name": "bank",
 																					"kind": 1024,
 																					"kindString": "Property",
@@ -10898,7 +11820,7 @@
 																					"defaultValue": "f.balance.bank"
 																				},
 																				{
-																					"id": 620,
+																					"id": 654,
 																					"name": "wallet",
 																					"kind": 1024,
 																					"kindString": "Property",
@@ -10915,8 +11837,8 @@
 																					"title": "Properties",
 																					"kind": 1024,
 																					"children": [
-																						619,
-																						620
+																						653,
+																						654
 																					]
 																				}
 																			]
@@ -10930,7 +11852,7 @@
 													"defaultValue": "..."
 												},
 												{
-													"id": 621,
+													"id": 655,
 													"name": "wallet",
 													"kind": 1024,
 													"kindString": "Property",
@@ -10948,14 +11870,14 @@
 																	{
 																		"type": "reflection",
 																		"declaration": {
-																			"id": 622,
+																			"id": 656,
 																			"name": "__type",
 																			"kind": 65536,
 																			"kindString": "Type literal",
 																			"flags": {},
 																			"children": [
 																				{
-																					"id": 624,
+																					"id": 658,
 																					"name": "bank",
 																					"kind": 1024,
 																					"kindString": "Property",
@@ -10967,7 +11889,7 @@
 																					"defaultValue": "f.balance.bank"
 																				},
 																				{
-																					"id": 623,
+																					"id": 657,
 																					"name": "wallet",
 																					"kind": 1024,
 																					"kindString": "Property",
@@ -10984,8 +11906,8 @@
 																					"title": "Properties",
 																					"kind": 1024,
 																					"children": [
-																						624,
-																						623
+																						658,
+																						657
 																					]
 																				}
 																			]
@@ -10994,14 +11916,14 @@
 																	{
 																		"type": "reflection",
 																		"declaration": {
-																			"id": 625,
+																			"id": 659,
 																			"name": "__type",
 																			"kind": 65536,
 																			"kindString": "Type literal",
 																			"flags": {},
 																			"children": [
 																				{
-																					"id": 626,
+																					"id": 660,
 																					"name": "bank",
 																					"kind": 1024,
 																					"kindString": "Property",
@@ -11013,7 +11935,7 @@
 																					"defaultValue": "f.balance.bank"
 																				},
 																				{
-																					"id": 627,
+																					"id": 661,
 																					"name": "wallet",
 																					"kind": 1024,
 																					"kindString": "Property",
@@ -11030,8 +11952,8 @@
 																					"title": "Properties",
 																					"kind": 1024,
 																					"children": [
-																						626,
-																						627
+																						660,
+																						661
 																					]
 																				}
 																			]
@@ -11050,8 +11972,8 @@
 													"title": "Properties",
 													"kind": 1024,
 													"children": [
-														614,
-														621
+														648,
+														655
 													]
 												}
 											]
@@ -11061,7 +11983,7 @@
 							]
 						},
 						{
-							"id": 665,
+							"id": 699,
 							"name": "leaderBoard",
 							"kind": 2048,
 							"kindString": "Method",
@@ -11071,13 +11993,13 @@
 							"sources": [
 								{
 									"fileName": "lib/structures/currency.ts",
-									"line": 199,
+									"line": 172,
 									"character": 9
 								}
 							],
 							"signatures": [
 								{
-									"id": 666,
+									"id": 700,
 									"name": "leaderBoard",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -11090,7 +12012,51 @@
 							]
 						},
 						{
-							"id": 667,
+							"id": 732,
+							"name": "options",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true
+							},
+							"sources": [
+								{
+									"fileName": "lib/util/manager.ts",
+									"line": 19,
+									"character": 9
+								}
+							],
+							"signatures": [
+								{
+									"id": 733,
+									"name": "options",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "simple util to grab data from our Economy Constructor",
+										"returns": "EconomyConfigOptions\n"
+									},
+									"type": {
+										"type": "reference",
+										"id": 735,
+										"name": "EconomyConfigOptions"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 798,
+										"name": "ManagerBase.options"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 797,
+								"name": "ManagerBase.options"
+							}
+						},
+						{
+							"id": 701,
 							"name": "pay",
 							"kind": 2048,
 							"kindString": "Method",
@@ -11100,13 +12066,13 @@
 							"sources": [
 								{
 									"fileName": "lib/structures/currency.ts",
-									"line": 210,
+									"line": 183,
 									"character": 15
 								}
 							],
 							"signatures": [
 								{
-									"id": 668,
+									"id": 702,
 									"name": "pay",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -11117,7 +12083,7 @@
 									},
 									"parameters": [
 										{
-											"id": 669,
+											"id": 703,
 											"name": "amount",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -11131,7 +12097,7 @@
 											}
 										},
 										{
-											"id": 670,
+											"id": 704,
 											"name": "targetUser",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -11145,7 +12111,7 @@
 											}
 										},
 										{
-											"id": 671,
+											"id": 705,
 											"name": "targetToPay",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -11172,14 +12138,14 @@
 													{
 														"type": "reflection",
 														"declaration": {
-															"id": 672,
+															"id": 706,
 															"name": "__type",
 															"kind": 65536,
 															"kindString": "Type literal",
 															"flags": {},
 															"children": [
 																{
-																	"id": 675,
+																	"id": 709,
 																	"name": "newUserWallet",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -11191,7 +12157,7 @@
 																	"defaultValue": "u2.balance.wallet"
 																},
 																{
-																	"id": 673,
+																	"id": 707,
 																	"name": "paid",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -11203,7 +12169,7 @@
 																	"defaultValue": "amount"
 																},
 																{
-																	"id": 674,
+																	"id": 708,
 																	"name": "userWallet",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -11220,9 +12186,9 @@
 																	"title": "Properties",
 																	"kind": 1024,
 																	"children": [
-																		675,
-																		673,
-																		674
+																		709,
+																		707,
+																		708
 																	]
 																}
 															]
@@ -11237,7 +12203,7 @@
 							]
 						},
 						{
-							"id": 628,
+							"id": 662,
 							"name": "set",
 							"kind": 2048,
 							"kindString": "Method",
@@ -11247,13 +12213,13 @@
 							"sources": [
 								{
 									"fileName": "lib/structures/currency.ts",
-									"line": 62,
+									"line": 35,
 									"character": 15
 								}
 							],
 							"signatures": [
 								{
-									"id": 629,
+									"id": 663,
 									"name": "set",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -11265,7 +12231,7 @@
 									},
 									"parameters": [
 										{
-											"id": 630,
+											"id": 664,
 											"name": "amount",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -11279,7 +12245,7 @@
 											}
 										},
 										{
-											"id": 631,
+											"id": 665,
 											"name": "targetUser",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -11293,7 +12259,7 @@
 											}
 										},
 										{
-											"id": 632,
+											"id": 666,
 											"name": "type",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -11303,7 +12269,7 @@
 											},
 											"type": {
 												"type": "reference",
-												"id": 734,
+												"id": 767,
 												"name": "EconomyMethodOption"
 											}
 										}
@@ -11321,14 +12287,14 @@
 													{
 														"type": "reflection",
 														"declaration": {
-															"id": 633,
+															"id": 667,
 															"name": "__type",
 															"kind": 65536,
 															"kindString": "Type literal",
 															"flags": {},
 															"children": [
 																{
-																	"id": 635,
+																	"id": 669,
 																	"name": "bank",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -11340,7 +12306,7 @@
 																	"defaultValue": "f.balance.bank"
 																},
 																{
-																	"id": 634,
+																	"id": 668,
 																	"name": "wallet",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -11357,8 +12323,8 @@
 																	"title": "Properties",
 																	"kind": 1024,
 																	"children": [
-																		635,
-																		634
+																		669,
+																		668
 																	]
 																}
 															]
@@ -11367,14 +12333,14 @@
 													{
 														"type": "reflection",
 														"declaration": {
-															"id": 636,
+															"id": 670,
 															"name": "__type",
 															"kind": 65536,
 															"kindString": "Type literal",
 															"flags": {},
 															"children": [
 																{
-																	"id": 637,
+																	"id": 671,
 																	"name": "bank",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -11386,7 +12352,7 @@
 																	"defaultValue": "amount"
 																},
 																{
-																	"id": 638,
+																	"id": 672,
 																	"name": "wallet",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -11403,8 +12369,8 @@
 																	"title": "Properties",
 																	"kind": 1024,
 																	"children": [
-																		637,
-																		638
+																		671,
+																		672
 																	]
 																}
 															]
@@ -11419,7 +12385,7 @@
 							]
 						},
 						{
-							"id": 652,
+							"id": 686,
 							"name": "subtract",
 							"kind": 2048,
 							"kindString": "Method",
@@ -11429,13 +12395,13 @@
 							"sources": [
 								{
 									"fileName": "lib/structures/currency.ts",
-									"line": 152,
+									"line": 125,
 									"character": 15
 								}
 							],
 							"signatures": [
 								{
-									"id": 653,
+									"id": 687,
 									"name": "subtract",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -11446,7 +12412,7 @@
 									},
 									"parameters": [
 										{
-											"id": 654,
+											"id": 688,
 											"name": "amount",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -11460,7 +12426,7 @@
 											}
 										},
 										{
-											"id": 655,
+											"id": 689,
 											"name": "targetUser",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -11474,7 +12440,7 @@
 											}
 										},
 										{
-											"id": 656,
+											"id": 690,
 											"name": "type",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -11484,7 +12450,7 @@
 											},
 											"type": {
 												"type": "reference",
-												"id": 734,
+												"id": 767,
 												"name": "EconomyMethodOption"
 											}
 										}
@@ -11502,14 +12468,14 @@
 													{
 														"type": "reflection",
 														"declaration": {
-															"id": 657,
+															"id": 691,
 															"name": "__type",
 															"kind": 65536,
 															"kindString": "Type literal",
 															"flags": {},
 															"children": [
 																{
-																	"id": 660,
+																	"id": 694,
 																	"name": "bank",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -11521,7 +12487,7 @@
 																	"defaultValue": "f.balance.bank"
 																},
 																{
-																	"id": 658,
+																	"id": 692,
 																	"name": "subtracted",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -11533,7 +12499,7 @@
 																	"defaultValue": "amount"
 																},
 																{
-																	"id": 659,
+																	"id": 693,
 																	"name": "wallet",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -11550,9 +12516,9 @@
 																	"title": "Properties",
 																	"kind": 1024,
 																	"children": [
-																		660,
-																		658,
-																		659
+																		694,
+																		692,
+																		693
 																	]
 																}
 															]
@@ -11561,14 +12527,14 @@
 													{
 														"type": "reflection",
 														"declaration": {
-															"id": 661,
+															"id": 695,
 															"name": "__type",
 															"kind": 65536,
 															"kindString": "Type literal",
 															"flags": {},
 															"children": [
 																{
-																	"id": 663,
+																	"id": 697,
 																	"name": "bank",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -11580,7 +12546,7 @@
 																	"defaultValue": "..."
 																},
 																{
-																	"id": 662,
+																	"id": 696,
 																	"name": "subtracted",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -11592,7 +12558,7 @@
 																	"defaultValue": "amount"
 																},
 																{
-																	"id": 664,
+																	"id": 698,
 																	"name": "wallet",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -11609,9 +12575,9 @@
 																	"title": "Properties",
 																	"kind": 1024,
 																	"children": [
-																		663,
-																		662,
-																		664
+																		697,
+																		696,
+																		698
 																	]
 																}
 															]
@@ -11626,7 +12592,7 @@
 							]
 						},
 						{
-							"id": 676,
+							"id": 710,
 							"name": "work",
 							"kind": 2048,
 							"kindString": "Method",
@@ -11636,13 +12602,13 @@
 							"sources": [
 								{
 									"fileName": "lib/structures/currency.ts",
-									"line": 251,
+									"line": 224,
 									"character": 15
 								}
 							],
 							"signatures": [
 								{
-									"id": 677,
+									"id": 711,
 									"name": "work",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -11652,7 +12618,7 @@
 									},
 									"parameters": [
 										{
-											"id": 678,
+											"id": 712,
 											"name": "targetUser",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -11666,7 +12632,7 @@
 											}
 										},
 										{
-											"id": 679,
+											"id": 713,
 											"name": "minEarn",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -11680,7 +12646,7 @@
 											}
 										},
 										{
-											"id": 680,
+											"id": 714,
 											"name": "maxEarn",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -11694,7 +12660,7 @@
 											}
 										},
 										{
-											"id": 681,
+											"id": 715,
 											"name": "failChance",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -11723,14 +12689,14 @@
 													{
 														"type": "reflection",
 														"declaration": {
-															"id": 682,
+															"id": 716,
 															"name": "__type",
 															"kind": 65536,
 															"kindString": "Type literal",
 															"flags": {},
 															"children": [
 																{
-																	"id": 684,
+																	"id": 718,
 																	"name": "bank",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -11742,7 +12708,7 @@
 																	"defaultValue": "u.balance.bank"
 																},
 																{
-																	"id": 683,
+																	"id": 717,
 																	"name": "earned",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -11754,7 +12720,7 @@
 																	"defaultValue": "amount"
 																},
 																{
-																	"id": 685,
+																	"id": 719,
 																	"name": "wallet",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -11771,9 +12737,9 @@
 																	"title": "Properties",
 																	"kind": 1024,
 																	"children": [
-																		684,
-																		683,
-																		685
+																		718,
+																		717,
+																		719
 																	]
 																}
 															]
@@ -11793,38 +12759,47 @@
 							"title": "Constructors",
 							"kind": 512,
 							"children": [
-								603
+								642
 							]
 						},
 						{
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								606,
-								605
+								731,
+								730,
+								729,
+								728
 							]
 						},
 						{
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								639,
-								607,
+								673,
+								720,
+								644,
+								699,
+								732,
+								701,
+								662,
 								686,
-								610,
-								665,
-								667,
-								628,
-								652,
-								676
+								710
 							]
 						}
 					],
 					"sources": [
 						{
 							"fileName": "lib/structures/currency.ts",
-							"line": 9,
+							"line": 8,
 							"character": 13
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"id": 790,
+							"name": "ManagerBase"
 						}
 					]
 				}
@@ -11834,7 +12809,7 @@
 					"title": "Classes",
 					"kind": 128,
 					"children": [
-						602
+						641
 					]
 				}
 			],
@@ -11847,21 +12822,970 @@
 			]
 		},
 		{
-			"id": 695,
+			"id": 734,
+			"name": "typings/typings",
+			"kind": 2,
+			"kindString": "Module",
+			"flags": {},
+			"children": [
+				{
+					"id": 735,
+					"name": "EconomyConfigOptions",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {},
+					"comment": {
+						"shortText": "Economy Constructor Config typings."
+					},
+					"children": [
+						{
+							"id": 736,
+							"name": "currency",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"shortText": "The namne of your economys currency"
+							},
+							"sources": [
+								{
+									"fileName": "lib/typings/typings.ts",
+									"line": 6,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 741,
+							"name": "dailyAmount",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"shortText": "The total daily maximum amount of currency generated for the reward manager."
+							},
+							"sources": [
+								{
+									"fileName": "lib/typings/typings.ts",
+									"line": 16,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 738,
+							"name": "defaultBankLimit",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"shortText": "The default bank size allows for a user before updating."
+							},
+							"sources": [
+								{
+									"fileName": "lib/typings/typings.ts",
+									"line": 10,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 740,
+							"name": "mongodbURL",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"shortText": "Optional Connection string for mongodb. If not provided you will have to create your own connection."
+							},
+							"sources": [
+								{
+									"fileName": "lib/typings/typings.ts",
+									"line": 14,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 743,
+							"name": "monthlyAmount",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"shortText": "The total monthly maximum amount of currency generated for the reward manager."
+							},
+							"sources": [
+								{
+									"fileName": "lib/typings/typings.ts",
+									"line": 20,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 739,
+							"name": "robEnabled",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"shortText": "If robbing is allowed in your economy."
+							},
+							"sources": [
+								{
+									"fileName": "lib/typings/typings.ts",
+									"line": 12,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						},
+						{
+							"id": 737,
+							"name": "shopEnabled",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"shortText": "If users can buy Items for your economy"
+							},
+							"sources": [
+								{
+									"fileName": "lib/typings/typings.ts",
+									"line": 8,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						},
+						{
+							"id": 742,
+							"name": "weeklyAmount",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"shortText": "The total weekly maximum amount of currency generated for the reward manager."
+							},
+							"sources": [
+								{
+									"fileName": "lib/typings/typings.ts",
+									"line": 18,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								736,
+								741,
+								738,
+								740,
+								743,
+								739,
+								737,
+								742
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "lib/typings/typings.ts",
+							"line": 4,
+							"character": 17
+						}
+					]
+				},
+				{
+					"id": 769,
+					"name": "EconomyJobStructure",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {},
+					"comment": {
+						"shortText": "The structure for the job system and hierarchy in the economy."
+					},
+					"children": [
+						{
+							"id": 772,
+							"name": "highClass",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "lib/typings/typings.ts",
+									"line": 74,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": "basketball player"
+							}
+						},
+						{
+							"id": 770,
+							"name": "lowClass",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "lib/typings/typings.ts",
+									"line": 72,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 773,
+								"name": "lowJobList"
+							}
+						},
+						{
+							"id": 771,
+							"name": "middleClass",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "lib/typings/typings.ts",
+									"line": 73,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 774,
+								"name": "middleJobList"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								772,
+								770,
+								771
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "lib/typings/typings.ts",
+							"line": 71,
+							"character": 17
+						}
+					]
+				},
+				{
+					"id": 744,
+					"name": "UserEconomyTypes",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {},
+					"comment": {
+						"shortText": "Typings for the User Data in our Economy."
+					},
+					"children": [
+						{
+							"id": 759,
+							"name": "balance",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"comment": {
+								"shortText": "Where all the money is stored in the economy"
+							},
+							"sources": [
+								{
+									"fileName": "lib/typings/typings.ts",
+									"line": 50,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 760,
+									"name": "__type",
+									"kind": 65536,
+									"kindString": "Type literal",
+									"flags": {},
+									"children": [
+										{
+											"id": 762,
+											"name": "bank",
+											"kind": 1024,
+											"kindString": "Property",
+											"flags": {},
+											"comment": {
+												"shortText": "The private user storage that cant be robbed. The bank can also be used to buy items from our shop."
+											},
+											"sources": [
+												{
+													"fileName": "lib/typings/typings.ts",
+													"line": 55,
+													"character": 4
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 761,
+											"name": "wallet",
+											"kind": 1024,
+											"kindString": "Property",
+											"flags": {},
+											"comment": {
+												"shortText": "The public user storage that can be robbed."
+											},
+											"sources": [
+												{
+													"fileName": "lib/typings/typings.ts",
+													"line": 52,
+													"character": 4
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"groups": [
+										{
+											"title": "Properties",
+											"kind": 1024,
+											"children": [
+												762,
+												761
+											]
+										}
+									]
+								}
+							}
+						},
+						{
+							"id": 745,
+							"name": "bankLimit",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"comment": {
+								"shortText": "The max balance a user bank can have."
+							},
+							"sources": [
+								{
+									"fileName": "lib/typings/typings.ts",
+									"line": 28,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 747,
+							"name": "daily",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "lib/typings/typings.ts",
+									"line": 31,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 748,
+									"name": "__type",
+									"kind": 65536,
+									"kindString": "Type literal",
+									"flags": {},
+									"children": [
+										{
+											"id": 749,
+											"name": "dailyStreak",
+											"kind": 1024,
+											"kindString": "Property",
+											"flags": {},
+											"comment": {
+												"shortText": "The daily streak each time the daily command is used."
+											},
+											"sources": [
+												{
+													"fileName": "lib/typings/typings.ts",
+													"line": 33,
+													"character": 4
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 750,
+											"name": "dailyTimeout",
+											"kind": 1024,
+											"kindString": "Property",
+											"flags": {},
+											"comment": {
+												"shortText": "The last cached time the daily command was used."
+											},
+											"sources": [
+												{
+													"fileName": "lib/typings/typings.ts",
+													"line": 35,
+													"character": 4
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"groups": [
+										{
+											"title": "Properties",
+											"kind": 1024,
+											"children": [
+												749,
+												750
+											]
+										}
+									]
+								}
+							}
+						},
+						{
+							"id": 746,
+							"name": "itemsOwned",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"comment": {
+								"shortText": "All the items owned by the user from the shop"
+							},
+							"sources": [
+								{
+									"fileName": "lib/typings/typings.ts",
+									"line": 30,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "intrinsic",
+									"name": "any"
+								}
+							}
+						},
+						{
+							"id": 763,
+							"name": "jobConfig",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"comment": {
+								"shortText": "All user job and work information"
+							},
+							"sources": [
+								{
+									"fileName": "lib/typings/typings.ts",
+									"line": 58,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 764,
+									"name": "__type",
+									"kind": 65536,
+									"kindString": "Type literal",
+									"flags": {},
+									"children": [
+										{
+											"id": 766,
+											"name": "workJob",
+											"kind": 1024,
+											"kindString": "Property",
+											"flags": {},
+											"comment": {
+												"shortText": "The type of job the user has."
+											},
+											"sources": [
+												{
+													"fileName": "lib/typings/typings.ts",
+													"line": 62,
+													"character": 4
+												}
+											],
+											"type": {
+												"type": "reference",
+												"id": 769,
+												"name": "EconomyJobStructure"
+											}
+										},
+										{
+											"id": 765,
+											"name": "workTimeOut",
+											"kind": 1024,
+											"kindString": "Property",
+											"flags": {},
+											"comment": {
+												"shortText": "The time limit to use the work command again."
+											},
+											"sources": [
+												{
+													"fileName": "lib/typings/typings.ts",
+													"line": 60,
+													"character": 4
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"groups": [
+										{
+											"title": "Properties",
+											"kind": 1024,
+											"children": [
+												766,
+												765
+											]
+										}
+									]
+								}
+							}
+						},
+						{
+							"id": 755,
+							"name": "monthly",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "lib/typings/typings.ts",
+									"line": 43,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 756,
+									"name": "__type",
+									"kind": 65536,
+									"kindString": "Type literal",
+									"flags": {},
+									"children": [
+										{
+											"id": 757,
+											"name": "monthlyStreak",
+											"kind": 1024,
+											"kindString": "Property",
+											"flags": {},
+											"comment": {
+												"shortText": "The last cached time the monthly command was used."
+											},
+											"sources": [
+												{
+													"fileName": "lib/typings/typings.ts",
+													"line": 45,
+													"character": 4
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 758,
+											"name": "monthlyTimeout",
+											"kind": 1024,
+											"kindString": "Property",
+											"flags": {},
+											"comment": {
+												"shortText": "The last cached time the monthly command was used."
+											},
+											"sources": [
+												{
+													"fileName": "lib/typings/typings.ts",
+													"line": 47,
+													"character": 4
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"groups": [
+										{
+											"title": "Properties",
+											"kind": 1024,
+											"children": [
+												757,
+												758
+											]
+										}
+									]
+								}
+							}
+						},
+						{
+							"id": 751,
+							"name": "weekly",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "lib/typings/typings.ts",
+									"line": 37,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 752,
+									"name": "__type",
+									"kind": 65536,
+									"kindString": "Type literal",
+									"flags": {},
+									"children": [
+										{
+											"id": 753,
+											"name": "weeklyStreak",
+											"kind": 1024,
+											"kindString": "Property",
+											"flags": {},
+											"comment": {
+												"shortText": "The last cached time the weekly command was used."
+											},
+											"sources": [
+												{
+													"fileName": "lib/typings/typings.ts",
+													"line": 39,
+													"character": 4
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 754,
+											"name": "weeklyTimeout",
+											"kind": 1024,
+											"kindString": "Property",
+											"flags": {},
+											"comment": {
+												"shortText": "The last cached time the weekly command was used."
+											},
+											"sources": [
+												{
+													"fileName": "lib/typings/typings.ts",
+													"line": 41,
+													"character": 4
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"groups": [
+										{
+											"title": "Properties",
+											"kind": 1024,
+											"children": [
+												753,
+												754
+											]
+										}
+									]
+								}
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								759,
+								745,
+								747,
+								746,
+								763,
+								755,
+								751
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "lib/typings/typings.ts",
+							"line": 24,
+							"character": 17
+						}
+					]
+				},
+				{
+					"id": 768,
+					"name": "EconomyCoolDownOption",
+					"kind": 4194304,
+					"kindString": "Type alias",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/typings/typings.ts",
+							"line": 68,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "literal",
+								"value": "daily"
+							},
+							{
+								"type": "literal",
+								"value": "weekly"
+							},
+							{
+								"type": "literal",
+								"value": "monthly"
+							}
+						]
+					}
+				},
+				{
+					"id": 767,
+					"name": "EconomyMethodOption",
+					"kind": 4194304,
+					"kindString": "Type alias",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/typings/typings.ts",
+							"line": 66,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "literal",
+								"value": "wallet"
+							},
+							{
+								"type": "literal",
+								"value": "bank"
+							}
+						]
+					}
+				},
+				{
+					"id": 775,
+					"name": "highEndCome",
+					"kind": 4194304,
+					"kindString": "Type alias",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/typings/typings.ts",
+							"line": 81,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": "basketball player"
+					}
+				},
+				{
+					"id": 773,
+					"name": "lowJobList",
+					"kind": 4194304,
+					"kindString": "Type alias",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/typings/typings.ts",
+							"line": 77,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "literal",
+								"value": "taxi driver"
+							},
+							{
+								"type": "literal",
+								"value": "mailman"
+							}
+						]
+					}
+				},
+				{
+					"id": 774,
+					"name": "middleJobList",
+					"kind": 4194304,
+					"kindString": "Type alias",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/typings/typings.ts",
+							"line": 79,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "literal",
+								"value": "banker"
+							},
+							{
+								"type": "literal",
+								"value": "lawyer"
+							}
+						]
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Interfaces",
+					"kind": 256,
+					"children": [
+						735,
+						769,
+						744
+					]
+				},
+				{
+					"title": "Type aliases",
+					"kind": 4194304,
+					"children": [
+						768,
+						767,
+						775,
+						773,
+						774
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "lib/typings/typings.ts",
+					"line": 4,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 776,
 			"name": "util/errors",
 			"kind": 2,
 			"kindString": "Module",
 			"flags": {},
 			"children": [
 				{
-					"id": 696,
+					"id": 777,
 					"name": "default",
 					"kind": 128,
 					"kindString": "Class",
 					"flags": {},
 					"children": [
 						{
-							"id": 697,
+							"id": 778,
 							"name": "constructor",
 							"kind": 512,
 							"kindString": "Constructor",
@@ -11875,14 +13799,14 @@
 							],
 							"signatures": [
 								{
-									"id": 698,
+									"id": 779,
 									"name": "new default",
 									"kind": 16384,
 									"kindString": "Constructor signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 699,
+											"id": 780,
 											"name": "key",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -11893,7 +13817,7 @@
 											}
 										},
 										{
-											"id": 700,
+											"id": 781,
 											"name": "args",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -11911,14 +13835,14 @@
 									],
 									"type": {
 										"type": "reference",
-										"id": 696,
+										"id": 777,
 										"name": "LewdLabsModuleError"
 									}
 								}
 							]
 						},
 						{
-							"id": 701,
+							"id": 782,
 							"name": "code",
 							"kind": 1024,
 							"kindString": "Property",
@@ -11936,7 +13860,7 @@
 							}
 						},
 						{
-							"id": 702,
+							"id": 783,
 							"name": "name",
 							"kind": 262144,
 							"kindString": "Accessor",
@@ -11950,7 +13874,7 @@
 							],
 							"getSignature": [
 								{
-									"id": 703,
+									"id": 784,
 									"name": "name",
 									"kind": 524288,
 									"kindString": "Get signature",
@@ -11968,21 +13892,21 @@
 							"title": "Constructors",
 							"kind": 512,
 							"children": [
-								697
+								778
 							]
 						},
 						{
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								701
+								782
 							]
 						},
 						{
 							"title": "Accessors",
 							"kind": 262144,
 							"children": [
-								702
+								783
 							]
 						}
 					],
@@ -12006,7 +13930,7 @@
 					"title": "Classes",
 					"kind": 128,
 					"children": [
-						696
+						777
 					]
 				}
 			],
@@ -12019,14 +13943,14 @@
 			]
 		},
 		{
-			"id": 704,
+			"id": 785,
 			"name": "util/functions",
 			"kind": 2,
 			"kindString": "Module",
 			"flags": {},
 			"children": [
 				{
-					"id": 705,
+					"id": 786,
 					"name": "ErrorMessage",
 					"kind": 64,
 					"kindString": "Function",
@@ -12040,7 +13964,7 @@
 					],
 					"signatures": [
 						{
-							"id": 706,
+							"id": 787,
 							"name": "ErrorMessage",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -12056,7 +13980,7 @@
 							},
 							"parameters": [
 								{
-									"id": 707,
+									"id": 788,
 									"name": "msg",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -12083,7 +14007,7 @@
 					"title": "Functions",
 					"kind": 64,
 					"children": [
-						705
+						786
 					]
 				}
 			],
@@ -12096,625 +14020,236 @@
 			]
 		},
 		{
-			"id": 708,
-			"name": "util/typings",
+			"id": 789,
+			"name": "util/manager",
 			"kind": 2,
 			"kindString": "Module",
 			"flags": {},
 			"children": [
 				{
-					"id": 709,
-					"name": "EconomyConfigOptions",
-					"kind": 256,
-					"kindString": "Interface",
+					"id": 790,
+					"name": "ManagerBase",
+					"kind": 128,
+					"kindString": "Class",
 					"flags": {},
 					"comment": {
-						"shortText": "Economy Constructor Config typings."
+						"shortText": "The base class for all manager classes.",
+						"text": "In this class we will keep most of the basic types for all the other methods to inherit.\n"
 					},
 					"children": [
 						{
-							"id": 710,
-							"name": "currency",
-							"kind": 1024,
-							"kindString": "Property",
+							"id": 791,
+							"name": "constructor",
+							"kind": 512,
+							"kindString": "Constructor",
 							"flags": {},
-							"comment": {
-								"shortText": "The namne of your economys currency"
-							},
-							"sources": [
+							"signatures": [
 								{
-									"fileName": "lib/util/typings.ts",
-									"line": 6,
-									"character": 2
+									"id": 792,
+									"name": "new ManagerBase",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"id": 790,
+										"name": "ManagerBase"
+									}
 								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "string"
-							}
+							]
 						},
 						{
-							"id": 712,
-							"name": "defaultBankLimit",
-							"kind": 1024,
-							"kindString": "Property",
-							"flags": {},
-							"comment": {
-								"shortText": "The default bank size allows for a user before updating."
-							},
-							"sources": [
-								{
-									"fileName": "lib/util/typings.ts",
-									"line": 10,
-									"character": 2
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "number"
-							}
-						},
-						{
-							"id": 714,
-							"name": "mongodbURL",
+							"id": 796,
+							"name": "_options",
 							"kind": 1024,
 							"kindString": "Property",
 							"flags": {
-								"isOptional": true
-							},
-							"comment": {
-								"shortText": "Optional Connection string for mongodb. If not provided you will have to create your own connection."
+								"isPublic": true
 							},
 							"sources": [
 								{
-									"fileName": "lib/util/typings.ts",
+									"fileName": "lib/util/manager.ts",
 									"line": 14,
-									"character": 2
+									"character": 9
 								}
 							],
 							"type": {
-								"type": "intrinsic",
-								"name": "string"
-							}
+								"type": "reference",
+								"id": 547,
+								"name": "IEconomy"
+							},
+							"defaultValue": "..."
 						},
 						{
-							"id": 713,
-							"name": "robEnabled",
+							"id": 795,
+							"name": "db",
 							"kind": 1024,
 							"kindString": "Property",
-							"flags": {},
-							"comment": {
-								"shortText": "If robbing is allowed in your economy."
+							"flags": {
+								"isPublic": true
 							},
 							"sources": [
 								{
-									"fileName": "lib/util/typings.ts",
+									"fileName": "lib/util/manager.ts",
+									"line": 13,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 471,
+								"name": "DataBaseController"
+							},
+							"defaultValue": "..."
+						},
+						{
+							"id": 794,
+							"name": "fetchManager",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPublic": true
+							},
+							"sources": [
+								{
+									"fileName": "lib/util/manager.ts",
 									"line": 12,
-									"character": 2
+									"character": 9
 								}
 							],
 							"type": {
-								"type": "intrinsic",
-								"name": "boolean"
-							}
+								"type": "reference",
+								"id": 563,
+								"name": "fetchManager"
+							},
+							"defaultValue": "..."
 						},
 						{
-							"id": 711,
-							"name": "shopEnabled",
+							"id": 793,
+							"name": "utilities",
 							"kind": 1024,
 							"kindString": "Property",
-							"flags": {},
-							"comment": {
-								"shortText": "If users can buy Items for your economy"
+							"flags": {
+								"isPublic": true
 							},
 							"sources": [
 								{
-									"fileName": "lib/util/typings.ts",
-									"line": 8,
-									"character": 2
+									"fileName": "lib/util/manager.ts",
+									"line": 11,
+									"character": 9
 								}
 							],
 							"type": {
-								"type": "intrinsic",
-								"name": "boolean"
-							}
+								"type": "reference",
+								"name": "UtilityBase"
+							},
+							"defaultValue": "..."
+						},
+						{
+							"id": 797,
+							"name": "options",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true
+							},
+							"sources": [
+								{
+									"fileName": "lib/util/manager.ts",
+									"line": 19,
+									"character": 9
+								}
+							],
+							"signatures": [
+								{
+									"id": 798,
+									"name": "options",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "simple util to grab data from our Economy Constructor",
+										"returns": "EconomyConfigOptions\n"
+									},
+									"type": {
+										"type": "reference",
+										"id": 735,
+										"name": "EconomyConfigOptions"
+									}
+								}
+							]
 						}
 					],
 					"groups": [
 						{
+							"title": "Constructors",
+							"kind": 512,
+							"children": [
+								791
+							]
+						},
+						{
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								710,
-								712,
-								714,
-								713,
-								711
+								796,
+								795,
+								794,
+								793
+							]
+						},
+						{
+							"title": "Methods",
+							"kind": 2048,
+							"children": [
+								797
 							]
 						}
 					],
 					"sources": [
 						{
-							"fileName": "lib/util/typings.ts",
-							"line": 4,
-							"character": 17
+							"fileName": "lib/util/manager.ts",
+							"line": 10,
+							"character": 13
+						}
+					],
+					"extendedBy": [
+						{
+							"type": "reference",
+							"id": 563,
+							"name": "fetchManager"
+						},
+						{
+							"type": "reference",
+							"id": 611,
+							"name": "RewardManager"
+						},
+						{
+							"type": "reference",
+							"id": 631,
+							"name": "WalletManager"
+						},
+						{
+							"type": "reference",
+							"id": 641,
+							"name": "CurrencyHandler"
 						}
 					]
-				},
-				{
-					"id": 715,
-					"name": "UserEconomyTypes",
-					"kind": 256,
-					"kindString": "Interface",
-					"flags": {},
-					"comment": {
-						"shortText": "Typings for the User Data in our Economy."
-					},
-					"children": [
-						{
-							"id": 730,
-							"name": "balance",
-							"kind": 1024,
-							"kindString": "Property",
-							"flags": {},
-							"comment": {
-								"shortText": "Where all the money is stored in the economy"
-							},
-							"sources": [
-								{
-									"fileName": "lib/util/typings.ts",
-									"line": 44,
-									"character": 2
-								}
-							],
-							"type": {
-								"type": "reflection",
-								"declaration": {
-									"id": 731,
-									"name": "__type",
-									"kind": 65536,
-									"kindString": "Type literal",
-									"flags": {},
-									"children": [
-										{
-											"id": 733,
-											"name": "bank",
-											"kind": 1024,
-											"kindString": "Property",
-											"flags": {},
-											"comment": {
-												"shortText": "The private user storage that cant be robbed. The bank can also be used to buy items from our shop."
-											},
-											"sources": [
-												{
-													"fileName": "lib/util/typings.ts",
-													"line": 49,
-													"character": 4
-												}
-											],
-											"type": {
-												"type": "intrinsic",
-												"name": "number"
-											}
-										},
-										{
-											"id": 732,
-											"name": "wallet",
-											"kind": 1024,
-											"kindString": "Property",
-											"flags": {},
-											"comment": {
-												"shortText": "The public user storage that can be robbed."
-											},
-											"sources": [
-												{
-													"fileName": "lib/util/typings.ts",
-													"line": 46,
-													"character": 4
-												}
-											],
-											"type": {
-												"type": "intrinsic",
-												"name": "number"
-											}
-										}
-									],
-									"groups": [
-										{
-											"title": "Properties",
-											"kind": 1024,
-											"children": [
-												733,
-												732
-											]
-										}
-									]
-								}
-							}
-						},
-						{
-							"id": 716,
-							"name": "bankLimit",
-							"kind": 1024,
-							"kindString": "Property",
-							"flags": {},
-							"comment": {
-								"shortText": "The max balance a user bank can have."
-							},
-							"sources": [
-								{
-									"fileName": "lib/util/typings.ts",
-									"line": 22,
-									"character": 2
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "number"
-							}
-						},
-						{
-							"id": 718,
-							"name": "daily",
-							"kind": 1024,
-							"kindString": "Property",
-							"flags": {},
-							"sources": [
-								{
-									"fileName": "lib/util/typings.ts",
-									"line": 25,
-									"character": 2
-								}
-							],
-							"type": {
-								"type": "reflection",
-								"declaration": {
-									"id": 719,
-									"name": "__type",
-									"kind": 65536,
-									"kindString": "Type literal",
-									"flags": {},
-									"children": [
-										{
-											"id": 721,
-											"name": "dailyStreak",
-											"kind": 1024,
-											"kindString": "Property",
-											"flags": {},
-											"comment": {
-												"shortText": "The daily streak each time the daily command is used."
-											},
-											"sources": [
-												{
-													"fileName": "lib/util/typings.ts",
-													"line": 29,
-													"character": 4
-												}
-											],
-											"type": {
-												"type": "intrinsic",
-												"name": "number"
-											}
-										},
-										{
-											"id": 720,
-											"name": "dailyTimeout",
-											"kind": 1024,
-											"kindString": "Property",
-											"flags": {},
-											"comment": {
-												"shortText": "The last cached time the daily command was used."
-											},
-											"sources": [
-												{
-													"fileName": "lib/util/typings.ts",
-													"line": 27,
-													"character": 4
-												}
-											],
-											"type": {
-												"type": "intrinsic",
-												"name": "number"
-											}
-										}
-									],
-									"groups": [
-										{
-											"title": "Properties",
-											"kind": 1024,
-											"children": [
-												721,
-												720
-											]
-										}
-									]
-								}
-							}
-						},
-						{
-							"id": 717,
-							"name": "itemsOwned",
-							"kind": 1024,
-							"kindString": "Property",
-							"flags": {},
-							"comment": {
-								"shortText": "All the items owned by the user from the shop"
-							},
-							"sources": [
-								{
-									"fileName": "lib/util/typings.ts",
-									"line": 24,
-									"character": 2
-								}
-							],
-							"type": {
-								"type": "array",
-								"elementType": {
-									"type": "intrinsic",
-									"name": "any"
-								}
-							}
-						},
-						{
-							"id": 726,
-							"name": "monthly",
-							"kind": 1024,
-							"kindString": "Property",
-							"flags": {},
-							"sources": [
-								{
-									"fileName": "lib/util/typings.ts",
-									"line": 37,
-									"character": 2
-								}
-							],
-							"type": {
-								"type": "reflection",
-								"declaration": {
-									"id": 727,
-									"name": "__type",
-									"kind": 65536,
-									"kindString": "Type literal",
-									"flags": {},
-									"children": [
-										{
-											"id": 729,
-											"name": "monthlyStreak",
-											"kind": 1024,
-											"kindString": "Property",
-											"flags": {},
-											"comment": {
-												"shortText": "The last cached time the monthly command was used."
-											},
-											"sources": [
-												{
-													"fileName": "lib/util/typings.ts",
-													"line": 41,
-													"character": 4
-												}
-											],
-											"type": {
-												"type": "intrinsic",
-												"name": "number"
-											}
-										},
-										{
-											"id": 728,
-											"name": "monthlyTimeout",
-											"kind": 1024,
-											"kindString": "Property",
-											"flags": {},
-											"comment": {
-												"shortText": "The last cached time the monthly command was used."
-											},
-											"sources": [
-												{
-													"fileName": "lib/util/typings.ts",
-													"line": 39,
-													"character": 4
-												}
-											],
-											"type": {
-												"type": "intrinsic",
-												"name": "number"
-											}
-										}
-									],
-									"groups": [
-										{
-											"title": "Properties",
-											"kind": 1024,
-											"children": [
-												729,
-												728
-											]
-										}
-									]
-								}
-							}
-						},
-						{
-							"id": 722,
-							"name": "weekly",
-							"kind": 1024,
-							"kindString": "Property",
-							"flags": {},
-							"sources": [
-								{
-									"fileName": "lib/util/typings.ts",
-									"line": 31,
-									"character": 2
-								}
-							],
-							"type": {
-								"type": "reflection",
-								"declaration": {
-									"id": 723,
-									"name": "__type",
-									"kind": 65536,
-									"kindString": "Type literal",
-									"flags": {},
-									"children": [
-										{
-											"id": 725,
-											"name": "weeklyStreak",
-											"kind": 1024,
-											"kindString": "Property",
-											"flags": {},
-											"comment": {
-												"shortText": "The last cached time the weekly command was used."
-											},
-											"sources": [
-												{
-													"fileName": "lib/util/typings.ts",
-													"line": 35,
-													"character": 4
-												}
-											],
-											"type": {
-												"type": "intrinsic",
-												"name": "number"
-											}
-										},
-										{
-											"id": 724,
-											"name": "weeklyTimeout",
-											"kind": 1024,
-											"kindString": "Property",
-											"flags": {},
-											"comment": {
-												"shortText": "The last cached time the weekly command was used."
-											},
-											"sources": [
-												{
-													"fileName": "lib/util/typings.ts",
-													"line": 33,
-													"character": 4
-												}
-											],
-											"type": {
-												"type": "intrinsic",
-												"name": "number"
-											}
-										}
-									],
-									"groups": [
-										{
-											"title": "Properties",
-											"kind": 1024,
-											"children": [
-												725,
-												724
-											]
-										}
-									]
-								}
-							}
-						}
-					],
-					"groups": [
-						{
-							"title": "Properties",
-							"kind": 1024,
-							"children": [
-								730,
-								716,
-								718,
-								717,
-								726,
-								722
-							]
-						}
-					],
-					"sources": [
-						{
-							"fileName": "lib/util/typings.ts",
-							"line": 18,
-							"character": 17
-						}
-					]
-				},
-				{
-					"id": 735,
-					"name": "EconomyCoolDownOption",
-					"kind": 4194304,
-					"kindString": "Type alias",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "lib/util/typings.ts",
-							"line": 55,
-							"character": 12
-						}
-					],
-					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "literal",
-								"value": "daily"
-							},
-							{
-								"type": "literal",
-								"value": "weekly"
-							},
-							{
-								"type": "literal",
-								"value": "monthly"
-							}
-						]
-					}
-				},
-				{
-					"id": 734,
-					"name": "EconomyMethodOption",
-					"kind": 4194304,
-					"kindString": "Type alias",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "lib/util/typings.ts",
-							"line": 53,
-							"character": 12
-						}
-					],
-					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "literal",
-								"value": "wallet"
-							},
-							{
-								"type": "literal",
-								"value": "bank"
-							}
-						]
-					}
 				}
 			],
 			"groups": [
 				{
-					"title": "Interfaces",
-					"kind": 256,
+					"title": "Classes",
+					"kind": 128,
 					"children": [
-						709,
-						715
-					]
-				},
-				{
-					"title": "Type aliases",
-					"kind": 4194304,
-					"children": [
-						735,
-						734
+						790
 					]
 				}
 			],
 			"sources": [
 				{
-					"fileName": "lib/util/typings.ts",
-					"line": 4,
+					"fileName": "lib/util/manager.ts",
+					"line": 1,
 					"character": 0
 				}
 			]
@@ -12727,18 +14262,21 @@
 			"children": [
 				465,
 				1,
-				507,
+				508,
 				466,
 				470,
-				535,
-				543,
-				545,
-				557,
-				558,
-				601,
-				695,
-				704,
-				708
+				536,
+				544,
+				546,
+				561,
+				562,
+				610,
+				630,
+				640,
+				734,
+				776,
+				785,
+				789
 			]
 		}
 	]

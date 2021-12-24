@@ -1,12 +1,14 @@
 import type { Model } from "mongoose";
 import { IDataBaseController } from ".";
+import { IEconomy } from "../economy";
 import { UserDataSchema, UserEconomyStructure } from "./schema";
-import { key_db_options } from "./types";
+import type { key_db_options } from "./types";
 
 /**
  * The Database Controller manages the main functionality of the database and our cache system.
  */
 export class DataBaseController extends IDataBaseController {
+  private eco = new IEconomy();
   public constructor(model?: Model<UserEconomyStructure>) {
     super();
     // if a model is  inserted then use that and not the default
@@ -101,6 +103,7 @@ export class DataBaseController extends IDataBaseController {
     }
   > {
     const obj = await this.model.findOne({ id });
+    // if no document is found in our db, create one and return that default data.
     if (!obj) {
       // eslint-disable-next-line new-cap
       const newDoc = await new this.model({
@@ -110,7 +113,7 @@ export class DataBaseController extends IDataBaseController {
             wallet: 0,
             bank: 0,
           },
-          bankLimit: 5000,
+          bankLimit: this.eco.config.defaultBankLimit || 10000,
           daily: {
             dailyStreak: 0,
             dailyTimeout: 0,
@@ -124,11 +127,14 @@ export class DataBaseController extends IDataBaseController {
             monthlyStreak: 0,
             monthlyTimeout: 0,
           },
+          jobConfig: {
+            workTimeOut: 60000 * 60 * 24,
+          },
         },
       }).save();
       return newDoc;
+    } else {
+      return obj;
     }
-
-    return obj;
   }
 }

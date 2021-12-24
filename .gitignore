@@ -4,9 +4,7 @@ node_modules/
 # TS emits
 build/
 dist/
-
-# Express cockiess local data
-sessions/
+out/
 
 # Vars
 
@@ -14,3 +12,5 @@ sessions/
 config.json
 
 # test
+
+test-directory/

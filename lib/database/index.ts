@@ -1,6 +1,6 @@
-import { Model } from "mongoose";
+import type { Model } from "mongoose";
 import IModuleError from "../util/errors";
-import { UserEconomyStructure } from "./schema";
+import type { UserEconomyStructure } from "./schema";
 import { ICache } from "../cache";
 
 export class IDataBaseController {

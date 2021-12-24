@@ -1,38 +1,11 @@
-import { DataBaseController } from "..";
-import { fetchManager } from "../managers/fetch";
 import { ErrorMessage } from "../util/functions";
-import { EconomyMethodOption } from "../util/typings";
+import type { EconomyMethodOption } from "../typings/typings";
+import { ManagerBase } from "../util/manager";
 
 /**
  * The class to handler user balance methods.
  */
-export class CurrencyHandler {
-  private fetchManager: fetchManager = new fetchManager();
-  private db: DataBaseController = new DataBaseController();
-
-  /**
-   * Creates the base user data for our economy.
-   * @param targetUser
-   */
-  //@ts-ignore
-  private async createUser(targetUser: string) {
-    if (!targetUser) {
-      throw new Error(
-        ErrorMessage("You are missing the valid options for this method.")
-      );
-    }
-    await this.db.set(targetUser, "balance", {
-      wallet: 0,
-      bank: 0,
-    });
-    await this.db.set(targetUser, "bankLimit", 5000);
-    await this.db.set(targetUser, "daily", {});
-    await this.db.set(targetUser, "itemsOwned", []);
-    await this.db.set(targetUser, "weekly", {});
-    await this.db.set(targetUser, "monthly", {});
-    return "User Data Created.";
-  }
-
+export class CurrencyHandler extends ManagerBase {
   /**
    * Fetches for a users ballance
    * @param targetUser the discord user
@@ -287,38 +260,36 @@ export class CurrencyHandler {
     }
   }
 
-  public async daily(targetUser: string, amount: number) {
+  /**
+   *
+   * @param targetUser the db ID to fetch
+   * @param amount of money you wish to deposit to your bank
+   */
+  public async deposit(targetUser: string, amount: number) {
     if (!targetUser || !amount) {
       throw new Error(
         ErrorMessage("You are missing the valid options for this method.")
       );
+    } else if (isNaN(amount)) {
+      throw new Error(ErrorMessage("amount option is not type Number!"));
     }
 
     let u = await this.fetchManager.fetchUser(targetUser);
 
-    // if the daily function was used in the last 24 hours, return
-    if (Date.now() < u.daily.dailyTimeout + 86400000) {
+    if (amount > u.balance.wallet) {
       return false;
+    } else if (u.bankLimit > amount + u.balance.bank) {
+      return "full_bank";
     } else {
-      if (Date.now() > u.daily.dailyTimeout + 86400000 * 2)
-        u.daily.dailyStreak = 0;
-      else u.daily.dailyStreak + 1;
-
-      await this.db.set(targetUser, "daily", {
-        dailyStreak: u.daily.dailyStreak,
-        dailyTimeout: (u.daily.dailyTimeout = Date.now()),
-      });
-
       await this.db.set(targetUser, "balance", {
-        wallet: u.balance.wallet + amount,
-        bank: u.balance.bank,
+        wallet: u.balance.wallet - amount,
+        bank: u.balance.bank + amount,
       });
 
       return {
-        earned: amount,
-        bank: u.balance.bank,
+        amount: amount,
         wallet: u.balance.wallet,
-        dailyStreak: u.daily.dailyStreak,
+        bank: u.balance.bank,
       };
     }
   }
