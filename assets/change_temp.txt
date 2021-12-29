@@ -1,5 +1,7 @@
 # New package version [v] `⭐`
 
+---
+
 ## Breaking changes
 
 - 

@@ -17,32 +17,9 @@
 - `⚡` Caching for quick load times.
 - `🤖` Made for Discord.js first.
 
-### Example
-
-```typescript
-import { Economy, CurrencyHandler } from "discord-ts-economy";
-
-const eco = new Economy({
-  // configuration options...
-});
-
-const currencyHandler = new CurrencyHandler();
-
-// a built in function to connect to mongodb
-eco.connect("mongodb connection string");
-
-// load all the documents from our db after connecting
-eco.init();
-
-// adds a value of 100 through 500 to a users wallet with a 10 percent fail chance.
-currencyHandler.work("some_user_id", 100, 500, 10);
-```
-
-_For a more complex example please read our [detailed guide](https://lewd-labs.github.io/xyz/)_
-
 ## Installation
 
-Use one of the node package managers listed below to install.
+> Version 16.6.0 or newer of Node.js is required
 
 ```
 yarn add discord-ts-economy
@@ -50,7 +27,26 @@ npm install discord-ts-economy
 pnpm add discord-ts-economy
 ```
 
-_Mongodb will be installed as well as the package dependency._
+### Basic Demo
+
+```typescript
+import { Economy, CurrencyHandler } from "discord-ts-economy";
+
+const eco = new Economy();
+
+// connect our database
+eco.connect("mongodb connection string");
+
+const currencyHandler = new CurrencyHandler();
+
+// Fetches all the documents from our database (if the exist) and saves them to our cache.
+currencyHandler.init();
+
+// adds a value of 100 through 500 to a users wallet with a 10 percent fail chance.
+currencyHandler.work("some_user_id", 100, 500, 10);
+```
+
+_For a more complex example please read our [detailed guide](https://lewd-labs.github.io/xyz/)_
 
 ## Built with
 
@@ -70,4 +66,6 @@ Please read [CONTRIBUTING.md](./.github/assets/CONTRIBUTING.md) for details on o
 
 - [Discord](https://discord.com/invite/N79DZsm3m2)
 
-- [Guide](https://lewd-labs.github.io/xyz/)
+- [Guide](https://lewd-labs.github.io/guide/)
+
+- [Change Logs](https://github.com/lewd-labs/discord-ts-economy/releases)

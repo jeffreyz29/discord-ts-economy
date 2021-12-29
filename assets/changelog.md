@@ -1,23 +1,19 @@
-# New package version 0.1.5 `⭐`
+# New package version [v] `⭐`
 
-## Breaking changes
-
-- Economy class no only inherits other low level classes. They must be exported independently.
+---
 
 ## New Features
 
-- New method **Withdraw**
+- Fetch bank limit method to the wallet class.
+- LeadBoard method added! You can now display all users in your economy.
 
 ## Changes
 
-- Removed async method from db connection functions
-- Cache version bummed down
-- Classes no long extend ManagerBase class
-- Some methods converted to more caching and less native db calls
+- Added examples file with discord.js integration
+- Economy Schema now minimalists all empty objects.
+- Increased default bank-limit to `20,000`
 
-## Bug  fixes
+## Bug fixes
 
-- Cache system from Normal js map to discordjs/collection package
-- spelling to reward class
-- Maximum call stack size exceeded in db class
-- Looped classes
+- deposit command bank limits not working.
+- Internal connect function now makes use of the mongourl config in constructor.

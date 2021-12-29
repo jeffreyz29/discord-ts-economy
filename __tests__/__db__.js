@@ -4,7 +4,12 @@
  * ? ----------------------------- Test File -----------------------------
  */
 
-const { Economy, CurrencyHandler, fetchManager } = require("../out/index");
+const {
+  Economy,
+  CurrencyHandler,
+  fetchManager,
+  WalletManager,
+} = require("../out/index");
 const config = require("./config.json");
 
 async function test() {
@@ -16,19 +21,29 @@ async function test() {
   });
 
   const fetchHandler = new fetchManager();
+  const moneyHandler = new CurrencyHandler();
+  const walletHandler = new WalletManager();
 
-  await eco.connect(`${config.dbURl}`);
-
-  console.log(`x: ${eco.config.defaultBankLimit}`);
+  eco.connect(`${config.dbURl}`);
 
   fetchHandler.init();
 
-  setInterval(async () => {
-    // let data1 = await currencyHandler.work("xxx", 100, 500)
-    // console.log(data1);
-    let data = await fetchHandler.fetchBalance("xxx", "wallet");
-    console.log(data);
-  }, 5000);
+  let lb = await moneyHandler.leaderBoard(5);
+  console.log(lb);
+
+  // await walletHandler.fetchBankLimit("0");
+  // await walletHandler.fetchBankLimit("1");
+  // await walletHandler.fetchBankLimit("2");
+  // await walletHandler.fetchBankLimit("3");
+  // await walletHandler.fetchBankLimit("4");
+  // await walletHandler.fetchBankLimit("5");
+  // await walletHandler.fetchBankLimit("6");
+  // await walletHandler.fetchBankLimit("7");
+  // await walletHandler.fetchBankLimit("8");
+
+  setTimeout(function () {
+    process.exit(0);
+  }, 10000);
 }
 
 test().catch((err) => {

@@ -180,8 +180,46 @@ export class CurrencyHandler {
     return "Failed to subtract the new balance.";
   }
 
-  public leaderBoard() {
-    throw new Error(ErrorMessage("This function is not implemented yet."));
+  /**
+   * leaderBoard method returns and Array of all the documents in the database.
+   * We then sort the documents by highest to lowest wallet and bank.
+   * @param limit the limit to search in the leaderBoard. default: 10
+   * @returns
+   */
+  public async leaderBoard(limit?: number) {
+    try {
+      // our temp storage for this method
+      let lib: Array<{
+        // the index of the leaderBoard data
+        index: number;
+        // the user id found in the document
+        userId: string;
+        // total bank money found from the user in the documents
+        bank: number;
+      }> = [];
+
+      // fetch all the documents from the db
+      let doc = await this.db.model.find({});
+
+      if (!doc) return false;
+
+      let users = doc.map((x) => x.id);
+      let ranks = doc.map((y) => y.settings.balance.bank);
+
+      // for each document found it will be added to the array
+      for (const i in ranks)
+        lib.push({
+          index: Number(i) + 1,
+          userId: users[i],
+          bank: Number(ranks[i]),
+        });
+
+      // Only the top 10 results will be returned from the array. We will also need to sort them from highest to lowest.
+      return lib.sort((x, y) => x.bank + y.bank).slice(0, limit || 10);
+    } catch (err) {
+      console.log(err);
+      return false;
+    }
   }
 
   /**
@@ -289,7 +327,7 @@ export class CurrencyHandler {
 
     if (amount > u.balance.wallet) {
       return false;
-    } else if (u.bankLimit > amount + u.balance.bank) {
+    } else if (u.balance.bank + amount > u.bankLimit) {
       return "full_bank";
     } else {
       await this.db.set(targetUser, "balance", {

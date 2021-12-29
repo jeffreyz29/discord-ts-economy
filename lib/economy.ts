@@ -17,7 +17,7 @@ export class IEconomy {
    * @param configOptions The options to pass to the constructor. These are required.
    */
   public constructor(configOptions?: EconomyConfigOptions) {
-    if (configOptions) {
+    if (configOptions !== undefined) {
       let missing: string[] = [];
       if (!configOptions.currency) missing.push("currency");
       if (!configOptions.defaultBankLimit) missing.push("defaultBankLimit");
@@ -32,12 +32,13 @@ export class IEconomy {
             )}`
           )
         );
+      } else {
+        this.config = configOptions;
       }
-      this.config = configOptions;
     } else {
-      let defaultOptions: EconomyConfigOptions = {
+      var defaultOptions: EconomyConfigOptions = {
         currency: "$",
-        defaultBankLimit: 10000,
+        defaultBankLimit: 20000,
         shopEnabled: false,
         robEnabled: true,
       };
@@ -51,9 +52,17 @@ export class IEconomy {
    * @param url Your mongodb URL
    * @see https://www.mongodb.com/ for support with setting up your database.
    */
-  public connect(url: string): void {
-    if (!url)
-      throw new Error(ErrorMessage("No URL passed for database connection."));
-    else mongodb_connect_function(url);
+  public connect(url?: string | undefined): void {
+    if (!url && this.config.mongodbURL === undefined) {
+      throw new Error(
+        ErrorMessage(
+          "Invalid mongodb connect function. You need to pass a mongodb url to the setup class or in this function."
+        )
+      );
+    } else if (url && this.config.mongodbURL === undefined) {
+      mongodb_connect_function(url);
+    } else if (!url && this.config.mongodbURL !== undefined) {
+      mongodb_connect_function(this.config.mongodbURL);
+    }
   }
 }

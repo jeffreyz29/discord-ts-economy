@@ -1,7 +1,7 @@
 import type { Model } from "mongoose";
 import { IDataBaseController } from ".";
 import { IEconomy } from "../economy";
-import { UserDataSchema, UserEconomyStructure } from "./schema";
+import { UserDataSchema } from "./schema";
 import type { key_db_options } from "./types";
 
 /**
@@ -10,7 +10,7 @@ import type { key_db_options } from "./types";
 export class DataBaseController extends IDataBaseController {
   /** Allows native db functions to access the economy config constructor */
   public config = new IEconomy().config;
-  public constructor(model?: Model<UserEconomyStructure>) {
+  public constructor(model?: Model<any>) {
     super();
     // if a model is  inserted then use that and not the default
     if (model) {
@@ -98,11 +98,7 @@ export class DataBaseController extends IDataBaseController {
    * @param {string} id - ID of document
    * @returns {Document<any, any, any>} - Mongoose query object|document
    */
-  public async getDocument(id: string): Promise<
-    UserEconomyStructure & {
-      _id: any;
-    }
-  > {
+  public async getDocument(id: string) {
     const obj = await this.model.findOne({ id });
     // if no document is found in our db, create one and return that default data.
     if (!obj) {
@@ -114,7 +110,7 @@ export class DataBaseController extends IDataBaseController {
             wallet: 0,
             bank: 0,
           },
-          bankLimit: this.config.defaultBankLimit || 10000,
+          bankLimit: this.config.defaultBankLimit || 20000,
           daily: {
             dailyStreak: 0,
             dailyTimeout: 0,
@@ -132,7 +128,7 @@ export class DataBaseController extends IDataBaseController {
             workTimeOut: 60000 * 60 * 24,
           },
         },
-      }).save();
+      }).save({ timestamps: true });
       return newDoc;
     } else {
       return obj;

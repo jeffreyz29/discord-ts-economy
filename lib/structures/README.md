@@ -15,9 +15,11 @@ The structures folder controls all the User based methods for our economy class.
 - leaderBoard
 - pay
 - work
+- deposit
+- withdraw
 
 `Private`
 
 - createUser
 
-Todo: deposit, withdraw, leaderBoard, rob, weekly, monthly
+Todo: leaderBoard, rob, weekly, monthly

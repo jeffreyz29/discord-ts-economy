@@ -1,4 +1,5 @@
 import { Document, model, Schema } from "mongoose";
+import type { UserEconomyTypes } from "../typings/typings";
 
 /** The mongodb model structure. This is required to use with this package*/
 export interface UserEconomyStructure extends Document {
@@ -9,7 +10,7 @@ export interface UserEconomyStructure extends Document {
    */
   id: string;
   /** Our object for all our user settings. */
-  settings: Object;
+  settings: UserEconomyTypes;
 }
 
 const schema = new Schema<UserEconomyStructure>(
@@ -23,7 +24,7 @@ const schema = new Schema<UserEconomyStructure>(
       require: true,
     },
   },
-  { minimize: false, timestamps: true }
+  { minimize: true, timestamps: true }
 ) as Schema;
 
 export const UserDataSchema = model<UserEconomyStructure>(
