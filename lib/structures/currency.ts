@@ -215,7 +215,7 @@ export class CurrencyHandler {
         });
 
       // Only the top 10 results will be returned from the array. We will also need to sort them from highest to lowest.
-      return lib.sort((x, y) => x.bank + y.bank).slice(0, limit || 10);
+      return lib.sort((x, y) => y.bank - x.bank).slice(0, limit || 10);
     } catch (err) {
       console.log(err);
       return false;

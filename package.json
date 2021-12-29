@@ -1,6 +1,6 @@
 {
   "name": "discord-ts-economy",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "A simple discord bot economy system using mongodb and typescript.",
   "main": "./out/index.js",
   "files": [

@@ -28,7 +28,7 @@ async function test() {
 
   fetchHandler.init();
 
-  let lb = await moneyHandler.leaderBoard(5);
+  let lb = await moneyHandler.leaderBoard();
   console.log(lb);
 
   // await walletHandler.fetchBankLimit("0");
@@ -41,9 +41,7 @@ async function test() {
   // await walletHandler.fetchBankLimit("7");
   // await walletHandler.fetchBankLimit("8");
 
-  setTimeout(function () {
-    process.exit(0);
-  }, 10000);
+  process.exit(0);
 }
 
 test().catch((err) => {
