@@ -14,7 +14,7 @@ export class WalletManager {
    * @returns
    */
   public async fetchBankLimit(targetUser: string): Promise<{
-    banklimit: any;
+    bank_limit: number;
   }> {
     if (!targetUser) {
       throw new Error(
@@ -27,11 +27,11 @@ export class WalletManager {
     if (!banklimitCache) {
       let r = await this.fetchManager.fetchUser(targetUser);
       return {
-        banklimit: r.bankLimit,
+        bank_limit: r.bankLimit,
       };
     } else {
       return {
-        banklimit: banklimitCache,
+        bank_limit: banklimitCache,
       };
     }
   }

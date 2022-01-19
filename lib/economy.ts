@@ -1,9 +1,10 @@
-import { mongodb_connect_function } from "./database/connection";
+import {
+  mongodb_connect_function,
+  mongodb_connect_function_self,
+} from "./database/connection";
 import { ErrorMessage } from "./util/functions";
 import type { EconomyConfigOptions } from "./typings/typings";
-// import { fetchManager } from "./managers/fetch";
-// import { CurrencyHandler } from "./structures/currency";
-// import { RewardManager } from "./managers/reward";
+import type { CallbackWithoutResult, ConnectOptions } from "mongoose";
 
 /**
  * The Lewd Labs Economy for discord bots with mongodb
@@ -36,13 +37,12 @@ export class IEconomy {
         this.config = configOptions;
       }
     } else {
-      var defaultOptions: EconomyConfigOptions = {
+      this.config = {
         currency: "$",
         defaultBankLimit: 20000,
         shopEnabled: false,
         robEnabled: true,
       };
-      this.config = defaultOptions;
     }
   }
 
@@ -52,17 +52,39 @@ export class IEconomy {
    * @param url Your mongodb URL
    * @see https://www.mongodb.com/ for support with setting up your database.
    */
-  public connect(url?: string | undefined): void {
+  public connect(url: string): void {
     if (!url && this.config.mongodbURL === undefined) {
       throw new Error(
         ErrorMessage(
-          "Invalid mongodb connect function. You need to pass a mongodb url to the setup class or in this function."
+          "Invalid mongodb connect function. You need to pass a mongodb url to the setup class or in this method."
         )
       );
     } else if (url && this.config.mongodbURL === undefined) {
       mongodb_connect_function(url);
     } else if (!url && this.config.mongodbURL !== undefined) {
-      mongodb_connect_function(this.config.mongodbURL);
+      mongodb_connect_function(url);
     }
+  }
+
+  /**
+   * A custom connect function that gives you more control over the mongodb connect settings.
+   * You must pass in all the settings and nothing here is filled out for you.
+   * @param url
+   * @param options
+   * @param callback
+   */
+  public self_connect(
+    url: string,
+    options?: ConnectOptions,
+    callback?: CallbackWithoutResult
+  ): void {
+    if (!url) {
+      throw new Error(
+        ErrorMessage(
+          "Invalid mongodb connect function. You need to pass a mongodb url to the setup class or in this method."
+        )
+      );
+    }
+    mongodb_connect_function_self(url, options, callback);
   }
 }

@@ -2,7 +2,7 @@
  * Economy Constructor Config typings.
  */
 export interface EconomyConfigOptions {
-  /** The namne of your economys currency */
+  /** The name of your economy's currency */
   currency: string;
   /** If users can buy Items for your economy */
   shopEnabled?: boolean;

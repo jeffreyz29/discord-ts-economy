@@ -1,19 +1,19 @@
-# New package version [v] `⭐`
+# Package version [v0.1.8] `⭐`
 
 ---
 
 ## New Features
 
-- Fetch bank limit method to the wallet class.
-- LeadBoard method added! You can now display all users in your economy.
+New Self connect function for more mongodb connection flexibility.
 
 ## Changes
 
-- Added examples file with discord.js integration
-- Economy Schema now minimalists all empty objects.
-- Increased default bank-limit to `20,000`
+Spell checking for inline docs.
+
+The DB init functions now return all Documents loaded by cache from the DataBaseController#init method.
 
 ## Bug fixes
 
-- deposit command bank limits not working.
-- Internal connect function now makes use of the mongourl config in constructor.
+Quality of code fixes...
+
+Removing void error to mongodb connect function

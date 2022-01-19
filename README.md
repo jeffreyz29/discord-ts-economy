@@ -60,7 +60,7 @@ Please read [CONTRIBUTING.md](./.github/assets/CONTRIBUTING.md) for details on o
 
 ## Helpful links
 
-- [Documentation](https://lewd-labs.github.io/Economy/)
+- [Documentation](https://lewd-labs.github.io/discord-ts-economy/)
 
 - [YouTube](https://www.youtube.com/channel/UCVOQobByo_2WISQf2037eXQ)
 

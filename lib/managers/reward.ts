@@ -14,14 +14,14 @@ export class RewardManager {
   /**
    * Loads all the economy data to our ram for quick access.
    *
-   * WARNING: You only ned to call this function once in your program.
+   * WARNING: You only need to call this function once in your program.
    */
   public init(): void {
-    this.db.init();
+    this.db.init().then(() => {});
   }
 
   /**
-   * The daily reward adds a value to the users wallet every 24 hours.
+   * The daily reward adds a value to the users' wallet every 24 hours.
    * @param targetUser the id to fetch from our db
    * @param amount of money to give the user
    * @returns

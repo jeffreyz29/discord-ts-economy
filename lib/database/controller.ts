@@ -1,7 +1,7 @@
 import type { Model } from "mongoose";
 import { IDataBaseController } from ".";
 import { IEconomy } from "../economy";
-import { UserDataSchema } from "./schema";
+import { UserDataSchema, UserEconomyStructure } from "./schema";
 import type { key_db_options } from "./types";
 
 /**
@@ -23,12 +23,17 @@ export class DataBaseController extends IDataBaseController {
   /**
    * Saves all the mongodb documents to our cache after starting the db.
    */
-  public async init(): Promise<void> {
+  public async init(): Promise<{
+    cache: (UserEconomyStructure & { _id: any })[];
+  }> {
     const Cache = await this.model.find();
     for (const i in Cache) {
       const cache = Cache[i];
       this.items.set(cache.id, cache.settings);
     }
+    return {
+      cache: Cache,
+    };
   }
   /**
    * Gets a value from our cache.
@@ -54,7 +59,7 @@ export class DataBaseController extends IDataBaseController {
    * @returns {Promise<any>} - Mongoose query object|document
    */
   public async set(id: string, key: key_db_options, value: any): Promise<any> {
-    // gets the cache first before writting to the db
+    // gets the cache first before writing to the db
     const data = this.items.get(id) || {};
     data[key] = value;
     this.items.set(id, data);
@@ -103,7 +108,7 @@ export class DataBaseController extends IDataBaseController {
     // if no document is found in our db, create one and return that default data.
     if (!obj) {
       // eslint-disable-next-line new-cap
-      const newDoc = await new this.model({
+      return await new this.model({
         id,
         settings: {
           balance: {
@@ -129,7 +134,6 @@ export class DataBaseController extends IDataBaseController {
           },
         },
       }).save({ timestamps: true });
-      return newDoc;
     } else {
       return obj;
     }

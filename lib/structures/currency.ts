@@ -13,13 +13,13 @@ export class CurrencyHandler {
   /**
    * Loads all the economy data to our ram for quick access.
    *
-   * WARNING: You only ned to call this function once in your program.
+   * WARNING: You only need to call this function once in your program.
    */
   public init(): void {
-    this.db.init();
+    this.db.init().then((r) => `Loaded ${r.cache.length} Documents on launch.`);
   }
   /**
-   * Fetches for a users ballance
+   * Fetches for a users balance
    * @param targetUser the discord user
    * @returns object
    */
@@ -36,9 +36,9 @@ export class CurrencyHandler {
   }
 
   /**
-   * Sets's value to a users wallet or bank.
+   * Set's value to a users wallet or bank.
    *
-   * Warning using this function will over write a users ballance NOT add money to it. Please use the add function instead if you need to extend the wallet/bank.
+   * Warning using this function will overwrite a users balance NOT add money to it. Please use the add function instead if you need to extend the wallet/bank.
    * @param amount of currency you wish to give the user
    * @param targetUser the discord user to target
    * @param type wallet or bank option
@@ -82,7 +82,7 @@ export class CurrencyHandler {
   }
 
   /**
-   * Add's value to a users wallet or bank.
+   * Adds value to a users wallet or bank.
    * While similar to the set function, it will not overwrite the old storage
    * @param amount of currency you wish to give the user
    * @param targetUser the discord user to target
@@ -127,7 +127,7 @@ export class CurrencyHandler {
     }
   }
   /**
-   * Subtract's value to a users wallet or bank.
+   * Subtracts value to a users wallet or bank.
    * @param amount of currency you wish to give the user
    * @param targetUser the discord user to target
    * @param type wallet or bank option
@@ -182,7 +182,7 @@ export class CurrencyHandler {
 
   /**
    * leaderBoard method returns and Array of all the documents in the database.
-   * We then sort the documents by highest to lowest wallet and bank.
+   * We then sort the documents by highest to the lowest wallet and bank.
    * @param limit the limit to search in the leaderBoard. default: 10
    * @returns
    */

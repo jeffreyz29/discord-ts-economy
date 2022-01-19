@@ -9,7 +9,7 @@ import { DataBaseController } from "..";
 
 /**
  * Allows easy internal control over all fetch based functions in our package
- * These methods control common acts like fetching for user data, ballance, and more.
+ * These methods control common acts like fetching for user data, balance, and more.
  *
  * The fetch managers main goal is to make common data fetching easy and quick. Most things will be controlled by cache.
  *
@@ -19,10 +19,10 @@ export class fetchManager {
   /**
    * Loads all the economy data to our ram for quick access.
    *
-   * WARNING: You only ned to call this function once in your program.
+   * WARNING: You only need to call this function once in your program.
    */
   public init(): void {
-    this.db.init();
+    this.db.init().then(() => {});
   }
   /**
    * Searches the db for our user document.
@@ -36,10 +36,8 @@ export class fetchManager {
         ErrorMessage("You are missing the valid options for this method.")
       );
     }
-    let f = (await this.db.getDocument(targetUser))
-      .settings as UserEconomyTypes;
     // check if the document exists
-    return f;
+    return (await this.db.getDocument(targetUser)).settings as UserEconomyTypes;
   }
   /**
    * Fetches the database for the users current balance in our economy.
@@ -74,9 +72,9 @@ export class fetchManager {
   }
 
   /**
-   * Returns a given users reward cooldowns
+   * Returns a given users reward cool-downs
    * @param targetUser the id to fetch from the db
-   * @param coolDownOption type of cooldown to fetch
+   * @param coolDownOption type of cool down to fetch
    * @returns
    */
   public async fetchCoolDowns(

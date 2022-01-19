@@ -50,7 +50,7 @@ botClient.on("messageCreate", async (msg) => {
       );
     }
     // if the wallet option is selected in the last argument
-    else if (option === "wallet".toLocaleLowerCase()) {
+    else if (option === "wallet".toLowerCase()) {
       let data = await handler.add(amount, targetUser, "wallet");
       console.log(data);
       return msg.reply({
@@ -58,7 +58,7 @@ botClient.on("messageCreate", async (msg) => {
       });
     }
     // if the bank option is selected in the last argument
-    else if (option === "bank".toLocaleLowerCase()) {
+    else if (option === "bank".toLowerCase()) {
       /**
        * In the data variable we are using the add method from the CurrencyHandler class in the package.
        * This function takes 3 arguments. Amount, TargetUser, and the EconomyMethodOption (bank | wallet).
