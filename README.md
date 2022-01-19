@@ -46,7 +46,9 @@ currencyHandler.init();
 currencyHandler.work("some_user_id", 100, 500, 10);
 ```
 
-_For a more complex example please read our [detailed guide](https://lewd-labs.github.io/xyz/)_
+Click the image below for a video style introduction.
+[![Demo Video Screenshot Link](https://cdn.discordapp.com/attachments/919435340463366236/932835016076038144/support.png)
+](https://www.youtube.com/watch?v=xGt90N3mUtg&t=1276s)
 
 ## Built with
 
