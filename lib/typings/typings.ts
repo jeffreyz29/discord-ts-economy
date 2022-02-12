@@ -12,6 +12,8 @@ export interface EconomyConfigOptions {
   robEnabled?: boolean;
   /** Optional Connection string for mongodb. If not provided you will have to create your own connection.*/
   mongodbURL?: string;
+  /** Debug mode for the economy. Defaults to false.*/
+  debug?: boolean;
 }
 
 /** Typings for the User Data in our Economy. */

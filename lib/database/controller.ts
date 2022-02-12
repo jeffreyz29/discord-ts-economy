@@ -3,6 +3,7 @@ import { IDataBaseController } from ".";
 import { IEconomy } from "../economy";
 import { UserDataSchema, UserEconomyStructure } from "./schema";
 import type { key_db_options } from "./types";
+import {Logger} from "../util/logger";
 
 /**
  * The Database Controller manages the main functionality of the database and our cache system.
@@ -16,6 +17,7 @@ export class DataBaseController extends IDataBaseController {
     if (model) {
       this.model = model;
     } else {
+      if(this.config.debug) Logger.info("[DB] using default economy model. Pass a model to the constructor to use a custom model.");
       this.model = UserDataSchema;
     }
   }
@@ -29,6 +31,7 @@ export class DataBaseController extends IDataBaseController {
     const Cache = await this.model.find();
     for (const i in Cache) {
       const cache = Cache[i];
+      if(this.config.debug) Logger.info(`[DB] loaded cache index[${i}] with value of: ${cache}`);
       this.items.set(cache.id, cache.settings);
     }
     return {
@@ -46,8 +49,10 @@ export class DataBaseController extends IDataBaseController {
   public get(id: string, key: key_db_options, defaultValue: any): any {
     if (this.items.has(id)) {
       const value = this.items.get(id)[key];
+      if(this.config.debug) Logger.info(`[DB] get cache[${id}] key[${key}]`);
       return value == null ? defaultValue : value;
     } else {
+      if(this.config.debug) Logger.warn(`[DB] get cache[${id}] key[${key}] not found. Returning default value.`);
       return defaultValue;
     }
   }
@@ -63,6 +68,8 @@ export class DataBaseController extends IDataBaseController {
     const data = this.items.get(id) || {};
     data[key] = value;
     this.items.set(id, data);
+
+    if(this.config.debug) Logger.info(`[DB] set cache[${id}] key[${key}] value[${value}]`);
 
     const doc = (await this.getDocument(id)) as any;
     doc.settings[key] = value;
@@ -81,6 +88,8 @@ export class DataBaseController extends IDataBaseController {
     const data = this.items.get(id) || {};
     delete data[key];
 
+    if(this.config.debug) Logger.info(`[DB] delete cache[${id}] key[${key}]`);
+
     const doc = (await this.getDocument(id)) as any;
     delete doc.settings[key];
     doc.markModified("settings");
@@ -94,6 +103,7 @@ export class DataBaseController extends IDataBaseController {
    */
   public async clear(id: string): Promise<void> {
     this.items.delete(id);
+    if(this.config.debug) Logger.warn(`[DB] document destroyed [${id}]`);
     const doc = await this.getDocument(id);
     if (doc) await doc.remove();
   }
@@ -108,7 +118,7 @@ export class DataBaseController extends IDataBaseController {
     // if no document is found in our db, create one and return that default data.
     if (!obj) {
       // eslint-disable-next-line new-cap
-      return await new this.model({
+      let defaultDoc = await new this.model({
         id,
         settings: {
           balance: {
@@ -134,7 +144,10 @@ export class DataBaseController extends IDataBaseController {
           },
         },
       }).save({ timestamps: true });
+      if(this.config.debug) Logger.info(`[DB] creating document[${id}] with default . ${JSON.stringify(defaultDoc)}`);
+      return defaultDoc;
     } else {
+      if(this.config.debug) Logger.info(`[DB] returning document[${id}] ${obj.settings}`);
       return obj;
     }
   }

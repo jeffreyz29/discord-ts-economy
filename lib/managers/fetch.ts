@@ -6,6 +6,7 @@ import type {
   UserEconomyTypes,
 } from "../typings/typings";
 import { DataBaseController } from "..";
+import {Logger} from "../util/logger";
 
 /**
  * Allows easy internal control over all fetch based functions in our package
@@ -61,12 +62,16 @@ export class fetchManager {
 
     if (!ff) return "no data found";
 
+    if(this.db.config.debug) Logger.warn(`No Balance found for ${targetUser}`);
+
     if (!type) {
       return { wallet: ff.wallet };
     }
     if (type === "bank") {
+      if(this.db.config.debug) Logger.warn(`[fetchManager] Bank Balance found for ${targetUser} with ${ff.bank}`);
       return { bank: ff.bank };
     } else if (type === "wallet") {
+      if(this.db.config.debug) Logger.warn(`[fetchManager] Wallet Balance found for ${targetUser} with ${ff.wallet}`);
       return { wallet: ff.wallet };
     }
   }
@@ -90,16 +95,19 @@ export class fetchManager {
 
     switch (coolDownOption) {
       case "daily":
+        if(this.db.config.debug) Logger.warn(`[fetchManager] Found Cool Down found for ${targetUser} as ${u.daily.dailyTimeout}`);
         return {
           dailyTimeout: u.daily.dailyTimeout,
           dailyStreak: u.daily.dailyStreak,
         };
       case "weekly":
+        if(this.db.config.debug) Logger.warn(`[fetchManager] Found Cool Down found for ${targetUser} as ${u.weekly.weeklyTimeout}`);
         return {
           weeklyTimeout: u.weekly.weeklyTimeout,
           weeklyStreak: u.weekly.weeklyStreak,
         };
       case "monthly":
+        if(this.db.config.debug) Logger.warn(`[fetchManager] Found Cool Down found for ${targetUser} as ${u.monthly.monthlyTimeout}`);
         return {
           monthlyTimeout: u.monthly.monthlyTimeout,
           monthlyStreak: u.monthly.monthlyStreak,

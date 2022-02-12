@@ -5,7 +5,7 @@ import {
 import { ErrorMessage } from "./util/functions";
 import type { EconomyConfigOptions } from "./typings/typings";
 import type { CallbackWithoutResult, ConnectOptions } from "mongoose";
-
+import { Logger } from "./util/logger";
 /**
  * The Lewd Labs Economy for discord bots with mongodb
  */
@@ -42,7 +42,11 @@ export class IEconomy {
         defaultBankLimit: 20000,
         shopEnabled: false,
         robEnabled: true,
-      };
+        debug: false,
+      }
+      if(this.config.debug) {
+        Logger.log(`[Economy:configOptions] Config: ${JSON.stringify(this.config)}`)
+      }
     }
   }
 
@@ -60,8 +64,14 @@ export class IEconomy {
         )
       );
     } else if (url && this.config.mongodbURL === undefined) {
+      if(this.config.debug) {
+        Logger.log(`[Economy:correct] Connecting to mongodb at ${url}`)
+      }
       mongodb_connect_function(url);
     } else if (!url && this.config.mongodbURL !== undefined) {
+      if(this.config.debug) {
+        Logger.log(`[Economy:correct] Connecting to mongodb at ${this.config.mongodbURL}`)
+      }
       mongodb_connect_function(url);
     }
   }
@@ -84,6 +94,9 @@ export class IEconomy {
           "Invalid mongodb connect function. You need to pass a mongodb url to the setup class or in this method."
         )
       );
+    }
+    if(this.config.debug) {
+      Logger.log(`[Economy:self_connect] Connecting to mongodb at ${url}`)
     }
     mongodb_connect_function_self(url, options, callback);
   }
