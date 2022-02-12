@@ -1,6 +1,6 @@
 {
   "name": "discord-ts-economy",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "A simple discord bot economy system using mongodb and typescript.",
   "main": "./out/index.js",
   "files": [
@@ -14,7 +14,7 @@
     "test": "node ./__tests__/__db__.js",
     "dev": "ts-node ./lib/index.ts",
     "prod:dev": "yarn run build && node .",
-    "make": "yarn run format && yarn run build && yarn run docs",
+    "prod:make": "yarn run format && yarn run build && yarn run docs",
     "build": "tsc --skipLibCheck",
     "format": "prettier --ignore-path .gitignore --write .",
     "update": "yarn upgrade-interactive --latest",

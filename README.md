@@ -8,8 +8,6 @@
 
 ![GitHub issues](https://img.shields.io/github/issues/lewd-labs/discord-easy-economy?style=for-the-badge) ![GitHub pull requests](https://img.shields.io/github/issues-pr/lewd-labs/discord-easy-economy?style=for-the-badge) ![GitHub Repo stars](https://img.shields.io/github/stars/lewd-labs/discord-easy-economy?style=for-the-badge) ![npm](https://img.shields.io/npm/v/discord-ts-economy?style=for-the-badge) ![npm](https://img.shields.io/npm/dw/discord-ts-economy?style=for-the-badge)
 
-⚠️ The package is still in beta-development and not ready for production. Please leave a star and join our discord for more updates!
-
 ## Highlights
 
 - `🍃` Power by MongoDB.
