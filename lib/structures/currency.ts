@@ -2,7 +2,7 @@ import { ErrorMessage } from "../util/functions";
 import type { EconomyMethodOption } from "../typings/typings";
 import { DataBaseController } from "..";
 import { fetchManager } from "../managers/fetch";
-import {Logger} from "../util/logger";
+import { Logger } from "../util/logger";
 
 /**
  * The class to handler user balance methods.
@@ -67,7 +67,8 @@ export class CurrencyHandler {
         wallet: amount,
         bank: u.balance.bank,
       });
-      if(this.db.config.debug) Logger.info(`Set ${targetUser}'s wallet to ${amount}`);
+      if (this.db.config.debug)
+        Logger.info(`Set ${targetUser}'s wallet to ${amount}`);
       return {
         wallet: amount,
       };
@@ -76,7 +77,8 @@ export class CurrencyHandler {
         wallet: u.balance.wallet,
         bank: amount,
       });
-      if(this.db.config.debug) Logger.info(`Set ${targetUser}'s bank to ${amount}`);
+      if (this.db.config.debug)
+        Logger.info(`Set ${targetUser}'s bank to ${amount}`);
       return {
         bank: amount,
       };
@@ -114,7 +116,8 @@ export class CurrencyHandler {
         wallet: u.balance.wallet + amount,
         bank: u.balance.bank,
       });
-      if(this.db.config.debug) Logger.info(`Added ${amount} to ${targetUser}'s wallet`);
+      if (this.db.config.debug)
+        Logger.info(`Added ${amount} to ${targetUser}'s wallet`);
       return {
         earned: amount,
         wallet: u.balance.wallet + amount,
@@ -124,7 +127,8 @@ export class CurrencyHandler {
         wallet: u.balance.wallet,
         bank: u.balance.bank + amount,
       });
-      if(this.db.config.debug) Logger.info(`Added ${amount} to ${targetUser}'s bank`);
+      if (this.db.config.debug)
+        Logger.info(`Added ${amount} to ${targetUser}'s bank`);
       return {
         earned: amount,
         bank: u.balance.bank + amount,
@@ -164,7 +168,8 @@ export class CurrencyHandler {
         wallet: u.balance.wallet - amount,
         bank: u.balance.bank,
       });
-      if(this.db.config.debug) Logger.info(`Subtracted ${amount} from ${targetUser}'s wallet`);
+      if (this.db.config.debug)
+        Logger.info(`Subtracted ${amount} from ${targetUser}'s wallet`);
       return {
         subtracted: amount,
         wallet: u.balance.wallet - amount,
@@ -178,7 +183,8 @@ export class CurrencyHandler {
         wallet: u.balance.wallet,
         bank: u.balance.bank - amount,
       });
-      if(this.db.config.debug) Logger.info(`Subtracted ${amount} from ${targetUser}'s bank`);
+      if (this.db.config.debug)
+        Logger.info(`Subtracted ${amount} from ${targetUser}'s bank`);
       return {
         subtracted: amount,
         bank: u.balance.bank - amount,
@@ -224,10 +230,10 @@ export class CurrencyHandler {
 
       let data = lib.sort((x, y) => y.bank - x.bank).slice(0, limit || 10);
 
-      if(this.db.config.debug) Logger.info(`LeaderBoard data: ${data}`);
+      if (this.db.config.debug) Logger.info(`LeaderBoard data: ${data}`);
 
       // Only the top 10 results will be returned from the array. We will also need to sort them from highest to lowest.
-      return data
+      return data;
     } catch (err) {
       Logger.error(`LeaderBoard error: ${err}`);
       return false;
@@ -267,7 +273,7 @@ export class CurrencyHandler {
         wallet: u2.balance.wallet + amount,
         bank: u2.balance.bank,
       });
-      if(this.db.config.debug) Logger.info(`Paid ${amount} to ${targetToPay}`);
+      if (this.db.config.debug) Logger.info(`Paid ${amount} to ${targetToPay}`);
       return {
         paid: amount,
         userWallet: u1.balance.wallet - amount,
@@ -314,7 +320,7 @@ export class CurrencyHandler {
         wallet: u.balance.wallet + amount,
         bank: u.balance.bank,
       });
-      if(this.db.config.debug) Logger.info(`Worked ${amount}`);
+      if (this.db.config.debug) Logger.info(`Worked ${amount}`);
       return {
         earned: amount,
         bank: u.balance.bank,
@@ -348,7 +354,7 @@ export class CurrencyHandler {
         wallet: u.balance.wallet - amount,
         bank: u.balance.bank + amount,
       });
-      if(this.db.config.debug) Logger.info(`Deposited ${amount}`);
+      if (this.db.config.debug) Logger.info(`Deposited ${amount}`);
       return {
         amount: amount,
         wallet: u.balance.wallet - amount,
@@ -373,7 +379,7 @@ export class CurrencyHandler {
         wallet: u.balance.wallet + amount,
         bank: u.balance.bank - amount,
       });
-      if(this.db.config.debug) Logger.info(`Withdrew ${amount}`);
+      if (this.db.config.debug) Logger.info(`Withdrew ${amount}`);
       return {
         amount: amount,
         wallet: u.balance.wallet + amount,

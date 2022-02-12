@@ -1,6 +1,6 @@
 import { DataBaseController, fetchManager } from "..";
 import { ErrorMessage } from "../util/functions";
-import {Logger} from "../util/logger";
+import { Logger } from "../util/logger";
 
 /** The Wallet manager class handles common methods with our economy currency and values.
  *
@@ -40,7 +40,7 @@ export class WalletManager {
     } else {
       if (this.db.config.debug) {
         Logger.info(
-            `[WalletManager] Fetching bank limit for ${targetUser} from cache. ${bankLimitCache}`
+          `[WalletManager] Fetching bank limit for ${targetUser} from cache. ${bankLimitCache}`
         );
       }
       return {

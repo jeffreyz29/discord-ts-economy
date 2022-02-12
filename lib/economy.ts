@@ -43,9 +43,11 @@ export class IEconomy {
         shopEnabled: false,
         robEnabled: true,
         debug: false,
-      }
-      if(this.config.debug) {
-        Logger.log(`[Economy:configOptions] Config: ${JSON.stringify(this.config)}`)
+      };
+      if (this.config.debug) {
+        Logger.log(
+          `[Economy:configOptions] Config: ${JSON.stringify(this.config)}`
+        );
       }
     }
   }
@@ -64,13 +66,15 @@ export class IEconomy {
         )
       );
     } else if (url && this.config.mongodbURL === undefined) {
-      if(this.config.debug) {
-        Logger.log(`[Economy:correct] Connecting to mongodb at ${url}`)
+      if (this.config.debug) {
+        Logger.log(`[Economy:correct] Connecting to mongodb at ${url}`);
       }
       mongodb_connect_function(url);
     } else if (!url && this.config.mongodbURL !== undefined) {
-      if(this.config.debug) {
-        Logger.log(`[Economy:correct] Connecting to mongodb at ${this.config.mongodbURL}`)
+      if (this.config.debug) {
+        Logger.log(
+          `[Economy:correct] Connecting to mongodb at ${this.config.mongodbURL}`
+        );
       }
       mongodb_connect_function(url);
     }
@@ -95,8 +99,8 @@ export class IEconomy {
         )
       );
     }
-    if(this.config.debug) {
-      Logger.log(`[Economy:self_connect] Connecting to mongodb at ${url}`)
+    if (this.config.debug) {
+      Logger.log(`[Economy:self_connect] Connecting to mongodb at ${url}`);
     }
     mongodb_connect_function_self(url, options, callback);
   }

@@ -1,0 +1,66 @@
+<!DOCTYPE html><html class="default"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>Lewd labs Economy</title><meta name="description" content="Documentation for Lewd labs Economy"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script async src="assets/search.js" id="search-script"></script></head><body><script>document.body.classList.add(localStorage.getItem("tsd-theme") || "os")</script><header><div class="tsd-page-toolbar"><div class="container"><div class="table-wrap"><div class="table-cell" id="tsd-search" data-base="."><div class="field"><label for="tsd-search-field" class="tsd-widget search no-caption">Search</label><input type="text" id="tsd-search-field"/></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">Lewd labs Economy</a></div><div class="table-cell" id="tsd-widgets"><div id="tsd-filter"><a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a><div class="tsd-filter-group"><div class="tsd-select" id="tsd-filter-visibility"><span class="tsd-select-label">All</span><ul class="tsd-select-list"><li data-value="public">Public</li><li data-value="protected">Public/Protected</li><li data-value="private" class="selected">All</li></ul></div> <input type="checkbox" id="tsd-filter-inherited" checked/><label class="tsd-widget" for="tsd-filter-inherited">Inherited</label></div></div><a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a></div></div></div></div><div class="tsd-page-title"><div class="container"><h1> Lewd labs Economy</h1></div></div></header><div class="container container-main"><div class="row"><div class="col-8 col-content"><div class="tsd-panel tsd-typography">
+<a href="#discord-ts-economy" id="discord-ts-economy" style="color: inherit; text-decoration: none;">
+  <h1>Discord TS Economy</h1>
+</a>
+<pre><code><span class="hl-0"> </span><span class="hl-1">*</span><span class="hl-0"> </span><span class="hl-1">!</span><span class="hl-0"> </span><span class="hl-1">-----------------------------</span><span class="hl-0"> Lewd Labs </span><span class="hl-1">---------------------------------</span><br/><span class="hl-0"> </span><span class="hl-1">*</span><span class="hl-0">  Thanks for checking our </span><span class="hl-2">this</span><span class="hl-0"> </span><span class="hl-1">package!</span><span class="hl-0"> Please read the information below</span><span class="hl-1">...</span><br/><span class="hl-0"> </span><span class="hl-1">*</span><span class="hl-0"> </span><span class="hl-1">?</span><span class="hl-0"> </span><span class="hl-1">------------------------</span><span class="hl-0"> Discord </span><span class="hl-2">TS</span><span class="hl-0"> Economy </span><span class="hl-1">---------------------------</span>
+</code></pre>
+<p><img src="https://img.shields.io/github/issues/lewd-labs/discord-easy-economy?style=for-the-badge" alt="GitHub issues"> <img src="https://img.shields.io/github/issues-pr/lewd-labs/discord-easy-economy?style=for-the-badge" alt="GitHub pull requests"> <img src="https://img.shields.io/github/stars/lewd-labs/discord-easy-economy?style=for-the-badge" alt="GitHub Repo stars"> <img src="https://img.shields.io/npm/v/discord-ts-economy?style=for-the-badge" alt="npm"> <img src="https://img.shields.io/npm/dw/discord-ts-economy?style=for-the-badge" alt="npm"></p>
+
+<a href="#highlights" id="highlights" style="color: inherit; text-decoration: none;">
+  <h2>Highlights</h2>
+</a>
+<ul>
+<li><code>🍃</code> Power by MongoDB.</li>
+<li><code>🌀</code> Build with typescript.</li>
+<li><code>⚡</code> Caching for quick load times.</li>
+<li><code>🤖</code> Made for Discord.js first.</li>
+</ul>
+
+<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
+  <h2>Installation</h2>
+</a>
+<blockquote>
+<p>Version 16.6.0 or newer of Node.js is required</p>
+</blockquote>
+<pre><code><span class="hl-0">yarn add discord</span><span class="hl-1">-</span><span class="hl-0">ts</span><span class="hl-1">-</span><span class="hl-0">economy</span><br/><span class="hl-0">npm install discord</span><span class="hl-1">-</span><span class="hl-0">ts</span><span class="hl-1">-</span><span class="hl-0">economy</span><br/><span class="hl-0">pnpm add discord</span><span class="hl-1">-</span><span class="hl-0">ts</span><span class="hl-1">-</span><span class="hl-0">economy</span>
+</code></pre>
+
+<a href="#basic-demo" id="basic-demo" style="color: inherit; text-decoration: none;">
+  <h3>Basic Demo</h3>
+</a>
+<pre><code class="language-typescript"><span class="hl-1">import</span><span class="hl-0"> { Economy, CurrencyHandler } </span><span class="hl-1">from</span><span class="hl-0"> </span><span class="hl-3">&quot;discord-ts-economy&quot;</span><span class="hl-0">;</span><br/><br/><span class="hl-1">const</span><span class="hl-0"> </span><span class="hl-2">eco</span><span class="hl-0"> </span><span class="hl-1">=</span><span class="hl-0"> </span><span class="hl-1">new</span><span class="hl-0"> </span><span class="hl-4">Economy</span><span class="hl-0">();</span><br/><br/><span class="hl-5">// connect our database</span><br/><span class="hl-0">eco.</span><span class="hl-4">connect</span><span class="hl-0">(</span><span class="hl-3">&quot;mongodb connection string&quot;</span><span class="hl-0">);</span><br/><br/><span class="hl-1">const</span><span class="hl-0"> </span><span class="hl-2">currencyHandler</span><span class="hl-0"> </span><span class="hl-1">=</span><span class="hl-0"> </span><span class="hl-1">new</span><span class="hl-0"> </span><span class="hl-4">CurrencyHandler</span><span class="hl-0">();</span><br/><br/><span class="hl-5">// Fetches all the documents from our database (if the exist) and saves them to our cache.</span><br/><span class="hl-0">currencyHandler.</span><span class="hl-4">init</span><span class="hl-0">();</span><br/><br/><span class="hl-5">// adds a value of 100 through 500 to a users wallet with a 10 percent fail chance.</span><br/><span class="hl-0">currencyHandler.</span><span class="hl-4">work</span><span class="hl-0">(</span><span class="hl-3">&quot;some_user_id&quot;</span><span class="hl-0">, </span><span class="hl-2">100</span><span class="hl-0">, </span><span class="hl-2">500</span><span class="hl-0">, </span><span class="hl-2">10</span><span class="hl-0">);</span>
+</code></pre>
+<p>Click the image below for a video style introduction.
+<a href="https://www.youtube.com/watch?v=xGt90N3mUtg&amp;t=1276s"><img src="https://cdn.discordapp.com/attachments/919435340463366236/932835016076038144/support.png" alt="Demo Video Screenshot Link">
+</a></p>
+
+<a href="#built-with" id="built-with" style="color: inherit; text-decoration: none;">
+  <h2>Built with</h2>
+</a>
+<ul>
+<li><a href="https://nodejs.org/en/">Nodejs</a></li>
+<li><a href="https://www.typescriptlang.org/">TypeScript</a></li>
+<li><a href="https://www.youtube.com/channel/UCVOQobByo_2WISQf2037eXQ">Love</a></li>
+</ul>
+
+<a href="#contributing" id="contributing" style="color: inherit; text-decoration: none;">
+  <h2>Contributing</h2>
+</a>
+<p>Please read <a href="./.github/assets/CONTRIBUTING.md">CONTRIBUTING.md</a> for details on our code of conduct, and the process for submitting pull requests to us.</p>
+
+<a href="#helpful-links" id="helpful-links" style="color: inherit; text-decoration: none;">
+  <h2>Helpful links</h2>
+</a>
+<ul>
+<li><p><a href="https://lewd-labs.github.io/discord-ts-economy/">Documentation</a></p>
+</li>
+<li><p><a href="https://www.youtube.com/channel/UCVOQobByo_2WISQf2037eXQ">YouTube</a></p>
+</li>
+<li><p><a href="https://discord.com/invite/N79DZsm3m2">Discord</a></p>
+</li>
+<li><p><a href="https://lewd-labs.github.io/guide/">Guide</a></p>
+</li>
+<li><p><a href="https://github.com/lewd-labs/discord-ts-economy/releases">Change Logs</a></p>
+</li>
+</ul>
+</div></div><div class="col-4 col-menu menu-sticky-wrap menu-highlight"><nav class="tsd-navigation primary"><ul><li class="current"><a href="modules.html">Modules</a></li><li class=" tsd-kind-module"><a href="modules/database.html">database</a></li><li class=" tsd-kind-module"><a href="modules/database_connection.html">database/connection</a></li><li class=" tsd-kind-module"><a href="modules/database_controller.html">database/controller</a></li><li class=" tsd-kind-module"><a href="modules/database_schema.html">database/schema</a></li><li class=" tsd-kind-module"><a href="modules/database_types.html">database/types</a></li><li class=" tsd-kind-module"><a href="modules/economy.html">economy</a></li><li class=" tsd-kind-module"><a href="modules/index.html">index</a></li><li class=" tsd-kind-module"><a href="modules/managers_fetch.html">managers/fetch</a></li><li class=" tsd-kind-module"><a href="modules/managers_reward.html">managers/reward</a></li><li class=" tsd-kind-module"><a href="modules/managers_wallet.html">managers/wallet</a></li><li class=" tsd-kind-module"><a href="modules/structures_currency.html">structures/currency</a></li><li class=" tsd-kind-module"><a href="modules/typings_typings.html">typings/typings</a></li><li class=" tsd-kind-module"><a href="modules/util_errors.html">util/errors</a></li><li class=" tsd-kind-module"><a href="modules/util_functions.html">util/functions</a></li><li class=" tsd-kind-module"><a href="modules/util_logger.html">util/logger</a></li><li class=" tsd-kind-module"><a href="modules/util_logger_util.html">util/logger/util</a></li><li class=" tsd-kind-module"><a href="modules/util_util.html">util/util</a></li></ul></nav></div></div></div><footer class=""><div class="container"><h2>Legend</h2><div class="tsd-legend-group"><ul class="tsd-legend"><li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li><li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li><li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li></ul><ul class="tsd-legend"><li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li></ul><ul class="tsd-legend"><li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li></ul><ul class="tsd-legend"><li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li></ul></div><h2>Settings</h2><p>Theme <select id="theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></p></div></footer><div class="overlay"></div><script src="assets/main.js"></script></body></html>

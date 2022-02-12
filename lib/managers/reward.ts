@@ -1,7 +1,7 @@
 import { DataBaseController } from "..";
 import { ErrorMessage } from "../util/functions";
 import { fetchManager } from "./fetch";
-import {Logger} from "../util/logger";
+import { Logger } from "../util/logger";
 
 /**
  * The reward manager is a class used to control economy rewards.
@@ -64,10 +64,14 @@ export class RewardManager {
         time: dailyTimeOUT,
       };
 
-      if(this.db.config.debug) Logger.info(`[RewardManager] Daily Reward given to ${targetUser} with data: ${JSON.stringify(data)}`);
+      if (this.db.config.debug)
+        Logger.info(
+          `[RewardManager] Daily Reward given to ${targetUser} with data: ${JSON.stringify(
+            data
+          )}`
+        );
 
       return data;
-
     }
   }
 
@@ -113,7 +117,12 @@ export class RewardManager {
         weeklyTimeout: weeklyTimeOUT,
       };
 
-      if(this.db.config.debug) Logger.log(`[RewardManager] Weekly reward given to ${targetUser} with data: ${JSON.stringify(data)}`);
+      if (this.db.config.debug)
+        Logger.log(
+          `[RewardManager] Weekly reward given to ${targetUser} with data: ${JSON.stringify(
+            data
+          )}`
+        );
 
       return data;
     }
@@ -159,13 +168,16 @@ export class RewardManager {
         wallet: u.balance.wallet,
         monthlyStreak: u.monthly.monthlyStreak,
         monthlyTimeout: monthlyTimeOUT,
-      }
+      };
 
-      if(this.db.config.debug) Logger.info(`[RewardManager] Monthly reward given to ${targetUser} with data: ${JSON.stringify(data)}`);
+      if (this.db.config.debug)
+        Logger.info(
+          `[RewardManager] Monthly reward given to ${targetUser} with data: ${JSON.stringify(
+            data
+          )}`
+        );
 
-
-
-      return data
+      return data;
     }
   }
 }

@@ -4,6 +4,10 @@ interface LoggerOptions {
   name?: string;
 }
 
+/**
+ * Logger class for logging messages to the console.
+ * @class Logger
+ */
 class ILogger {
   private readonly name?: string;
   public constructor(options?: LoggerOptions) {
