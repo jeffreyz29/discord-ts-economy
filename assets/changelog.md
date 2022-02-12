@@ -1,19 +1,18 @@
-# Package version [v0.1.8] `⭐`
+# Package version [v0.1.9] `⭐`
 
 ---
 
 ## New Features
 
-New Self connect function for more mongodb connection flexibility.
+- Updated Reward method(s): [weekly, Monthly]
+- Added A debugging feature to the Economy System for developers.
 
 ## Changes
 
-Spell checking for inline docs.
-
-The DB init functions now return all Documents loaded by cache from the DataBaseController#init method.
+- Added colors to error handling.
+- Updated Database controller with logging.
 
 ## Bug fixes
 
-Quality of code fixes...
-
-Removing void error to mongodb connect function
+- Fixing small bugs with reward manager
+- Spelling fixes with variables
